@@ -22,14 +22,14 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: $green;
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($green, 25%);
   }
 }
 
@@ -51,6 +51,11 @@ h1{
   line-height: 60px;
   font-weight: 700;
 }
+h2{
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
 h3{
       font-weight: 700;
     font-size: 18px;
@@ -64,3 +69,7 @@ h5{
   font-size: 15px;
   font-weight: 400;
 }
+p{
+    font-weight: 200;
+    padding-bottom: 20px;
+  }
