@@ -26,6 +26,23 @@
   float: right;
   text-align: left;
 }
+.block50{
+  float: left;
+  width: 50%;
+}
+.block25{
+  float: left;
+  width: 25%;
+}
 .bg-light{
   background-color: $light-gray;
+}
+.bg-green{
+  background-color: $green;
+}
+.bg-darkblue{
+  background-color: $dark-blue;
+}
+hgroup{
+  text-align: center;
 }

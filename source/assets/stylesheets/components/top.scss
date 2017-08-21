@@ -17,6 +17,14 @@
 	}
 	.actions{
 		overflow: hidden;
+		i{
+			float: left;
+			display: inline-block;
+			padding-right: 10px;
+			img{
+				width: 24px;
+			}
+		}
 	}
 	.inc500{
 		height: 70px;

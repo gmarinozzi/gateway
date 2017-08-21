@@ -22,12 +22,12 @@ title: Gateway Commercial Finance
 					.block-left
 						%h4 CALL A DECISION MAKER!
 						.button.outline.phone
-							%i
+							%i=image_tag('icons/phone.svg')
 							1-855-424-2955
 					.block-right
 						%h4 OR
 						.button
-							%i
+							%i=image_tag('icons/clock.svg')
 							GET STARTED IN MINUTES!
 			.inc500
 				=image_tag('logos/inc500.gif')
@@ -49,8 +49,9 @@ title: Gateway Commercial Finance
 				=link_to 'What Fcactoring Is and How It Works', '#'
 %section.industries
 	.container
-		%h3 The Industries We Serve
-		%p Delivering experience, knowledge and financial solutions in a variety of fields.
+		%hgroup
+			%h3 The Industries We Serve
+			%p Delivering experience, knowledge and financial solutions in a variety of fields.
 		.cards
 			.item.large
 				.content
@@ -120,5 +121,56 @@ title: Gateway Commercial Finance
 				%h2 YOUR FACTORING DISCOUNT RATE<br>ASPECTS THAT INFLUENCE YOUR COMPANY AND CLIENTS’ RISK TO A FACTOR
 				%p As a company manager you are well aware of the risks and expenses involved with doing business. We take those risks very seriously and utilize different metrics to determine the rate and contract terms for your business. How reliable are your clients when it comes to paying their bills? How long does it take your average customer to pay their invoices? We have put together this comprehensive explanation as to how a factor determines your factoring rate and what kinds of considerations go into this extremely important decision. We provide you with a series of interactive worksheets that allow you to put in your real numbers and see what kinds of results that you get.
 				=link_to 'Your Factoring Discount Rate', '#'
+
+%section.testimonials.bg-green
+	.container
+		%hgroup
+			%h3 Factoring Company Reviews
+			%p Some Industries We Factor
+		.testimonial
+			%p Gateway’s team actually listened to our situation and created a program tailored specifically to our needs and the payment trends of our customers. With reliable cash flow, we’re ready to take on the Fortune 100!
+			.autor
+				=image_tag('testimonials/pic.png')
+				%h6 Industry: Printers
+				%p Today Gabriel can focus on what he does best
+		.testimonial
+			%p Gateway’s team actually listened to our situation and created a program tailored specifically to our needs and the payment trends of our customers. With reliable cash flow, we’re ready to take on the Fortune 100!
+			.autor
+				=image_tag('testimonials/pic.png')
+				%h6 Industry: Printers
+				%p Today Gabriel can focus on what he does best
+%section.bottom.bg-darkblue
+	.container
+		.block50
+			%p Our Affiliations & Partnerships
+			.affiliations
+				=image_tag('affiliations/pic1.png')
+				=image_tag('affiliations/pic2.png')
+				=image_tag('affiliations/pic3.png')
+				=image_tag('affiliations/pic4.png')
+				=image_tag('affiliations/pic5.png')
+		.block25
+			%p More Links...
+			%ul
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+		.block25
+			%p More Links...
+			%ul
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+				%li=link_to 'link', '#'
+%footer.bg-darkblue
+	.container
+		%span Copyright Gateway Commercial Finance, LLC 2017
+		%nav
+			%ul
+				%li=link_to 'Privacy', '#'
+				%li=link_to 'Sitemap', '#'
+				%li=link_to 'Library', '#'
+
 
 
