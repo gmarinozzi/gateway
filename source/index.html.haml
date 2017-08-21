@@ -3,15 +3,18 @@ title: Gateway Commercial Finance
 ---
 
 %header
-	.logo
-		=link_to image_tag('logos/gateway.png'), '#'
-	%nav
-		%ul
-			%li=link_to 'Invoice Factoring', '#'
-			%li=link_to 'Industries we serve', '#'
-			%li=link_to 'Our Company', '#'
-			%li=link_to 'Contact Us', '#'
-			%li.button.outline=link_to 'Clients Area', '#'
+	.flex-container
+		.container-left
+			.logo
+				=link_to image_tag('logos/gateway.png'), '#'
+		.container-right
+			%nav
+				%ul
+					%li=link_to 'Invoice Factoring', '#'
+					%li=link_to 'Industries we serve', '#'
+					%li=link_to 'Our Company', '#'
+					%li=link_to 'Contact Us', '#'
+					%li.button.outline=link_to 'Clients Area', '#'
 %section.top
 	.flex-container
 		.container-left

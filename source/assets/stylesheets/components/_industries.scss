@@ -8,8 +8,8 @@
 		display: flex;
 		justify-content: space-between;
 		.item{
-			flex-basis: 165px;
-			width: 165px;
+			flex-basis: 160px;
+			width: 160px;
 			.content{
 				background-color: #fff;
 				margin-bottom: 5px;
@@ -27,6 +27,9 @@
 					font-weight: 200;
 					margin: 0;
 					padding: 0 5px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 				&:hover{
 					box-shadow: 0px 0px 4px rgba(0,0,0,.2);
@@ -43,14 +46,27 @@
 				}
 			}
 		}
-		@media (min-width: 960px) and (max-width: 1199px){
+	}
+	@media (min-width: 320px) and (max-width: 1199px){
+		.cards {
+			padding: 0;
 			.item{
-				flex-basis: 132px;
-				width: 132px;
+				flex-basis: 128px;
+				width: 128px;
 				h5{
 					font-size: 14px;
-					line-height: 14px;
-					bottom: 2px;
+					bottom: 0px;
+				}
+			}
+		}
+	}
+	@media (min-width: 760px) and (max-width: 959px){
+		.cards {
+			.item{
+				flex-basis: 97px;
+				width: 97px;
+				h5{
+					font-size: 13px;
 				}
 			}
 		}

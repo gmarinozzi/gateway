@@ -51,4 +51,22 @@
 	a:hover{
 		text-decoration: underline;
 	}
+	@media (min-width: 960px) and (max-width: 1199px){
+		.container-left .block{
+			padding: 40px 40px 40px 100px;
+		}
+		.container-right .block{
+			padding: 40px;
+		}
+
+	}
+	@media (min-width: 320px) and (max-width: 959px){
+		.container-left .block{
+			padding: 40px 30px 40px 60px;
+		}
+		.container-right .block{
+			padding: 40px;
+		}
+
+	}
 }

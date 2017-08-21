@@ -43,12 +43,12 @@
     padding: 9px 20px;
   }
   @media (min-width: 960px) and (max-width: 1299px){
-  font-size: 16px;
-  padding: 6px 10px;
-  &.phone{
-    font-size:24px;
+    font-size: 15px;
     padding: 6px 10px;
+    line-height: 24px;
+    &.phone{
+      font-size:24px;
+      padding: 6px 10px;
+    }
   }
-}
-
 }
