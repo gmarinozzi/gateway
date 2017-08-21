@@ -1,0 +1,44 @@
+header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	.logo{
+		float: left;
+		width: 200px;
+		margin: 20px 30px;
+	}
+	nav{
+		float: right;
+		padding-top: 40px;
+		padding-right: 40px;
+		ul{
+			li{
+				float: left;
+				a{
+					font-size: 15px;
+					line-height: 20px;
+					color: #fff;
+					font-weight: 200;
+					padding: 10px;
+					opacity:.8;
+					&:hover{
+						opacity:1;
+						color: #fff;
+					}
+				}
+				&.button.outline {
+					font-size:  15px;
+					padding: 2px 5px;
+					margin-left: 5px;
+					&:hover{
+						background-color: #fff;
+						a{
+							color: $blue!important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

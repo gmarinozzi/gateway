@@ -1,0 +1,29 @@
+.top{
+	.flex-container{
+		background: url('../images/bg-top.jpg') top left no-repeat;
+		background-size: cover;
+	}
+	.container-left{
+
+	}
+	.container-right{
+		box-shadow: -4px -4px 4px rgba(0,0,0,.4);
+		background-color: rgba($blue, .85);
+		color: #fff;
+		text-align: center;
+	}
+	.caption{
+		padding: 220px 40px 80px 40px;
+	}
+	.actions{
+		overflow: hidden;
+	}
+	.inc500{
+		height: 70px;
+		background-color: #DCDDDF;
+		position: relative;
+		img{
+			height: 70px;
+		}
+	}
+}
