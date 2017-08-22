@@ -14,5 +14,10 @@
     padding: 30px 10px; }
   .text-contents .container-right .block {
     padding: 30px; } }
+@media (min-width: 320px) and (max-width: 759px) {
+  .text-contents img {
+    max-width: 300px; }
+  .text-contents .flex-container {
+    border-bottom: 1px solid #ededed; } }
 
 /*# sourceMappingURL=_text-contents.css.map */

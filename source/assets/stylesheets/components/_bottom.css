@@ -8,5 +8,12 @@
       display: inline-block;
       margin-right: 20px;
       margin-bottom: 20px; }
+    @media (min-width: 320px) and (max-width: 759px) {
+      .bottom .affiliations {
+        padding-right: 0; }
+        .bottom .affiliations img {
+          max-width: 100px;
+          max-height: 40px;
+          margin-right: 10px; } }
 
 /*# sourceMappingURL=_bottom.css.map */

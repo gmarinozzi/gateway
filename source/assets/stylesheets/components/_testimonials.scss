@@ -14,4 +14,14 @@
 			margin-right: 20px;
 		}
 	}
+	@media (min-width: 320px) and (max-width: 759px){
+		.testimonial{
+			width: 100%;
+			border-bottom: 1px solid rgba(#fff, .2);
+			padding-top: 30px;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
 }

@@ -12,5 +12,12 @@
       float: left;
       width: 60px;
       margin-right: 20px; }
+  @media (min-width: 320px) and (max-width: 759px) {
+    .testimonials .testimonial {
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 30px; }
+      .testimonials .testimonial:last-child {
+        border-bottom: none; } }
 
 /*# sourceMappingURL=_testimonials.css.map */

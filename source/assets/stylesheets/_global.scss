@@ -11,6 +11,9 @@
   @media (min-width: 760px) and (max-width: 959px){
     width: 760px;
   }
+  @media (min-width: 320px) and (max-width: 759px){
+    width: 100%;
+  }
 }
 .flex-container{
   display: flex;
@@ -21,7 +24,19 @@
   .container-right{
     flex-basis:60%;
   }
+  @media (min-width: 320px) and (max-width: 759px){
+    display: block;
+    .container-left{
+      overflow: hidden;
+      width: 100%;
+    }
+    .container-right{
+      width: 100%;
+      overflow: hidden;
+    }
+  }
 }
+
 .block-left, .block-right{
   width:50%;
   padding: 10px;
@@ -41,6 +56,16 @@
 .block25{
   float: left;
   width: 25%;
+}
+@media (min-width: 320px) and (max-width: 759px){
+  .block50{
+    float: none;
+    width: 100%;
+  }
+  .block25{
+    float: left;
+    width: 50%;
+  }
 }
 .bg-light{
   background-color: $light-gray;

@@ -71,4 +71,18 @@
 			}
 		}
 	}
+	@media (min-width: 320px) and (max-width: 759px){
+		.cards {
+			display: block;
+			overflow: hidden;
+			.item{
+				width:120px;
+				float: left;
+				margin-right: 5px;
+				h5{
+					font-size: 13px;
+				}
+			}
+		}
+	}
 }

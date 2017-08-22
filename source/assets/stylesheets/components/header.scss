@@ -57,5 +57,8 @@ header{
 				}
 			}
 		}
+		@media (min-width: 320px) and (max-width: 759px){
+			display: none;
+		}
 	}
 }
