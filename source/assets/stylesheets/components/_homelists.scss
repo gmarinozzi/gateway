@@ -1,0 +1,29 @@
+.lists{
+	@extend .first;
+	.container-left{
+		background-color: transparent;
+		&:before {
+			background-image: url('../images/bg-lists.jpg');
+			opacity: 1;
+		}
+	}
+	.container-right {
+		.block{
+			ul {
+				padding-bottom: 20px;
+				li{
+					font-size: 14px;
+					font-weight: 200;
+					padding-bottom: 5px;
+					line-height: 16px;
+				}
+			}
+			a{
+				color: $green;
+			}
+		}
+		.block + .block{
+			padding-left: 0;
+		}
+	}
+}
