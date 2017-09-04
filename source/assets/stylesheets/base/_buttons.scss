@@ -23,6 +23,9 @@
     background-color: lighten($green, 10%);
     color: #fff;
   }
+  a, a:hover{
+    color: #fff;
+  }
 
   &:disabled {
     cursor: not-allowed;
