@@ -40,6 +40,11 @@
     border: 1px solid #fff;
     color: #fff;
   }
+  &.outline-green{
+    background-color: transparent;
+    border: 1px solid $green;
+    color: $green;
+  }
   &.phone{
     font-weight: 700;
     font-size: 30px;
