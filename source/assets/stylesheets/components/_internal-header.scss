@@ -6,25 +6,31 @@ header.internal{
 	.logo{
 		float: left;
 		width: 200px;
-		margin: 20px 30px;
+		margin: 30px 30px 0 30px;
+	}
+	.container-left{
+    	flex-basis:30%!important;
 	}
 	.container-right{
 		background-color: $light-gray;
+    	flex-basis:70%!important;
 	}
 	.contact{
 		text-align: right;
 		padding: 15px 20px 0 0;
 		line-height: 22px;
+		font-size: 20px;
 		.button.outline-green {
 			border-color: $blue;
 			position: relative;
 			margin-left: 10px;
 			padding: 0;
 			background-color: #fff;
+			top:-3px;
 			a{
-				padding: 0px 7px;
+				padding: 3px 9px;
 				color: $blue;
-				font-size: 14px;
+				font-size: 16px;
 				line-height: 20px;
 				display: block;
 				margin: 0;
@@ -34,7 +40,7 @@ header.internal{
 				border-color: $blue;
 				a{
 					color: #fff!important;
-					padding-bottom: 0;
+					padding: 3px 9px;
 					border-bottom: 0;
 				}
 			}
@@ -50,10 +56,11 @@ header.internal{
 			li{
 				float: left;
 				text-align: center;
+				margin-right: 1px;
 				a{
 					color:$dark-gray;
 					font-weight: 400;
-					padding:0px 10px 12px 10px;
+					padding:0px 12px 12px 12px;
 					display: block;
 					&:hover{
 						color: $green;
@@ -62,10 +69,11 @@ header.internal{
 					}
 				}
 				&.selected{
-					border-bottom: 4px solid $blue;
+					border-bottom: 4px solid $green;
 					a{
 						padding-bottom: 8px;
 						color: $blue;
+						font-weight: 700;
 						&:hover{
 							border-bottom: none;
 							padding-bottom: 8px;
@@ -86,9 +94,15 @@ header.internal{
 					padding:8px 10px;
 					border-bottom: none;
 					color: #fff!important;
+					font-weight: 200!important;
+					&:before{
+						content: '›';
+						padding-right: 5px;
+						text-decoration: none!important;
+					}
 					&:hover{
-						color: $green!important;
-						border-bottom: none;
+						color: #fff!important;
+						text-decoration: underline;
 					}
 				}
 			}

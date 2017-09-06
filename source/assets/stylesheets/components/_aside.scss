@@ -1,12 +1,11 @@
 aside{
-    flex-basis:40%;
+    flex-basis:30%!important;
 	background-color: $green;
 	position: relative;
 	&:before {
 		content: "";
 		background: $light-gray url('../images/pic.gif') left 70px no-repeat;
-		background-size: 65%;
-		opacity: 0.15;
+		opacity: 0.1;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -21,7 +20,7 @@ aside{
 		color: #fff;
 		z-index: 2;
 		position: relative;
-		padding: 80px 80px 80px 200px;
+		padding: 80px;
 		a{
 			color:#fff;
 		}
