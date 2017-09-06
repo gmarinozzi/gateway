@@ -995,33 +995,52 @@ header.internal {
   .lists .container-left:before {
     background-image: url("../images/bg-lists.jpg");
     opacity: 1; }
-.lists .container-right .block {
-  padding-right: 40px; }
-  .lists .container-right .block ul {
-    padding-bottom: 20px; }
-    .lists .container-right .block ul li {
-      font-weight: 200;
-      font-size: 15px;
-      line-height: 17px;
-      padding-bottom: 8px; }
-      .lists .container-right .block ul li:before {
-        content: '›';
-        display: block;
-        float: left;
-        width: 20px;
-        color: #16A09B; }
-  .lists .container-right .block a {
-    color: #16A09B; }
+.lists .container-right {
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
+  .lists .container-right .block {
+    padding-right: 40px; }
+    .lists .container-right .block ul {
+      padding-bottom: 20px; }
+      .lists .container-right .block ul li {
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 17px;
+        padding-bottom: 8px; }
+        .lists .container-right .block ul li:before {
+          content: '›';
+          display: block;
+          float: left;
+          width: 20px;
+          color: #16A09B; }
+    .lists .container-right .block a {
+      color: #16A09B; }
+  .lists .container-right .block.bg-light {
+    background-color: rgba(237, 237, 237, 0.4); }
 @media (min-width: 320px) and (max-width: 959px) {
   .lists .container-left {
     display: none; }
   .lists .container-right {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; } }
+        flex-basis: 100%; }
+    .lists .container-right .block.bg-light {
+      background-color: #fff !important; }
+    .lists .container-right .block {
+      padding: 80px 0; }
+    .lists .container-right .block + .block .content {
+      border-right: none; }
+    .lists .container-right .content {
+      border-left: 1px solid #EDEDED;
+      padding: 0 80px; } }
 @media (min-width: 320px) and (max-width: 759px) {
   .lists .container-right .block {
     width: 100%;
-    margin: 40px; } }
+    margin: 0px;
+    padding: 0; }
+    .lists .container-right .block .content {
+      padding: 40px;
+      border-right: none;
+      border-bottom: 1px solid #EDEDED; } }
 
 .industries {
   background-color: #D2D3D6;
