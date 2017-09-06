@@ -1,9 +1,11 @@
 @import "vendor/normalize";
 
 @import "bourbon";
+
 @import "base/base";
+@import "global";
+
 @import "components/base";
 
 @import "neat";
 
-@import "global";
