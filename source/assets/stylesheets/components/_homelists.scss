@@ -9,13 +9,21 @@
 	}
 	.container-right {
 		.block{
+			padding-right: 40px;
 			ul {
 				padding-bottom: 20px;
 				li{
-					font-size: 14px;
 					font-weight: 200;
-					padding-bottom: 5px;
-					line-height: 16px;
+					font-size: 15px;
+					line-height:17px;
+					padding-bottom: 8px;
+					&:before{
+						content: '›';
+						display: block;
+						float: left;
+						width: 20px;
+						color: $green;
+					}
 				}
 			}
 			a{
@@ -23,7 +31,6 @@
 			}
 		}
 		.block + .block{
-			padding-left: 0;
 		}
 	}
 }

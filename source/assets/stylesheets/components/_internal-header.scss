@@ -1,5 +1,4 @@
 header.internal{
-	background-color: #ffffff;
 	height: 125px;
 	z-index: 4;
 	position: absolute;
@@ -9,8 +8,8 @@ header.internal{
 		width: 200px;
 		margin: 20px 30px;
 	}
-	.container-left{
-		box-shadow: 4px -4px 4px rgba(0,0,0,.05);
+	.container-right{
+		background-color: $light-gray;
 	}
 	.contact{
 		text-align: right;
@@ -21,6 +20,7 @@ header.internal{
 			position: relative;
 			margin-left: 10px;
 			padding: 0;
+			background-color: #fff;
 			a{
 				padding: 0px 7px;
 				color: $blue;
@@ -57,12 +57,12 @@ header.internal{
 					display: block;
 					&:hover{
 						color: $green;
-						border-bottom: 4px solid $blue;
+						border-bottom: 4px solid $green;
 						padding-bottom: 8px;
 					}
 				}
 				&.selected{
-					border-bottom: 4px solid $medium-gray;
+					border-bottom: 4px solid $blue;
 					a{
 						padding-bottom: 8px;
 						color: $blue;
@@ -77,7 +77,7 @@ header.internal{
 				}
 			}
 			&.submenu{
-				background-color: $light-gray;
+				background-color: $blue;
 				width: 100%;
 				position: absolute;
 				top:46px;
@@ -85,9 +85,9 @@ header.internal{
 				a{
 					padding:8px 10px;
 					border-bottom: none;
-					color: $dark-gray;
+					color: #fff!important;
 					&:hover{
-						color: $green;
+						color: $green!important;
 						border-bottom: none;
 					}
 				}
