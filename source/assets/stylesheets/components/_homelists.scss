@@ -1,36 +1,75 @@
 .lists{
-	@extend .first;
-	.container-left{
-		background-color: transparent;
-		&:before {
-			background-image: url('../images/bg-lists.jpg');
-			opacity: 1;
-		}
-	}
-	.container-right {
-		.block{
-			padding-right: 40px;
-			ul {
-				padding-bottom: 20px;
-				li{
-					font-weight: 200;
-					font-size: 15px;
-					line-height:17px;
-					padding-bottom: 8px;
-					&:before{
-						content: '›';
-						display: block;
-						float: left;
-						width: 20px;
-						color: $green;
-					}
+	overflow: hidden;
+	box-shadow:         inset 0 4px 4px rgba(0,0,0,.2);
+	.list{
+		padding: 80px;
+		width: 50%;
+		float: left;
+		ul {
+			padding-bottom: 20px;
+			li{
+				font-weight: 200;
+				font-size: 15px;
+				line-height:17px;
+				padding-bottom: 8px;
+				&:before{
+					content: '›';
+					display: block;
+					float: left;
+					width: 20px;
+					color: $green;
 				}
 			}
-			a{
-				color: $green;
-			}
 		}
-		.block + .block{
+		a{
+			color: $green;
 		}
 	}
+	.list + .list{
+		padding-left: 0;
+	}
+	@media (min-width: 320px) and (max-width: 759px){
+		.list{
+			padding: 60px!important;
+			width: 100%;
+		}
+	}
+
 }
+
+// .lists{
+// 	@extend .first;
+// 	.container-left{
+// 		background-color: transparent;
+// 		&:before {
+// 			background-image: url('../images/bg-lists.jpg');
+// 			opacity: 1;
+// 		}
+// 	}
+// 	.container-right {
+// 		.block{
+// 			padding-right: 40px;
+// 			ul {
+// 				padding-bottom: 20px;
+// 				li{
+// 					font-weight: 200;
+// 					font-size: 15px;
+// 					line-height:17px;
+// 					padding-bottom: 8px;
+// 					&:before{
+// 						content: '›';
+// 						display: block;
+// 						float: left;
+// 						width: 20px;
+// 						color: $green;
+// 					}
+// 				}
+// 			}
+// 			a{
+// 				color: $green;
+// 			}
+// 		}
+// 		.block + .block{
+// 		}
+// 	}
+// }
