@@ -999,7 +999,8 @@ header.internal {
   -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
   .lists .container-right .block {
-    padding-right: 40px; }
+    padding-right: 40px;
+    height: 100%; }
     .lists .container-right .block ul {
       padding-bottom: 20px; }
       .lists .container-right .block ul li {
@@ -1050,22 +1051,20 @@ header.internal {
   text-align: center; }
   .industries .cards {
     padding-top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    text-align: center; }
     .industries .cards .item {
-      -ms-flex-preferred-size: 160px;
-          flex-basis: 160px;
-      width: 160px; }
+      width: 160px;
+      overflow: hidden;
+      display: inline-block;
+      text-align: center; }
       .industries .cards .item .content {
+        width: 100%;
         background-color: #fff;
         margin-bottom: 5px;
         height: 80px;
         position: relative;
-        opacity: .9; }
+        opacity: .9;
+        display: inline-block; }
         .industries .cards .item .content img {
           padding-top: 10px; }
         .industries .cards .item .content h5 {
@@ -1092,29 +1091,21 @@ header.internal {
     .industries .cards {
       padding: 0; }
       .industries .cards .item {
-        -ms-flex-preferred-size: 128px;
-            flex-basis: 128px;
         width: 128px; }
         .industries .cards .item h5 {
           font-size: 14px;
           bottom: 0px; } }
   @media (min-width: 760px) and (max-width: 959px) {
     .industries .cards .item {
-      -ms-flex-preferred-size: 97px;
-          flex-basis: 97px;
       width: 97px; }
       .industries .cards .item h5 {
         font-size: 13px; } }
   @media (min-width: 320px) and (max-width: 759px) {
-    .industries .cards {
-      display: block;
-      overflow: hidden; }
-      .industries .cards .item {
-        width: 120px;
-        float: left;
-        margin-right: 5px; }
-        .industries .cards .item h5 {
-          font-size: 13px; } }
+    .industries .cards .item {
+      width: 120px;
+      margin-right: 5px; }
+      .industries .cards .item h5 {
+        font-size: 13px; } }
 
 .text-contents .container-left {
   padding: 40px 80px 40px 120px; }
