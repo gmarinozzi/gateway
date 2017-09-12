@@ -20,7 +20,7 @@ header.home{
 					font-size: 15px;
 					line-height: 20px;
 					color: #fff;
-					font-weight: 200;
+					font-weight: 400;
 					padding: 10px;
 					opacity:.8;
 					&:hover{
@@ -83,7 +83,6 @@ header.home{
 						color: $dark-gray;
 						padding: 8px;
 						font-size: 14px;
-						font-weight: 400;
 					}
 					&.button.outline {
 						border-color:$medium-gray!important;
@@ -91,6 +90,26 @@ header.home{
 					}
 				}
 			}
+		}
+	}
+	&.navbar-fixed-top{
+		position: fixed;
+		background-color: #fff;
+		height: 60px;
+		box-shadow: 4px 4px 4px rgba(0,0,0,.1);
+		z-index: 999;
+		.logo{
+			width: 120px;
+			margin: 8px 20px;
+		}
+		nav{
+			padding-top: 17px;
+		}
+		nav ul li a{
+			color: $dark-gray;
+		}
+		nav ul li.button.outline {
+			border-color:$dark-gray!important;
 		}
 	}
 }
