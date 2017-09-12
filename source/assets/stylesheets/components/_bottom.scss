@@ -3,11 +3,13 @@
 	color: rgba(#fff, .7);
 	overflow: hidden;
 	.affiliations{
-		padding-right: 30%;
+
 		img{
 			display: inline-block;
 			margin-right: 20px;
 			margin-bottom:20px;
+			max-width: 100px;
+			vertical-align: middle;
 		}
 		@media (min-width: 320px) and (max-width: 759px){
 			padding-right: 0;

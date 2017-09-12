@@ -8,6 +8,21 @@ footer{
 	font-size: 14px;
 	font-weight: 200;
 	overflow: hidden;
+	.social{
+		padding-right: 20px;
+		display: inline-block;
+		a{
+			padding: 5px;
+			background-color: $blue;
+			border-radius: 1px;
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			&:hover{
+				background-color: $green;
+			}
+		}
+	}
 	nav{
 		display: inline-block;
 		float: right;
@@ -23,5 +38,22 @@ footer{
 			}
 		}
 	}
+	@media (min-width: 320px) and (max-width: 759px){
+		.social{
+			display: block;
+		}
+		nav{
+			display: block;
+			float: none;
+			ul li a{
+				padding-left:0;
+			}
+		}
+		span{
+			display: block;
+			padding: 20px 0;
+		}
+	}
+
 }
 

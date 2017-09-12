@@ -24,6 +24,26 @@
 	    		list-style: circle;
 	    	}
 	    }
+	    ol{
+	    	padding: 20px;
+	    	position: relative;
+	    	li{
+	    		list-style: decimal;
+	    		padding-left: 15px;
+	    		padding-bottom: 10px;
+	    		margin-left: 4px;
+	    		&:before{
+	    			background-color:$light-gray;
+	    			width: 25px;
+	    			height: 25px;
+	    			border-radius: 50%;
+	    			position: absolute;
+	    			content: '';
+	    			left: 0;
+	    			z-index: -1;
+	    		}
+	    	}
+	    }
 	    p.highlighted{
 	    	background-color: $light-gray;
 	    	padding: 10px;

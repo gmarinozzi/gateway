@@ -1,0 +1,22 @@
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 200;
+  overflow: hidden; }
+  footer .container {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  footer nav {
+    display: inline-block;
+    float: right; }
+    footer nav ul li {
+      float: left; }
+      footer nav ul li a {
+        color: #fff;
+        padding: 0 20px; }
+        footer nav ul li a:hover {
+          color: #fff;
+          text-decoration: underline; }
+
+/*# sourceMappingURL=_footer.css.map */

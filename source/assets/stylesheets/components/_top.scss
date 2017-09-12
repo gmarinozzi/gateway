@@ -27,12 +27,9 @@
 		}
 	}
 	.inc500{
-		height: 70px;
-		background-color: $medium-gray;
+		max-width: 100%;
+		background-color: #fff;
 		position: relative;
-		img{
-			height: 70px;
-		}
 	}
 	@media (min-width: 320px) and (max-width: 959px){
 		.caption{
