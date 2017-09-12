@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACV,QAAQ,EAAE,MAAM;EAChB,qBAAS;IACR,KAAK,EAAE,KAAK;IACZ,YAAY,EAAE,IAAI;IAClB,OAAO,EAAE,YAAY;IAEpB,gCAAG;MACF,KAAK,EAAE,IAAI;MACX,MAAM,EAAE,MAAM",
+"sources": ["_industries.scss"],
+"names": [],
+"file": "_industries.css"
+}
