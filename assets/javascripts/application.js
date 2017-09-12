@@ -14,4 +14,9 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $( ".nav-trigger" ).click(function() {
+	  $( "nav" ).slideToggle( "fast", function() {
+	  });
+	});
+
 });
