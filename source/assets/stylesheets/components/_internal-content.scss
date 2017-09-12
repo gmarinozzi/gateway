@@ -80,9 +80,9 @@
 
 	}
 	@media (min-width: 320px) and (max-width: 759px){
+		padding-top: 100px;
 		.container-left .block{
-			padding: 40px;
-			text-align: center;
+			display: none;
 		}
 		.container-right .block{
 			padding: 30px 15px;
