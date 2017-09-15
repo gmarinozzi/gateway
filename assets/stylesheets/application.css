@@ -1005,14 +1005,21 @@ header.internal {
       font-size: 32px;
       line-height: 32px;
       padding: 0; }
+    .internal-content article h2 {
+      color: #375D81;
+      font-size: 24px;
+      margin-bottom: 0; }
+    .internal-content article h3 {
+      font-size: 20px;
+      padding-bottom: 20px; }
     .internal-content article hgroup {
       text-align: left; }
     .internal-content article ul {
-      padding: 20px; }
+      padding: 0 20px 30px 20px; }
       .internal-content article ul li {
         list-style: circle; }
     .internal-content article ol {
-      padding: 20px;
+      padding: 0 20px 30px 20px;
       position: relative; }
       .internal-content article ol li {
         list-style: decimal;
