@@ -15,17 +15,26 @@
 	    	line-height: 32px;
 	    	padding: 0;
 	    }
+	    h2{
+	    	color: $blue;
+	    	font-size: 24px;
+	    	margin-bottom: 0;
+	    }
+	    h3{
+	    	font-size: 20px;
+	    	padding-bottom: 20px;
+	    }
 	    hgroup{
 	    	text-align: left;
 	    }
 	    ul{
-	    	padding: 20px;
+	    	padding: 0 20px 30px 20px;
 	    	li{
 	    		list-style: circle;
 	    	}
 	    }
 	    ol{
-	    	padding: 20px;
+	    	padding: 0 20px 30px 20px;
 	    	position: relative;
 	    	li{
 	    		list-style: decimal;
