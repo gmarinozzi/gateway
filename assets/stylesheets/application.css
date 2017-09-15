@@ -1294,17 +1294,24 @@ header.internal {
     width: 50%;
     float: left;
     padding: 0 40px 0 0;
-    text-align: left; }
+    text-align: left;
+    padding-top: 30px; }
     .testimonials .testimonial img {
       display: inline-block;
       float: left;
-      width: 60px;
-      margin-right: 20px; }
+      width: 50px;
+      margin-right: 10px; }
+    .testimonials .testimonial:nth-child(even) {
+      clear: left; }
+    .testimonials .testimonial h6 {
+      padding-bottom: 0; }
+    .testimonials .testimonial p {
+      margin-bottom: 0;
+      padding-bottom: 15px; }
   @media (min-width: 320px) and (max-width: 759px) {
     .testimonials .testimonial {
       width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding-top: 30px; }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
       .testimonials .testimonial:last-child {
         border-bottom: none; } }
 
