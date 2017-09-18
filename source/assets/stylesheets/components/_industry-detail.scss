@@ -1,0 +1,25 @@
+.industry-detail{
+	> div{
+		overflow: hidden;
+		border-bottom: 1px solid $light-gray;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		> div img{
+			float: left;
+			margin-right: 30px;
+			overflow: hidden;
+		}
+		h3{
+			color: $green;
+			padding-bottom: 10px;
+		}
+	}
+	@media (min-width: 320px) and (max-width: 479px){
+		> div{
+			float: none!important;
+			img{
+				float:none!important;
+			}
+		}
+	}
+}
