@@ -1419,7 +1419,8 @@ aside {
 .industries .industry {
   width: 200px;
   margin-right: 30px;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
   .industries .industry .image {
     text-align: center;
     height: 100px;
@@ -1462,6 +1463,34 @@ aside {
     float: none !important; }
     .industry-detail > div img {
       float: none !important; } }
+
+.locations-list {
+  padding-bottom: 50px; }
+  .locations-list ul {
+    margin: 0;
+    overflow: hidden; }
+    .locations-list ul li {
+      width: 120px;
+      float: left;
+      list-style: none !important;
+      text-align: center;
+      margin: 5px; }
+      .locations-list ul li a {
+        display: block;
+        padding: 5px;
+        text-decoration: underline;
+        border-bottom: none; }
+        .locations-list ul li a:hover {
+          background-color: #EDEDED; }
+      .locations-list ul li h5 {
+        background-color: #375D81;
+        color: #fff;
+        padding: 5px;
+        margin-bottom: 0; }
+      .locations-list ul li p {
+        padding: 0;
+        margin: 0;
+        height: 30px; }
 
 .bottom {
   padding: 80px 0;
