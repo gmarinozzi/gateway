@@ -1,12 +1,16 @@
 ---
 title: Gateway Commercial Finance
+description: The scientific theory that populations evolve over the course of generations through a process of natural selection.
+canonical: https://gatewaycfs.com/
 ---
 
 %header.home.navbar-static-top
   .flex-container
     .container-left
       .logo
-        =link_to image_tag('logos/gateway.png'), '/'
+        %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
+          %a{:href => "/"}
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/logos/gateway.png",}/      
     .container-right
       .nav-trigger
         =image_tag('icons/nav.svg')
@@ -16,7 +20,7 @@ title: Gateway Commercial Finance
           %li=link_to 'Industries We Serve', 'industries'
           %li=link_to 'Our Company', 'company'
           %li=link_to 'Contact Us', 'contact'
-          %li.button.outline=link_to 'Client Area', 'clients'
+          %li.button.outline=link_to 'Client Area', 'client-access'
 %section.top
   .flex-container
     .container-left
@@ -35,7 +39,7 @@ title: Gateway Commercial Finance
               %i=image_tag('icons/clock.svg')
               GET STARTED IN MINUTES!
       .inc500
-        =image_tag('logos/inc500.gif')
+        %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif",}/      
 %section.first
   .flex-container
     .container-left
@@ -199,11 +203,11 @@ title: Gateway Commercial Finance
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
-        =image_tag('affiliations/pic1.png')
-        =image_tag('affiliations/pic2.png')
-        =image_tag('affiliations/pic3.png')
-        =image_tag('affiliations/pic4.png')
-        =image_tag('affiliations/pic5.png')
+        %img{:alt => "affiliations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}/
+        %img{:alt => "associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic2.png", :title => "NFIB"}/
+        %img{:alt => "factoring credit", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}/
+        %img{:alt => "factoring members", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}/
+        %img{:alt => "factoring associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}/      
 %footer.bg-darkblue
   .container
     .social
