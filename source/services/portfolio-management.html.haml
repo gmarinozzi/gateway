@@ -1,7 +1,7 @@
 ---
 title: Invoice Factoring | How it Works
 description: The scientific theory that populations evolve over the course of generations through a process of natural selection.
-canonical: https://gatewaycfs.com/404
+canonical: https://gatewaycfs.com/services/portfolio-managemnt
 ---
 
 %header.internal.navbar-static-top
@@ -16,18 +16,18 @@ canonical: https://gatewaycfs.com/404
         =image_tag('icons/nav.svg')
       .contact
         %span.phone.c-green 1-855-424-2955
-        %span.button.outline-green=link_to 'CONTACT US', '../company/contact'
+        %span.button.outline-green=link_to 'CONTACT US', '/company/contact'
       %nav
         %ul
-          %li=link_to 'Invoice Factoring', '../invoice-factoring/how-it-works'
-          %li=link_to 'Industries we serve', '../industries/'
+          %li=link_to 'Invoice Factoring', '/invoice-factoring/how-it-works'
+          %li=link_to 'Industries We Serve', '/industries/'
           %li.selected
             =link_to 'Our Company', 'company'
             %ul.submenu
-              %li=link_to 'About Gateway', '../company/'
-              %li=link_to 'Factoring services', '../services/accounts-receivable-factoring'
-              %li=link_to 'Brokers & partners', 'factoring-brokers'
-              %li=link_to 'Locations we serve', '../locations/'
+              %li=link_to 'About Gateway', '/company/'
+              %li=link_to 'Factoring services', 'accounts-receivable-factoring'
+              %li=link_to 'Brokers & partners', '/company/factoring-brokers'
+              %li=link_to 'Locations we serve', '/locations/'
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -193,11 +193,11 @@ canonical: https://gatewaycfs.com/404
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
-        =image_tag('affiliations/pic1.png')
-        =image_tag('affiliations/pic2.png')
-        =image_tag('affiliations/pic3.png')
-        =image_tag('affiliations/pic4.png')
-        =image_tag('affiliations/pic5.png')
+        %img{:alt => "affiliations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}/
+        %img{:alt => "associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic2.png", :title => "NFIB"}/
+        %img{:alt => "factoring credit", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}/
+        %img{:alt => "factoring members", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}/
+        %img{:alt => "factoring associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}/      
 %footer.bg-darkblue
   .container
     .social
@@ -208,6 +208,6 @@ canonical: https://gatewaycfs.com/404
     %span Copyright Gateway Commercial Finance, LLC 2017
     %nav
       %ul
-        %li=link_to 'Privacy', '../privacy-policies'
-        %li=link_to 'Sitemap', '../sitemap'
-        %li=link_to 'Library', '../library/'
+        %li=link_to 'Privacy', '/privacy-policies'
+        %li=link_to 'Sitemap', '/sitemap'
+        %li=link_to 'Library', '/library/'

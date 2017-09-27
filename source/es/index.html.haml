@@ -16,9 +16,9 @@ canonical: https://gatewaycfs.com/404
         =image_tag('icons/nav.svg')
       %nav
         %ul
-          %li=link_to 'Solicite un Estimado', '../invoice-factoring/quote'
-          %li=link_to 'Contactenos', '../company/contact'
-          %li.button.outline=link_to 'Area de Clientes', '../client-access'
+          %li=link_to 'Solicite un Estimado', '/invoice-factoring/quote'
+          %li=link_to 'Contactenos', '/company/contact'
+          %li.button.outline=link_to 'Area de Clientes', '/client-access'
 %section.top
   .flex-container
     .container-left
@@ -190,11 +190,11 @@ canonical: https://gatewaycfs.com/404
     .block50
       %p Nuestras Membresias y Asociaciones
       .affiliations
-        =image_tag('affiliations/pic1.png')
-        =image_tag('affiliations/pic2.png')
-        =image_tag('affiliations/pic3.png')
-        =image_tag('affiliations/pic4.png')
-        =image_tag('affiliations/pic5.png')
+        %img{:alt => "affiliations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}/
+        %img{:alt => "associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic2.png", :title => "NFIB"}/
+        %img{:alt => "factoring credit", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}/
+        %img{:alt => "factoring members", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}/
+        %img{:alt => "factoring associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}/      
 %footer.bg-darkblue
   .container
     .social
@@ -205,9 +205,9 @@ canonical: https://gatewaycfs.com/404
     %span Copyright Gateway Commercial Finance, LLC 2017
     %nav
       %ul
-        %li=link_to 'Privacy', '../privacy-policies'
-        %li=link_to 'Sitemap', '../sitemap'
-        %li=link_to 'Library', '../library/'
+        %li=link_to 'Privacy', '/privacy-policies'
+        %li=link_to 'Sitemap', '/sitemap'
+        %li=link_to 'Library', '/library/'
 
 
 
