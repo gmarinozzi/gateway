@@ -25,9 +25,10 @@ canonical: https://gatewaycfs.com/company/partners
             =link_to 'Our Company', '/company/'
             %ul.submenu
               %li=link_to 'About Gateway', '/company/'
-              %li=link_to 'Factoring services', '/services/accounts-receivable-factoring'
-              %li=link_to 'Brokers & partners', 'factoring-brokers'
-              %li=link_to 'Locations we serve', '/locations/'
+              %li=link_to 'Factor services', '/services/accounts-receivable-factoring'
+              %li=link_to 'Factoring brokers', '/company/factoring-brokers'
+              %li=link_to 'Portfolio management', '/services/portfolio-management'
+              
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -36,15 +37,12 @@ canonical: https://gatewaycfs.com/company/partners
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Invoice Factoring', 'invoice-factoring/how-it-works'
+              =link_to 'Factoring of Invoices', 'invoice-factoring/how-it-works'
               %ul.submenu
-                %li=link_to 'How it works', 'invoice-factoring/how-it-works'
-                %li=link_to 'How much it costs', 'invoice-factoring/cost-fees-rates'
-                %li=link_to 'Do you Qualify?', 'invoice-factoring/requirements'
-            %li=link_to 'Industries we serve', 'industries'
-            %li=link_to 'Our Company', 'company'
-        .phone 1-855-424-2955
-        %button.outline=link_to 'GET STARTED', '#'
+                %li=link_to 'Factoring cash advances', 'invoice-factoring/cash-advances'
+                %li=link_to 'Cost of factoring receivables', 'invoice-factoring/cost-fees-rates'
+                %li=link_to 'Invoice factoring requirements', 'invoice-factoring/requirements'
+        %button.outline=link_to 'CONTACT US', '/company/contact'
     %article.container-right
       .block
         %hgroup
@@ -91,19 +89,19 @@ canonical: https://gatewaycfs.com/company/partners
 %section.bottom.bg-darkblue
   .container
     .block25
-      %p More Links...
+      %p Factoring
       %ul
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
+        %li=link_to 'Factoring Blog', '/bff/recent_posts'
+        %li=link_to 'Invoice Factoring Calculator', '/invoice-factoring/calculator'
+        %li=link_to 'Vendor Payment Terms', '/bff/ob/7-tips-negotiating-better-payment-terms-your-suppliers'
+        %li=link_to 'Online Business Funding', '/industries/online-funding-fintech'
     .block25
-      %p More Links...
+      %p Resources
       %ul
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
-        %li=link_to 'link', '#'
+        %li=link_to 'Financial Management', '/bff/m/business-financial-fitness-program'
+        %li=link_to 'Cash Flow Projection Template', '/bff/making-cash-flow-projections'
+        %li=link_to 'Days Sales Outstanding', '/bff/measuring-days-sales-outstanding'
+        %li=link_to 'Solvency vs Liquidity', '/bff/liquidity-vs-solvency'
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
