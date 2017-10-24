@@ -16,7 +16,7 @@ robots: index,follow
       .nav-trigger
         =image_tag('icons/nav.svg')
       .contact
-        %span.phone.c-green 1-855-424-2955
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
         %span.button.outline-green=link_to 'CONTACT US', '/company/contact'
       %nav
         %ul
@@ -37,14 +37,12 @@ robots: index,follow
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Invoice Factoring', '/invoice-factoring/how-it-works'
+              =link_to 'Factoring Invoices', '/invoice-factoring/how-it-works'
               %ul.submenu
-                %li=link_to 'How it works', '/invoice-factoring/how-it-works'
+                %li=link_to 'How factoring works', '/invoice-factoring/how-it-works'
                 %li=link_to 'How much it costs', '/invoice-factoring/cost-fees-rates'
-                %li=link_to 'Do you Qualify?', '/invoice-factoring/requirements'
+                %li=link_to 'Factoring Requirements', '/invoice-factoring/requirements'
             %li=link_to 'Industries we serve', '/industries/'
-            %li=link_to 'Our Company', '/company/'
-        .phone 1-855-424-2955
         %button.outline=link_to 'CONTACT US', '/company/contact'
     %article.container-right
       .block

@@ -16,18 +16,17 @@ robots: index,follow
       .nav-trigger
         =image_tag('icons/nav.svg')
       .contact
-        %span.phone.c-green 1-855-424-2955
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
         %span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
       %nav
         %ul
           %li.selected
-            =link_to 'Invoice Factoring', '/invoice-factoring/how-it-works'
+            =link_to 'Invoice Funding', '/invoice-factoring/how-it-works'
             %ul.submenu
               %li=link_to 'How it works', '/invoice-factoring/how-it-works'
               %li=link_to 'How much it costs', '/invoice-factoring/cost-fees-rates'
               %li=link_to 'Do you qualify?', '/invoice-factoring/requirements'
           %li=link_to 'Industries We Serve', '/industries/'
-          %li=link_to 'Our Company', '/company/'
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -39,7 +38,7 @@ robots: index,follow
           %p
             %strong
               Regresar a
-              %a{:href => "https://gatewaycfs.com/es/"} Sitio en Español           
+              %a{:href => "/es/"} Sitio en Español           
           %p
             %b What information do we collect?
             %br/

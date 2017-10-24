@@ -31,12 +31,12 @@ robots: index,follow
             %h4 HABLE CON UN GERENTE!
             .button.outline.phone
               %i=image_tag('icons/phone.svg')
-              1-855-424-2955
+              =link_to '1-855-424-2955','tel:+18554242955'
           .block-right
             %h4 O
             .button
               %i=image_tag('icons/clock.svg')
-              COMIENZE AHORA!
+              =link_to 'COMIENZE AHORA!','/invoice-factoring/quote'
       .inc500
         =image_tag('logos/inc500.gif')
 %section.first
