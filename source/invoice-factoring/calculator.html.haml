@@ -16,7 +16,7 @@ robots: index,follow
       .nav-trigger
         =image_tag('icons/nav.svg')
       .contact
-        %span.phone.c-green 1-855-424-2955
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
         %span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
       %nav
         %ul
@@ -26,7 +26,7 @@ robots: index,follow
               %li=link_to 'How it works', '/invoice-factoring/how-it-works'
               %li=link_to 'How much factoring costs', '/invoice-factoring/cost-fees-rates'
               %li=link_to 'Do you Qualify?', '/invoice-factoring/requirements'
-          %li=link_to 'Industries we serve', '/industries/'
+          %li=link_to 'Industries We Serve', '/industries/'
           %li=link_to 'Our Company', '/company/'
 %section.internal-content
   .flex-container

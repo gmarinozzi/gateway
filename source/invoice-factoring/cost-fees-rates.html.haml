@@ -16,7 +16,7 @@ robots: index,follow
       .nav-trigger
         =image_tag('icons/nav.svg')
       .contact
-        %span.phone.c-green 1-855-424-2955
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
         %span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
       %nav
         %ul
@@ -49,9 +49,9 @@ robots: index,follow
         %hgroup
           %h1 How Much Does Invoice Factoring Costs? <br>Factoring Fees & Factoring Rates 
         %p A common concern among factoring prospects is the cost of factoring receivables. Unfortunately there’s no “one-size-fits-all” rule when determining the cost of factoring services. Despite the teaser rate advertised by a factoring company, the final cost for you will depend on the terms of your factoring agreement, which are based on your individual company and client portfolio characteristics.
-        %p An abundance of confusing information exists online; we’ll try our best to clarify and organize it for you. 
+        %p.highlighted An abundance of confusing information exists online; we’ll try our best to clarify and organize it for you. 
         %h3 In this document we’ll elaborate on the following subjects:
-        %ul
+        %ol
           %li How much a factoring company charges
           %li What a factoring fee is
           %li What a factoring rate is
@@ -62,7 +62,8 @@ robots: index,follow
         %p.highlighted It’s important to understand how the fees are applied. For instance, you may find that the single-fee model ends up costing your company significantly more in the long run. We’ll provide comprehensive information so you can understand all the elements that influence the cost of factoring and also learn how factors (or computer algorithms in some cases) evaluate your company before defining your rates and fees.
         %p <strong>Your learning process begins here. Let’s talk about accounts receivable factoring fees.</strong>
         %h2 What are Factoring Fees? 
-        %p.highlighted Factoring fees amount to the discount factoring companies receive when purchasing invoices. They receive a discount in exchange for the immediate cash flow they provide. These fees are calculated by applying a factoring rate either on the amount advanced or on the invoice face value depending on the agreed upon discount rate structure. Factoring fees begin accruing on the day the receivable is purchased and are usually collected by the factor when the invoice is paid.
+        %img{:align => "right", :alt => "factoring fees", :src => "https://cdn.gatewaycfs.com/new/factoring-fees.jpg"}
+        %p.highlighted Factoring fees amount to the discount factoring companies receive when purchasing invoices in exchange for the immediate cash flow they provide. These fees are calculated by applying a factoring rate either on the amount advanced or on the invoice face value depending on the agreed upon discount rate structure. Factoring fees begin accruing on the day the receivable is purchased and are usually collected by the factor when the invoice is paid.
         %p <strong>Here is a simplified factoring fee example:</strong>
       
         %ul
@@ -74,6 +75,7 @@ robots: index,follow
         %p We’ll show you more realistic examples of common factoring rate structures and rate calculation details later on this page.
         %h2 What are Factoring Rates?
         %p.highlighted Factoring rates (a.k.a. factoring discount) are used to calculate the factoring fee that your company will pay for factoring services. There are several factoring rate models that factoring companies use. The most popular are a “flat discount rate” and a combination of a “flat discount plus margin”.
+        %img{:align => "", :alt => "types of factoring rates", :src => "https://cdn.gatewaycfs.com/new/factoring-rates-structure.jpg"}
         %p <strong>The invoice factoring rate that your company will be offered mainly depends on the following three variables:</strong> 
         %ol
           %li The model the factoring company uses to structure its discount rates,
@@ -86,7 +88,7 @@ robots: index,follow
         %ul
           %li Let’s say that you are selling a $100 invoice that will be paid in 60 days. You have been offered an advance rate of 80%.
           %li Let’s see how factoring fees will be calculated using the two most common methods.
-        =image_tag('video-pic.png')
+
         %p
           =link_to 'Click here to learn about factoring advance rates.', '/invoice-factoring/cash-advances'
           

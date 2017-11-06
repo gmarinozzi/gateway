@@ -31,14 +31,14 @@ robots: index,follow
             %h4 HABLE CON UN GERENTE!
             .button.outline.phone
               %i=image_tag('icons/phone.svg')
-              1-855-424-2955
+              =link_to '1-855-424-2955','tel:+18554242955'
           .block-right
             %h4 O
             .button
               %i=image_tag('icons/clock.svg')
-              COMIENZE AHORA!
+              =link_to 'COMIENZE AHORA!','/invoice-factoring/quote'
       .inc500
-        =image_tag('logos/inc500.gif')
+        %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif",}
 %section.first
   .flex-container
     .container-left
@@ -130,7 +130,7 @@ robots: index,follow
 %section.text-contents
   .flex-container
     .container-left
-      =image_tag('video-pic.png')
+      %img{:alt => "factoraje financiero", :src => "https://cdn.gatewaycfs.com/new/financing-factoring.png",}
     .container-right.bg-light
       .block
         %h2 QUE ES FACTORAJE FINANCIERO?
@@ -146,7 +146,7 @@ robots: index,follow
         %p El Factoraje Financiero es una herramienta excelente utilizada por miles de negocios para manejar las necesidades de caja diarias cuando otras formas de financiamiento no están disponibles o se vuelven inadecuadas. Muchos negocios utilizan este servicio para mantener las necesidades de nóminas, requisitos de proveedores y para aprovechar nuevas oportunidades de negocios. Si su negocio llena alguno de los criterios detallados arriba, considere el Factoraje Financiero un vehículo de financiamiento ideal y rápidamente accesible para mantener sus necesidades diarias de efectivo.
   .flex-container
     .container-left.bg-light
-      =image_tag('pic.gif')
+      %img{:alt => "venda sus facturas", :src => "https://cdn.gatewaycfs.com/new/sellyourinvoices.gif",}
     .container-right
       .block
         %h2 ACERCA DE LAS EMPRESAS DE FACTORAJE FINANCIERO

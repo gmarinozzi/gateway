@@ -33,12 +33,12 @@ robots: index,follow
             %h4 CALL A DECISION MAKER!
             .button.outline.phone
               %i=image_tag('icons/phone.svg')
-              1-855-424-2955
+              =link_to '1-855-424-2955','tel:+18554242955'
           .block-right
             %h4 OR
             .button
               %i=image_tag('icons/clock.svg')
-              GET STARTED IN MINUTES!
+              =link_to 'GET STARTED IN MINUTES!','/invoice-factoring/quote'
       .inc500
         %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif",}
 %section.first
@@ -85,8 +85,8 @@ robots: index,follow
           %ul
             %li How to compare costs and agreements
             %li What do you get for your money?
-            %li How reliable are online reviews?
-            %li Beware of best factoring companies lists and endorsements
+            %li How reliable are online endorsements?
+            %li Beware of best factoring companies lists
             %li The truth about published factoring rates
             %li Distinguish factoring companies from expensive online lenders
             %li Approval process: dealing with algorithms, brokers or decision makers?
@@ -153,7 +153,7 @@ robots: index,follow
 %section.text-contents
   .flex-container
     .container-left
-      =image_tag('video-pic.png')
+      %img{:alt => "factoring financing", :src => "https://cdn.gatewaycfs.com/new/financing-factoring.png",}
     .container-right.bg-light
       .block
         %h2 WHY CHOOSE GATEWAY COMMERCIAL FINANCE?
@@ -161,7 +161,7 @@ robots: index,follow
         =link_to 'More about our receivable factoring services', '/services/accounts-receivable-factoring'
   .flex-container
     .container-left.bg-light
-      =image_tag('pic.gif')
+      %img{:alt => "sell your invoices", :src => "https://cdn.gatewaycfs.com/new/sellyourinvoices.gif",}
     .container-right
       .block
         %h2 WHAT IS THE DIFFERENCE BETWEEN FACTORING, INVOICE FINANCING & ACCOUNTS RECEIVABLE FINANCE?

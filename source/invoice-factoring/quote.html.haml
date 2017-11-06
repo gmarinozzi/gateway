@@ -16,7 +16,7 @@ robots: index,follow
       .nav-trigger
         =image_tag('icons/nav.svg')
       .contact
-        %span.phone.c-green 1-855-424-2955
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
         %span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
       %nav
         %ul
@@ -61,7 +61,8 @@ robots: index,follow
             %h2 FACTORING QUOTE
             #dv014976237606967524{:style => "width: 300px;"}
             %script{:src => "https://gatewaycfs.com/ourforms/form.php?div_id=dv014976237606967524&template=leadnew", :type => "text/javascript"}      
-        =image_tag('logos/inc500.gif')
+
+        %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif",}
  
 
         %h2 About Our Factoring Services
