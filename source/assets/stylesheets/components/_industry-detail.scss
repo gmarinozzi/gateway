@@ -1,5 +1,9 @@
 .industry-detail{
+	h1{
+		font-size: 26px!important;
+	}
 	> div{
+		font-size: 80%;
 		overflow: hidden;
 		border-bottom: 1px solid $light-gray;
 		padding-bottom: 20px;
@@ -12,7 +16,12 @@
 		h3{
 			color: $green;
 			padding-bottom: 10px;
+			font-size: 18px;
 		}
+	}
+	.column-content{
+		column-count: 2;
+		font-size: 80%;
 	}
 	@media (min-width: 320px) and (max-width: 479px){
 		> div{
@@ -20,6 +29,9 @@
 			img{
 				float:none!important;
 			}
+		}
+		.column-content{
+			column-count: 1;
 		}
 	}
 }
