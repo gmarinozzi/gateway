@@ -1,0 +1,51 @@
+.education{
+	header{
+		height: 90px;
+		.logo{
+			margin: 20px!important;
+			img{
+				width: 150px!important;
+			}
+		}
+		.container-right{
+			height: 90px!important;
+			background-color: #fff;
+		}
+	}
+	aside{
+		background-color: $orange;
+		text-shadow: 1px 1px 1px darken($orange, 10%);
+		&:before{
+		    background-image: url(../images/education.png);
+		    background-size: 100%;
+		    background-position: 0 100px;
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 300;
+			margin-bottom: 20px;
+			padding-bottom: 0;
+		}
+		h3{
+			font-size: 24px;
+			font-weight: 300;
+		}
+		p{
+			padding-bottom: 0px;
+		}
+		strong{
+			font-size: 24px;
+			font-weight: 600;
+			font-style: italic;
+			padding-top: 40px;
+			display: inline-block;
+
+		}
+	}
+	.internal-content{
+		padding-top: 90px;
+	}
+	.internal-content article .block{
+		padding-top: 0!important;
+	}
+}

@@ -1,0 +1,15 @@
+.education header {
+  height: 90px; }
+  .education header .logo {
+    margin: 20px !important; }
+    .education header .logo img {
+      width: 150px !important; }
+  .education header .container-right {
+    height: 90px !important;
+    background-color: #fff; }
+.education .internal-content {
+  padding-top: 90px; }
+.education .internal-content article .block {
+  padding-top: 0 !important; }
+
+/*# sourceMappingURL=_education.css.map */
