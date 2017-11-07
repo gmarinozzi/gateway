@@ -42,7 +42,7 @@
 	    ol{
 	    	padding: 0 20px 30px 20px;
 	    	position: relative;
-	    	li{
+	    	> li{
 	    		list-style: decimal;
 	    		padding-left: 15px;
 	    		padding-bottom: 10px;
@@ -56,6 +56,11 @@
 	    			content: '';
 	    			left: 0;
 	    			z-index: -1;
+	    		}
+	    		ul{
+	    			li{
+
+	    			}
 	    		}
 	    	}
 	    }
