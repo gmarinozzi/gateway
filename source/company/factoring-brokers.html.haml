@@ -6,120 +6,122 @@ robots: index,follow
 ---
 
 %header.internal.navbar-static-top
-	.flex-container
-		.container-left
-			.logo
-				=link_to image_tag('logos/gateway.png'), '/'
-		.container-right
-			.nav-trigger
-				=image_tag('icons/nav.svg')
-			.contact
-				%span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
-				%span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
-			%nav
-				%ul
-					%li=link_to 'Invoice Factoring', '/invoice-factoring/how-it-works'
-					%li=link_to 'Industries We Serve', '/industries/'
-					%li.selected
-						=link_to 'Our Company', '/company/'
-						%ul.submenu
-							%li=link_to 'About Gateway', '/company/'
-							%li=link_to 'Factoring services', '/services/accounts-receivable-factoring'
-							%li=link_to 'Referral partners', '/company/partners'
-							%li=link_to 'Portfolio management', '/services/portfolio-management'
+  .flex-container
+    .container-left
+      .logo
+        %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
+          %a{:href => "/"}
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/logos/gateway.png",}
+    .container-right
+      .nav-trigger
+        =image_tag('icons/nav.svg')
+      .contact
+        %span.phone.c-green=link_to '1-855-424-2955','tel:+18554242955'
+        %span.button.outline-green=link_to 'GET STARTED', '/invoice-factoring/quote'
+      %nav
+        %ul
+          %li=link_to 'Invoice Factoring', '/invoice-factoring/how-it-works'
+          %li=link_to 'Industries We Serve', '/industries/'
+          %li.selected
+            =link_to 'Our Company', '/company/'
+            %ul.submenu
+              %li=link_to 'About Gateway', '/company/'
+              %li=link_to 'Factoring services', '/services/accounts-receivable-factoring'
+              %li=link_to 'Referral partners', '/company/partners'
+              %li=link_to 'Portfolio management', '/services/portfolio-management'
 %section.internal-content
-	.flex-container
-		%aside.container-left
-			.block
-				%nav
-					%h3 More about...
-					%ul
-						%li.selected
-							=link_to 'Invoice Funding', '/invoice-factoring/how-it-works'
-							%ul.submenu
-								%li=link_to 'Our Managing Director', '/company/marc-marin'
-								%li=link_to 'Factoring Training Guide', '/downloads/Factoring-Training-Guide.pdf'
-								%li=link_to 'Asset-Based Lending Training Guide', '/downloads/Asset-Based-Lending-Training-Guide.pdf'
-								%li=link_to 'Equipment Financing &amp; Leasing Training Guide', '/downloads/Equipment-Finance-And-Leasing-Training-Guide.pdf'
-								%li=link_to 'Commercial Lending Training Guide', '/downloads/Commercial -Lending-Training-Guide.pdf'
-								%li=link_to 'True Worth of Non-notification Factoring', '/invoice-factoring/non-notification'							
-				%button.outline=link_to 'CONTACT US', '/company/contact'
-		%article.container-right
-			.block
-				%hgroup
-					%h1 Factoring Brokers Information
-					%h3 Without You Doors Remain Closed
-				%p You play a critical role in your clients’ business. You help  them get the funding they need to expand, to meet their obligations, and maybe  even to keep their doors open. At Gateway Commercial Finance, we know how  important it is for you to partner with a factor who will provide you and your  clients with only the highest level of service.
-				%p.highlighted We value our factoring brokers and view them as an integral part of  our business. As you grow and build your business, we grow and expand right  along with you. We’re committed to offering you top-notch service, education,  support, and compensation.
-				%p We welcome the opportunity to partner with you and your  clients. Contact us today to start the conversation.
-				%h2 Why work with Gateway Commercial Finance as a factoring broker?
-				%p For more than 19 years, Gateway Commercial Finance owners have provided businesses with innovative funding solutions. And over that time,  partnerships with factoring brokers has been an important part of our business.  We value your efforts to help your clients and we demonstrate that appreciation  with best-in-industry compensation, training, support, and product offerings.
-				%h3 Highest industry compensation and bonus programs
-				%p It’s great to have a factoring partner who takes care of  your clients. It’s even better to have a partner who takes care of you too. We  offer our invoice factoring brokers an aggressive 15 percent commission structure, with  top volume producers getting an opportunity to earn more.
-				%h3 Unparalleled consultant support
-				%p We know how hard it is to find and close a new client. It’s  our job to make the process as easy as possible for you. That’s why offer a  level of broker support that you are unlikely to find anywhere else in the industry.
-				%p Our owners are always available via conference call to help  you close the deal. We’ll help you and your client assemble and submit the  necessary application documents. And after our quick underwriting process,  we’ll provide you with a clear and honest response. We value transparency and  honest communication.
-				%h3 An investment in you
-				%p Knowledge is the ultimate asset, especially when your job is  to help your business clients resolve difficult situations. We believe that the  best way we can support you is to help you stay one step ahead of your  competition.
-				%p We offer a number of different ongoing training programs for  invoice factoring brokers to arm you and your staff with industry-leading  knowledge and expertise. Our Managing Director hosts regular product training  sessions that explore our factoring products from “soup-to-nuts.”
-				%p We’ve also partnered with The Commercial Finance Institute  to offer access to one of the premier factoring and asset-based lending  training programs available today. The program includes case study analysis,  hands-on practice with due diligence and underwriting exercises, and an  accreditation opportunity with study materials.
-				%p Finally, you will also receive Gateway Online, our quarterly  newsletter designed to keep you up-to-date on the factoring industry, and our  Commercial Finance Series, a four-part, more than 350 page book on best  practices on serving factoring clients.
-				%h3 Our factoring and purchase order funding  programs
-				%p When you work with Gateway Commercial Finance, you will  partner with a factoring provider who offers a diverse set of products with  flexible terms, so you cast a wide net as you prospect for new clients. In all  of our products, we focus on the end customer’s ability to pay the invoice.  That focus allows us to provide funding to a broad base of businesses.
-				%h3 Factoring solutions
-				%p We offer factoring lines that start at $25,000 per month and  go all the way up to $2 Million per month. For clients who require more than $2  Million per month, we can leverage our syndicate capabilities to offer greater funding.
-				%p We can generally fund between 75 and 90 percent of an  invoice, and sometimes more depending on the specific situation. We pride  ourselves on keeping the cost of funds as low as possible. In some instances,  we can offer a one percent rate on the first 30 days.
-				%p Our factoring solutions are available for spot purchase,  selective service, or full service. Spot purchase is a great solution for  businesses who only occasionally need funding for specific invoices. Selective  Services is an option in which the business can select to fund invoices from  specific customers. Selective service is a flexible option for businesses who  have changing cash flow needs.
-				%p Finally, full service provides maximum availability against  all invoices, along with full monitoring and credit support. Full service is an  ideal solution for a business that generates a large number of invoices or who  has a large customer base.				
-				%h2 Why Should You Choose Gateway as Your Preferred Factoring Partner? 
-				%p We offer:
-				%ul 
-					%li Quick decisions - 1 hour response on completed  application packages
-					%li Advance rates up to 92%
-					%li Competitive and flexible fee structures
-					%li Lines from $25K to $2M (syndication ability up to $5M)
-					%li Recourse and non-recourse availability
-					%li Flexible short and long term agreements
-					%li Spot transactions
-					%li Purchase order and trade finance products
-					%li Competitive and flexible fee structures
-					%li Credit Protection
-				%p.highlighted Ready to get started with Gateway Commercial Finance? We are excited to work with you! Contact us today and start the conversation. We welcome the opportunity to help you grow your business.
+  .flex-container
+    %aside.container-left
+      .block
+        %nav
+          %h3 More about...
+          %ul
+            %li.selected
+              =link_to 'Invoice Funding', '/invoice-factoring/how-it-works'
+              %ul.submenu
+                %li=link_to 'Our Managing Director', '/company/marc-marin'
+                %li=link_to 'Factoring Training Guide', '/downloads/Factoring-Training-Guide.pdf'
+                %li=link_to 'Asset-Based Lending Training Guide', '/downloads/Asset-Based-Lending-Training-Guide.pdf'
+                %li=link_to 'Equipment Financing &amp; Leasing Training Guide', '/downloads/Equipment-Finance-And-Leasing-Training-Guide.pdf'
+                %li=link_to 'Commercial Lending Training Guide', '/downloads/Commercial -Lending-Training-Guide.pdf'
+                %li=link_to 'True Worth of Non-notification Factoring', '/invoice-factoring/non-notification'             
+        %button.outline=link_to 'CONTACT US', '/company/contact'
+    %article.container-right
+      .block
+        %hgroup
+          %h1 Factoring Brokers Information
+          %h3 Without You Doors Remain Closed
+        %p You play a critical role in your clients’ business. You help  them get the funding they need to expand, to meet their obligations, and maybe  even to keep their doors open. At Gateway Commercial Finance, we know how  important it is for you to partner with a factor who will provide you and your  clients with only the highest level of service.
+        %p.highlighted We value our factoring brokers and view them as an integral part of  our business. As you grow and build your business, we grow and expand right  along with you. We’re committed to offering you top-notch service, education,  support, and compensation.
+        %p We welcome the opportunity to partner with you and your  clients. Contact us today to start the conversation.
+        %h2 Why work with Gateway Commercial Finance as a factoring broker?
+        %p For more than 19 years, Gateway Commercial Finance owners have provided businesses with innovative funding solutions. And over that time,  partnerships with factoring brokers has been an important part of our business.  We value your efforts to help your clients and we demonstrate that appreciation  with best-in-industry compensation, training, support, and product offerings.
+        %h3 Highest industry compensation and bonus programs
+        %p It’s great to have a factoring partner who takes care of  your clients. It’s even better to have a partner who takes care of you too. We  offer our invoice factoring brokers an aggressive 15 percent commission structure, with  top volume producers getting an opportunity to earn more.
+        %h3 Unparalleled consultant support
+        %p We know how hard it is to find and close a new client. It’s  our job to make the process as easy as possible for you. That’s why offer a  level of broker support that you are unlikely to find anywhere else in the industry.
+        %p Our owners are always available via conference call to help  you close the deal. We’ll help you and your client assemble and submit the  necessary application documents. And after our quick underwriting process,  we’ll provide you with a clear and honest response. We value transparency and  honest communication.
+        %h3 An investment in you
+        %p Knowledge is the ultimate asset, especially when your job is  to help your business clients resolve difficult situations. We believe that the  best way we can support you is to help you stay one step ahead of your  competition.
+        %p We offer a number of different ongoing training programs for  invoice factoring brokers to arm you and your staff with industry-leading  knowledge and expertise. Our Managing Director hosts regular product training  sessions that explore our factoring products from “soup-to-nuts.”
+        %p We’ve also partnered with The Commercial Finance Institute  to offer access to one of the premier factoring and asset-based lending  training programs available today. The program includes case study analysis,  hands-on practice with due diligence and underwriting exercises, and an  accreditation opportunity with study materials.
+        %p Finally, you will also receive Gateway Online, our quarterly  newsletter designed to keep you up-to-date on the factoring industry, and our  Commercial Finance Series, a four-part, more than 350 page book on best  practices on serving factoring clients.
+        %h3 Our factoring and purchase order funding  programs
+        %p When you work with Gateway Commercial Finance, you will  partner with a factoring provider who offers a diverse set of products with  flexible terms, so you cast a wide net as you prospect for new clients. In all  of our products, we focus on the end customer’s ability to pay the invoice.  That focus allows us to provide funding to a broad base of businesses.
+        %h3 Factoring solutions
+        %p We offer factoring lines that start at $25,000 per month and  go all the way up to $2 Million per month. For clients who require more than $2  Million per month, we can leverage our syndicate capabilities to offer greater funding.
+        %p We can generally fund between 75 and 90 percent of an  invoice, and sometimes more depending on the specific situation. We pride  ourselves on keeping the cost of funds as low as possible. In some instances,  we can offer a one percent rate on the first 30 days.
+        %p Our factoring solutions are available for spot purchase,  selective service, or full service. Spot purchase is a great solution for  businesses who only occasionally need funding for specific invoices. Selective  Services is an option in which the business can select to fund invoices from  specific customers. Selective service is a flexible option for businesses who  have changing cash flow needs.
+        %p Finally, full service provides maximum availability against  all invoices, along with full monitoring and credit support. Full service is an  ideal solution for a business that generates a large number of invoices or who  has a large customer base.       
+        %h2 Why Should You Choose Gateway as Your Preferred Factoring Partner? 
+        %p We offer:
+        %ul 
+          %li Quick decisions - 1 hour response on completed  application packages
+          %li Advance rates up to 92%
+          %li Competitive and flexible fee structures
+          %li Lines from $25K to $2M (syndication ability up to $5M)
+          %li Recourse and non-recourse availability
+          %li Flexible short and long term agreements
+          %li Spot transactions
+          %li Purchase order and trade finance products
+          %li Competitive and flexible fee structures
+          %li Credit Protection
+        %p.highlighted Ready to get started with Gateway Commercial Finance? We are excited to work with you! Contact us today and start the conversation. We welcome the opportunity to help you grow your business.
 %section.bottom.bg-darkblue
-	.container
-		.block25
-			%p Factoring
-			%ul
-				%li=link_to 'Invoice Factoring Rate', '/invoice-factoring/cost-fees-rates'
-				%li=link_to 'Debtor Finance', '/'
-				%li=link_to 'Factoring Agreement', '/invoice-factoring/pick-a-company'
-				%li=link_to 'Factoring Recourse', '/invoice-factoring/non-recourse'
-		.block25
-			%p Resources
-			%ul
-				%li=link_to 'Business Budget Template', '/bff/projected-budgets'
-				%li=link_to 'Transport Factoring', '/industries/transportation-factoring'
-				%li=link_to 'Receivables Finance', '/bff/financing-receivables'
-				%li=link_to 'Factoring Companies California', '/locations/california-factoring'
-		.block50
-			%p Our Affiliations & Partnerships
-			.affiliations
-				%img{:alt => "affiliations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}/
-				%img{:alt => "associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic2.png", :title => "NFIB"}/
-				%img{:alt => "factoring credit", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}/
-				%img{:alt => "factoring members", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}/
-				%img{:alt => "factoring associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}/
+  .container
+    .block25
+      %p Factoring
+      %ul
+        %li=link_to 'Invoice Factoring Rate', '/invoice-factoring/cost-fees-rates'
+        %li=link_to 'Debtor Finance', '/'
+        %li=link_to 'Factoring Agreement', '/invoice-factoring/pick-a-company'
+        %li=link_to 'Factoring Recourse', '/invoice-factoring/non-recourse'
+    .block25
+      %p Resources
+      %ul
+        %li=link_to 'Business Budget Template', '/bff/projected-budgets'
+        %li=link_to 'Transport Factoring', '/industries/transportation-factoring'
+        %li=link_to 'Receivables Finance', '/bff/financing-receivables'
+        %li=link_to 'Factoring Companies California', '/locations/california-factoring'
+    .block50
+      %p Our Affiliations & Partnerships
+      .affiliations
+        %img{:alt => "affiliations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}/
+        %img{:alt => "associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic2.png", :title => "NFIB"}/
+        %img{:alt => "factoring credit", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}/
+        %img{:alt => "factoring members", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}/
+        %img{:alt => "factoring associations", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}/
 %footer.bg-darkblue
-	.container
-		.social
-			=link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-			=link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
-			=link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-			=link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-		%span Copyright Gateway Commercial Finance, LLC 2017
-		%nav
-			%ul
-				%li=link_to 'Privacy', '/privacy-policies'
-				%li=link_to 'Sitemap', '/sitemap'
-				%li=link_to 'Library', '/library/'
-				%li=link_to 'Factoraje Financiero', '/es/'				
+  .container
+    .social
+      =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
+      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
+      =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
+      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
+    %span Copyright Gateway Commercial Finance, LLC 2017
+    %nav
+      %ul
+        %li=link_to 'Privacy', '/privacy-policies'
+        %li=link_to 'Sitemap', '/sitemap'
+        %li=link_to 'Library', '/library/'
+        %li=link_to 'Factoraje Financiero', '/es/'        
