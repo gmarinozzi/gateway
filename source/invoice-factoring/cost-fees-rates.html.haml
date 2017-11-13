@@ -11,7 +11,7 @@ robots: index,follow
       .logo
         %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
           %a{:href => "/"}
-            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/logos/gateway.png",}/      
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/logos/gateway.png",}
     .container-right
       .nav-trigger
         =image_tag('icons/nav.svg')
@@ -91,7 +91,6 @@ robots: index,follow
 
         %p
           =link_to 'Click here to learn about factoring advance rates.', '/invoice-factoring/cash-advances'
-          
         %h2 Typical Invoice Factoring Fees & Rate Models
         %h3 Option One: Factoring fee based on a Flat Discount
         %p.highlighted <strong>Flat Discount</strong>: In this rate model, commonly used by the new wave of online lenders, factoring company rates are applied on the gross invoice value, not on the amount advanced, to calculate the factoring fee.
@@ -102,7 +101,25 @@ robots: index,follow
           %li First 30 days: $100 *2% = $2.00
           %li Second 30 days: $100 * 1% = $1.00
           %li Your <strong>total factoring fee</strong> if your invoice is paid in 60 days = $2+$1 = <strong>$3</strong> 
-        %p Here is a simple <a href="#">Factoring Flat Discount Calculator</a> for you to input your numbers and see how it works.
+        //Calculator1
+        %p Here is a simple <a data-fancybox="modal" data-src="#calculator1" href="javascript:;">Factoring Flat Discount Calculator</a> for you to input your numbers and see how it works.
+        #calculator1.calculator{style: 'display:none'}
+          %h3 Flat Discount Calculator Instructions
+          %p This script will calculate the factoring fee for the period the discount rate covers (e.g. 1.5% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.5% for the first 30 days, then 1% for the second 30 days and then add the results)
+          %p Complete fields on grey background entering numbers only.
+          %form
+            .row
+              %label Invoice Amount:
+              %input{type: 'text'}
+            .row
+              %labelFlat Discount (%):
+              %input{type: 'text'}
+            .actions
+              %button Calculate
+              %button Reset
+            .result
+              %label Factoring Fee:
+              %input{type:'text'}
         %h3 Option Two: Factoring fee based on a combination of a Flat Discount and PRIME plus Margin
         %p.highlighted <strong>Flat Discount and PRIME + Margin</strong>: Most factoring companies will use a combination of a flat fee and an annual interest rate to define their discount rates. 
         %p <strong>Flat Discount and PRIME + Margin Factoring Fee Calculation Example:</strong>
@@ -113,8 +130,32 @@ robots: index,follow
           %li <strong>First let’s calculate the PRIME+margin fee</strong> <br>PRIME plus margin: 4.25% + 2% = <strong>6.25% annual</strong><br>PRIME + Margin<strong> daily rate</strong> = 6.25% /360 = <strong>0.017%.</strong><br><br>This fee is <strong>calculated on the amount advanced, not on the gross invoice amount</strong> so we need to calculate your advance.<br><br>Amount advanced: $100 * 80% = $80<br><br><strong>The part of your fee based on prime plus margin</strong> would then be: $80 x 0.017% x 60 days =<strong> $0.84</strong><br><br>
           %li <strong>Second, let’s calculate the flat discount</strong><br>Flat discount= 1% every 30 days = 2% for 60 days<br>The <strong>flat discount for 60 days</strong> would be $100*2.00% = <strong>$2.00</strong><br><br>
           %li <strong>Lastly, let’s put them together to calculate the total factoring fee<br><br>Total factoring fees</strong> would be $0.84+$2= <strong>=$2.84 </strong>
-      
-        %p Here is a <a href="#">Factoring Flat Discount and PRIME plus Margin Calculator</a> for you to input your numbers and see how this rate structure works.
+        //Calculator2
+        %p Here is a <a data-fancybox="modal" data-src="#calculator2" href="javascript:;">Factoring Flat Discount and PRIME plus Margin Calculator</a> for you to input your numbers and see how this rate structure works.
+        #calculator2.calculator{style: 'display:none'}
+          %h3 Factoring Fee Calculator Instructions
+          %p This script will calculate the factoring fee for the period the flat discount covers (e.g. 1% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.0% for the first 30 days, then 1.00% for the second 30 days and then add the results)
+          %p Complete fields on grey area. Input numbers. No $,%, etc characters allowed.
+          %form
+            .row
+              %label Invoice Amount:
+              %input{type: 'text'}
+            .row
+              %labelFlat Advance Rate (%):
+              %input{type: 'text'}
+            .row
+              %labelFlat Prime + Margin (%):
+              %input{type: 'text'}
+            .row
+              %labelFlat Flat Discount (%):
+              %input{type: 'text'}
+            .actions
+              %button Calculate
+              %button Reset
+            .result
+              %label Factoring Fee:
+              %input{type:'text'}
+
         %p.highlighted The options described above represent the most common factoring agreements. However, these are not the only ones. It is very important for you to fully read and understand a factoring proposal, review the numbers and take into account other important variables before <a href="pick-a-company">picking a factoring company</a>.
         %h2 What Factoring Rate Can Your Company Get?
         %p.highlighted As a general rule you can expect to pay from 1 to 4% of the invoice amount factored to your factoring company as invoice factoring fees.

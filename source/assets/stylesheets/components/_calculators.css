@@ -1,0 +1,17 @@
+.calculator {
+  max-width: 600px; }
+  .calculator input {
+    display: inline;
+    width: 50px;
+    border: none;
+    border-bottom: 1px dashed #999;
+    box-shadow: none;
+    border-radius: 0;
+    margin-left: 20px;
+    padding: 0; }
+    .calculator input:focus, .calculator input:hover {
+      box-shadow: none; }
+  .calculator label {
+    display: inline; }
+
+/*# sourceMappingURL=_calculators.css.map */
