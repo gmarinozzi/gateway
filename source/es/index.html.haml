@@ -78,55 +78,67 @@ robots: index,follow
     .cards
       .item.large
         .content
-          .icon
-            =image_tag('industries/telecomunications.svg')
-          %h5 Telecomunicaciones
+          =link_to '/industries/telecommunications-factoring' do
+            .icon
+              =image_tag('industries/telecomunications.svg')
+            %h5 Telecomunicaciones
       .item
         .content
-          .icon
-            =image_tag('industries/manufacturers.svg')
-          %h5 Fabricantes
+          =link_to '/industries/manufacturer-factoring' do
+            .icon
+              =image_tag('industries/manufacturers.svg')
+            %h5 Fabricantes
         .content
-          .icon
-            =image_tag('industries/construction.svg')
-          %h5 Construccion
+          =link_to '/industries/construction-factoring' do
+            .icon
+              =image_tag('industries/construction.svg')
+            %h5 Construccion
       .item
         .content
-          .icon
-            =image_tag('industries/apparel.svg')
-          %h5 Textiles
+          =link_to '/industries/apparel-factoring' do
+            .icon
+              =image_tag('industries/apparel.svg')
+            %h5 Textiles
         .content
-          .icon
-            =image_tag('industries/aerospace.svg')
-          %h5 Aeroespacio
+          =link_to '/industries/aerospace-factoring' do
+            .icon
+              =image_tag('industries/aerospace.svg')
+            %h5 Aeroespacio
       .item.large
         .content
-          .icon
-            =image_tag('industries/staffing.svg')
-          %h5 Reclutamiento
+          =link_to '/industries/staffing-factoring' do
+            .icon
+              =image_tag('industries/staffing.svg')
+            %h5 Personal
       .item
         .content
-          .icon
-            =image_tag('industries/goverment.svg')
-          %h5 Gobiernos
+          =link_to '/industries/government-factoring' do
+            .icon
+              =image_tag('industries/goverment.svg')
+            %h5 Gobierno
         .content
-          .icon
-            =image_tag('industries/farmers.svg')
-          %h5 Agropecuarios
+          =link_to '/industries/farmer-factoring' do
+            .icon
+              =image_tag('industries/farmers.svg')
+            %h5 Agropecuarios
       .item
         .content
-          .icon
-            =image_tag('industries/commercial-services.svg')
-          %h5 Servicios Comerciales
+          =link_to '/industries/commercial-services-factoring' do
+            .icon
+              =image_tag('industries/commercial-services.svg')
+            %h5 Servicios Comerciales
         .content
-          .icon
-            =image_tag('industries/transportation.svg')
-          %h5 Transporte
+          =link_to '/industries/transportation-factoring' do
+            .icon
+              =image_tag('industries/transportation.svg')
+            %h5 Transporte
       .item.large
         .content
-          .icon
-            =image_tag('industries/distributors.svg')
-          %h5 Distribuidores
+          =link_to '/industries/distributor-factoring' do
+            .icon
+              =image_tag('industries/distributors.svg')
+            %h5 Distribuidores
+
 %section.text-contents
   .flex-container
     .container-left
@@ -209,7 +221,7 @@ robots: index,follow
       %ul
         %li=link_to 'Privacy', '/privacy-policies'
         %li=link_to 'Sitemap', '/sitemap'
-        %li=link_to 'Library', '/library/'
+        %li=link_to 'Education', '/education/'
         %li=link_to 'Factoring Blog', '/bff/recent_posts'
 
 
