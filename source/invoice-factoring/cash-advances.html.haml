@@ -63,16 +63,16 @@ robots: index,follow
           %form
             .row
               %label Invoice Amount:
-              %input{type: 'text'}
+              %input#Calculator3-invoice_amount{type: 'text'}
             .row
               %labelFlat Discount (%):
-              %input{type: 'text'}
+              %input#Calculator3-discount{type: 'text'}
             .actions
-              %button Calculate
-              %button Reset
+              %button#Calculator3-calculate Calculate
+              %button#Calculator3-reset Reset
             .result
               %label Factoring Fee:
-              %input{type:'text'}
+              %input#Calculator3-factoring_fee{type:'text'}
         %h2 How are Factoring Advance Rates Defined?
         %p.highlighted Before making you a proposal regarding invoice factoring advance rates, the commercial factoring company will analyze different parameters that influence your business and industry risk.
         %p The following items are usually taken into consideration:

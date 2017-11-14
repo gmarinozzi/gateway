@@ -14,7 +14,9 @@ function calculator_2(invoice_amount, advance_rate, prime_margin, flat_discount)
 
 }
 
-function calculator_3() {}
+function calculator_3(invoice_amount, discount) {
+  return invoice_amount * (discount / 100);
+}
 
 // Compute Calculator 1
 $("#Calculator1-calculate").on("click", function() {
@@ -49,6 +51,23 @@ $("#Calculator2-reset").on("click", function() {
   resetField("Calculator2-flat_discount");
   resetField("Calculator2-factoring_fee");
 })
+
+// Compute Calculator 3
+
+$("#Calculator3-calculate").on("click", function() {
+  var invoice_amount = parseInputNumber("Calculator3-invoice_amount");
+  var discount = parseInputNumber("Calculator3-discount");
+  var compute = calculator_3(invoice_amount, discount);
+
+  document.getElementById("Calculator3-factoring_fee").value = compute;
+})
+
+$("#Calculator3-reset").on("click", function() {
+  resetField("Calculator3-invoice_amount");
+  resetField("Calculator3-discount");
+  resetField("Calculator3-factoring_fee");
+})
+
 // Helpers
 function parseInputNumber(domElem) {
   return parseFloat(document.getElementById(domElem).value);
