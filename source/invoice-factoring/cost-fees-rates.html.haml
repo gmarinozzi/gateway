@@ -110,16 +110,16 @@ robots: index,follow
           %form
             .row
               %label Invoice Amount:
-              %input{type: 'text'}
+              %input#Calculator1-invoice_amount{type: 'text'}
             .row
               %labelFlat Discount (%):
-              %input{type: 'text'}
+              %input#Calculator1-discount{type: 'text'}
             .actions
-              %button Calculate
-              %button Reset
+              %button#Calculator1-calculate Calculate
+              %button#Calculator1-reset Reset
             .result
               %label Factoring Fee:
-              %input{type:'text'}
+              %input#Calculator1-factoring_fee{type:'text'}
         %h3 Option Two: Factoring fee based on a combination of a Flat Discount and PRIME plus Margin
         %p.highlighted <strong>Flat Discount and PRIME + Margin</strong>: Most factoring companies will use a combination of a flat fee and an annual interest rate to define their discount rates. 
         %p <strong>Flat Discount and PRIME + Margin Factoring Fee Calculation Example:</strong>
@@ -139,22 +139,22 @@ robots: index,follow
           %form
             .row
               %label Invoice Amount:
-              %input{type: 'text'}
+              %input#Calculator2-invoice_amount{type: 'text'}
             .row
               %labelFlat Advance Rate (%):
-              %input{type: 'text'}
+              %input#Calculator2-advance_rate{type: 'text'}
             .row
               %labelFlat Prime + Margin (%):
-              %input{type: 'text'}
+              %input#Calculator2-prime_margin{type: 'text'}
             .row
               %labelFlat Flat Discount (%):
-              %input{type: 'text'}
+              %input#Calculator2-flat_discount{type: 'text'}
             .actions
-              %button Calculate
-              %button Reset
+              %button#Calculator2-calculate Calculate
+              %button#Calculator2-reset Reset
             .result
               %label Factoring Fee:
-              %input{type:'text'}
+              %input#Calculator2-factoring_fee{type:'text'}
 
         %p.highlighted The options described above represent the most common factoring agreements. However, these are not the only ones. It is very important for you to fully read and understand a factoring proposal, review the numbers and take into account other important variables before <a href="pick-a-company">picking a factoring company</a>.
         %h2 What Factoring Rate Can Your Company Get?
