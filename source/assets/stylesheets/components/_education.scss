@@ -10,6 +10,9 @@
 		.container-right{
 			height: 90px!important;
 			background-color: #fff;
+			@media (min-width: 320px) and (max-width: 759px){
+				display: none;
+			}
 		}
 	}
 	aside{
@@ -44,8 +47,12 @@
 	}
 	.internal-content{
 		padding-top: 90px;
+
 	}
 	.internal-content article .block{
 		padding-top: 0!important;
+		@media (min-width: 320px) and (max-width: 759px){
+			padding-top: 40px!important;
+		}
 	}
 }
