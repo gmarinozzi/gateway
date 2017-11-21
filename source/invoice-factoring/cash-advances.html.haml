@@ -57,21 +57,21 @@ robots: index,follow
         //calculator3
         %p <a data-fancybox="modal" data-src="#calculator3" href="javascript:;">Here is a calculator for you to input your numbers and see how the advance rate works</a>
         #calculator3.calculator{style: 'display:none'}
-          %h3 Flat Discount Calculator Instructions
-          %p This script will calculate the factoring fee for the period the discount rate covers (e.g. 1.5% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.5% for the first 30 days, then 1% for the second 30 days and then add the results)
-          %p Complete fields on grey background entering numbers only.
+          %h3 Factoring Advance Calculator Instructions
+          %p This script will calculate the advance you'll get based on the advance rate agreed with your factor . 
+          %p Complete fields entering numbers only.
           %form
             .row
               %label Invoice Amount:
               %input#Calculator3-invoice_amount{type: 'text'}
             .row
-              %labelFlat Discount (%):
+              %label Advance Rate (%):
               %input#Calculator3-discount{type: 'text'}
             .actions
               %button#Calculator3-calculate Calculate
               %button#Calculator3-reset Reset
             .result
-              %label Factoring Fee:
+              %label Factoring Advance:
               %input#Calculator3-factoring_fee{type:'text'}
         %h2 How are Factoring Advance Rates Defined?
         %p.highlighted Before making you a proposal regarding invoice factoring advance rates, the commercial factoring company will analyze different parameters that influence your business and industry risk.

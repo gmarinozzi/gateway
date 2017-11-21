@@ -106,13 +106,13 @@ robots: index,follow
         #calculator1.calculator{style: 'display:none'}
           %h3 Flat Discount Calculator Instructions
           %p This script will calculate the factoring fee for the period the discount rate covers (e.g. 1.5% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.5% for the first 30 days, then 1% for the second 30 days and then add the results)
-          %p Complete fields on grey background entering numbers only.
+          %p Complete fields entering numbers only.
           %form
             .row
               %label Invoice Amount:
               %input#Calculator1-invoice_amount{type: 'text'}
             .row
-              %labelFlat Discount (%):
+              %label Flat Discount (%):
               %input#Calculator1-discount{type: 'text'}
             .actions
               %button#Calculator1-calculate Calculate
@@ -133,9 +133,9 @@ robots: index,follow
         //Calculator2
         %p Here is a <a data-fancybox="modal" data-src="#calculator2" href="javascript:;">Factoring Flat Discount and PRIME plus Margin Calculator</a> for you to input your numbers and see how this rate structure works.
         #calculator2.calculator{style: 'display:none'}
-          %h3 Factoring Fee Calculator Instructions
+          %h3 Factoring Flat Discount and PRIME plus Margin Calculator Instructions
           %p This script will calculate the factoring fee for the period the flat discount covers (e.g. 1% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.0% for the first 30 days, then 1.00% for the second 30 days and then add the results)
-          %p Complete fields on grey area. Input numbers. No $,%, etc characters allowed.
+          %p Complete fields entering numbers only. No $,%, etc characters allowed.
           %form
             .row
               %label Invoice Amount:
