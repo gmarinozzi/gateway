@@ -38,6 +38,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.5.6)
+    htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     kramdown (1.14.0)
@@ -91,6 +92,9 @@ GEM
       rack-livereload (~> 0.3.15)
     middleman-meta-tags (0.3.0)
       middleman-core (>= 3.0.0)
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     middleman-sprockets (4.0.0.rc.1)
       middleman-core (>= 4.0.0.rc.1)
       sprockets (~> 3.0)
@@ -144,9 +148,10 @@ DEPENDENCIES
   middleman-deploy (= 2.0.0.pre.alpha)
   middleman-livereload (~> 3.4)
   middleman-meta-tags
+  middleman-minify-html
   middleman-sprockets (= 4.0.0.rc.1)
   neat (~> 1.7)
   sassc (~> 1.8)
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
