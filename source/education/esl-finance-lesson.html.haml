@@ -37,180 +37,187 @@ robots: index,follow
         %img{:class => "float-right", :alt => "esl lesson games", :src => "https://cdn.gatewaycfs.com/bee-icon.png"}>/
         %p.highlighted Before you take our fill-in-the blank quiz and play our popular game, "Bee the Broker", study the following vocabulary and learn about different types of loans and advances!
   
-        %h3 New Vocabulary
-        %dl
-          %dt capital
-          %dd money invested in a business to help it grow
-          %dt borrow
-          %dd to take get something with the agreement to give it back later
-          %dt loan
-          %dd a lender gives money to a borrower, with the agreement that the borrower will repay the money, in most cases with interest
-          %dt principal
-          %dd amount given by the lender
-          %dt interest
-          %dd money paid back in addition to the principal
-          %dt interest rate
-          %dd interest expressed as percentage of principal
-          %dt collateral
-          %dd something with value (e.g. car, house, etc.) that lender can take if borrower cannot pay back loan
-          %dt fee
-          %dd money paid for a service; extra charge
-          %dt fixed rate
-          %dd loan agreement in which interest remains the same throughout repayment period
-          %dt variable rate
-          %dd loan agreement in which interest payments are adjusted according to certain conditions
-          %dt repayment period
-          %dd amount of time agreed upon that loan should be paid off
-          %dt APR (annual percentage rate)
-          %dd interest rate calculated over one year
-          %dt credit score
-          %dd a number between 300 and 850 that reflects how good your credit is; generally above 700 is a good score
-          %dt credit history
-          %dd record of debt over time; measures amount of borrowing and how you’ve paid off debt
-          %dt startup
-          %dd a small company starting an original type of business
-          %dt B2B
-          %dd business-to-business; a business that sells to other businesses
-          %dt B2C
-          %dd business-to-consumer;  a business that sells directly to consumers
-          %dt cash flow
-          %dd amount of cash available for use
-          %dt factoring
-          %dd selling of unpaid invoices at a discount in exchange for immediate cash flow
-          %dt accounts receivable
-          %dd money owed to a company by its debtors; invoices from customers that have NOT been paid
-          %dt advance
-          %dd amount paid or received before the agreed upon action is completed
+        
+        .vocabulary
+          %h3 New Vocabulary
+          %dl
+            .drow
+              %dt capital
+              %dd money invested in a business to help it grow
+            .drow
+              %dt borrow
+              %dd to take get something with the agreement to give it back later
+            .drow
+              %dt loan
+              %dd a lender gives money to a borrower, with the agreement that the borrower will repay the money, in most cases with interest
+            .drow
+              %dt principal
+              %dd amount given by the lender
+            .drow
+              %dt interest
+              %dd money paid back in addition to the principal
+            .drow
+              %dt interest rate
+              %dd interest expressed as percentage of principal
+            .drow
+              %dt collateral
+              %dd something with value (e.g. car, house, etc.) that lender can take if borrower cannot pay back loan
+            .drow
+              %dt fee
+              %dd money paid for a service; extra charge
+            .drow
+              %dt fixed rate
+              %dd loan agreement in which interest remains the same throughout repayment period
+            .drow
+              %dt variable rate
+              %dd loan agreement in which interest payments are adjusted according to certain conditions
+            .drow
+              %dt repayment period
+              %dd amount of time agreed upon that loan should be paid off
+            .drow
+              %dt APR (annual percentage rate)
+              %dd interest rate calculated over one year
+            .drow
+              %dt credit score
+              %dd a number between 300 and 850 that reflects how good your credit is; generally above 700 is a good score
+            .drow
+              %dt credit history
+              %dd record of debt over time; measures amount of borrowing and how you’ve paid off debt
+            .drow
+              %dt startup
+              %dd a small company starting an original type of business
+            .drow
+              %dt B2B
+              %dd business-to-business; a business that sells to other businesses
+            .drow
+              %dt B2C
+              %dd business-to-consumer;  a business that sells directly to consumers
+            .drow
+              %dt cash flow
+              %dd amount of cash available for use
+            .drow
+              %dt factoring
+              %dd selling of unpaid invoices at a discount in exchange for immediate cash flow
+            .drow
+              %dt accounts receivable
+              %dd money owed to a company by its debtors; invoices from customers that have NOT been paid
+            .drow
+              %dt advance
+              %dd amount paid or received before the agreed upon action is completed
         %h3 FILL-IN-THE-BLANK QUIZ!
         %p.highlighted Directions: Type your answers into the corresponding boxes. As you can see, only 3 out of the 4 words will be correct. Make sure to spell each word correctly!        
        
-        %form{:name => "FXY1"}
+        %form{:name => "FXY1", class: 'quiz'}
    
-        %hr/
-        1) It is very difficult for a
-        %input{:name => "NA01", :type => "hidden", :value => "startup"}/
-        %input.ipxa{:name => "NB01", :size => "14", :type => "text", :value => ""}/
-        company to get a
-        %input{:name => "NA02", :type => "hidden", :value => "loan"}/
-        %input.ipxa{:name => "NB02", :size => "15", :type => "text", :value => ""}/
+          1) It is very difficult for a
+          %input{:name => "NA01", :type => "hidden", :value => "startup"}
+          %input.ipxa{:name => "NB01", :size => "14", :type => "text", :value => ""}
+          company to get a
+          %input{:name => "NA02", :type => "hidden", :value => "loan"}
+          %input.ipxa{:name => "NB02", :size => "15", :type => "text", :value => ""}
+           
+          \. This is because new businesses usually don't have a long
+           
+          %input{:name => "NA03", :type => "hidden", :value => "credit history"}
+          %input.ipxa{:name => "NB03", :size => "15", :type => "text", :value => ""}
+          \.
+          %ul.quiz-ul
+            %li loan
+            %li credit history
+            %li fee
+            %li startup
+          2)
+          %input{:name => "NA04", :type => "hidden", :value => "B2B"}
+          %input.ipxa{:name => "NB04", :size => "15", :type => "text", :value => ""}
+          companies sell to other businesses, while
+          %input{:name => "NA05", :type => "hidden", :value => "B2C"}
+          %input.ipxa{:name => "NB05", :size => "15", :type => "text", :value => ""}
+          companies sell to customers. Both of these types of companies need
+          %input{:name => "NA06", :type => "hidden", :value => "capital"}
+          %input.ipxa{:name => "NB06", :size => "15", :type => "text", :value => ""}
+           
+          in order to maintain and grow their businesses.
+          %ul.quiz-ul
+            %li capital
+            %li B2C
+            %li APR
+            %li B2B
+          3) When paying off a loan, you are paying the
+          %input{:name => "NA07", :type => "hidden", :value => "principal"}
+          = succeed "," do
+            %input.ipxa{:name => "NB07", :size => "15", :type => "text", :value => ""}
+          %input{:name => "NA08", :type => "hidden", :value => "interest rate"}
+          %input.ipxa{:name => "NB08", :size => "15", :type => "text", :value => ""}
+           
+          \. By calculating these payments over the course of your
+          %input{:name => "NA09", :type => "hidden", :value => "repayment period"}
+          %input.ipxa{:name => "NB09", :size => "15", :type => "text", :value => ""}
+          , you can determine your APR.
+          %ul.quiz-ul
+            %li principal
+            %li loan
+            %li repayment period
+            %li interest rate
+          4) To get a bank loan, you must have a good
+          %input{:name => "NA10", :type => "hidden", :value => "credit history"}
+          = succeed "." do
+            %input.ipxa{:name => "NB10", :size => "15", :type => "text", :value => ""}
+          %input{:name => "NA11", :type => "hidden", :value => "credit score"}
+          %input.ipxa{:name => "NB11", :size => "15", :type => "text", :value => ""}
+          , probably above 700. This will help you get cheaper
+           
+          %input{:name => "NA12", :type => "hidden", :value => "loan"}
+          %input.ipxa{:name => "NB12", :size => "15", :type => "text", :value => ""}
+           
+          in the future.
+          %ul.quiz-ul
+            %li credit score
+            %li loans
+            %li credit history
+            %li cash flow
+          5) B2B companies often allow their customers to pay later, which means there will be many invoices that have not been paid. This means that a company’s worth is based partly on
+          %input{:name => "NA13", :type => "hidden", :value => "accounts receivable"}
+          %input.ipxa{:name => "NB13", :size => "15", :type => "text", :value => ""}
+          , a value that hasn’t yet turned to cash.
+          %input{:name => "NA14", :type => "hidden", :value => "factoring"}
+          %input.ipxa{:name => "NB14", :size => "15", :type => "text", :value => ""}
+          is a good alternative to loans for this type of company because they can get a cash
+          %input{:name => "NA15", :type => "hidden", :value => "advance"}
+          %input.ipxa{:name => "NB15", :size => "15", :type => "text", :value => ""}
+          immediately based on the money they are owed in the future.
+          %ul.quiz-ul
+            %li factoring
+            %li accounts receivable
+            %li B2C
+            %li advance
+          /
+            6) Most banks and lenders require that you put down some
+            <INPUT value="collateral" name=NA16 type=hidden><INPUT class=ipxa value="" name=NB16 type=text size=15>
+            
+            
+            , which is something they can take from you if you cannot pay off the loan. It protects them from losing money on the loan. Some lenders will only make you pay a percentage of your sales, which is a type of repayment period called a
+            <INPUT value="variable rate" name=NA17 type=hidden><INPUT class=ipxa value="" name=NB17 type=text size=15> 
+            
+            \. However most lenders are more strict, requiring the same payment every day or week. This is referred to as a
+            <INPUT value="variable rate" name=NA18 type=hidden><INPUT class=ipxa value="" name=NB18 type=text size=15> 
+            \.<br/>
+            <ul class="quiz-ul">
+            <li>borrow</li>
+            <li>fixed rate</li>
+            <li>collateral</li>
+            <li>variable rate</li>
+            </ul>
+            <br/>
+            <hr/>
+          %p Click "CHECK ALL" to see how you did!
+          %input{:name => "check", :onclick => "scoreme()", :type => "button", :value => "CHECK ALL"}
+          %button{:type => "reset", :value => "Reset"} Reset
+          %input.ipxx.result{:name => "ovrXX", :size => "28", :type => "text", :value => ""}
          
-        \. This is because new businesses usually don't have a long
-         
-        %input{:name => "NA03", :type => "hidden", :value => "credit history"}/
-        %input.ipxa{:name => "NB03", :size => "15", :type => "text", :value => ""}/
-        \.
-        %br/
-        %ul.quiz-ul
-          %li loan
-          %li credit history
-          %li fee
-          %li startup
-        %br/
-        %hr/
-        2)
-        %input{:name => "NA04", :type => "hidden", :value => "B2B"}/
-        %input.ipxa{:name => "NB04", :size => "15", :type => "text", :value => ""}/
-        companies sell to other businesses, while
-        %input{:name => "NA05", :type => "hidden", :value => "B2C"}/
-        %input.ipxa{:name => "NB05", :size => "15", :type => "text", :value => ""}/
-        companies sell to customers. Both of these types of companies need
-        %input{:name => "NA06", :type => "hidden", :value => "capital"}/
-        %input.ipxa{:name => "NB06", :size => "15", :type => "text", :value => ""}/
-         
-        in order to maintain and grow their businesses.
-        %br/
-        %ul.quiz-ul
-          %li capital
-          %li B2C
-          %li APR
-          %li B2B
-        %br/
-        %hr/
-        3) When paying off a loan, you are paying the
-        %input{:name => "NA07", :type => "hidden", :value => "principal"}/
-        = succeed "," do
-          %input.ipxa{:name => "NB07", :size => "15", :type => "text", :value => ""}/
-        %input{:name => "NA08", :type => "hidden", :value => "interest rate"}/
-        %input.ipxa{:name => "NB08", :size => "15", :type => "text", :value => ""}/
-         
-        \. By calculating these payments over the course of your
-        %input{:name => "NA09", :type => "hidden", :value => "repayment period"}/
-        %input.ipxa{:name => "NB09", :size => "15", :type => "text", :value => ""}/
-        , you can determine your APR.
-        %br/
-        %ul.quiz-ul
-          %li principal
-          %li loan
-          %li repayment period
-          %li interest rate
-        %br/
-        %hr/
-        4) To get a bank loan, you must have a good
-        %input{:name => "NA10", :type => "hidden", :value => "credit history"}/
-        = succeed "." do
-          %input.ipxa{:name => "NB10", :size => "15", :type => "text", :value => ""}/
-        %input{:name => "NA11", :type => "hidden", :value => "credit score"}/
-        %input.ipxa{:name => "NB11", :size => "15", :type => "text", :value => ""}/
-        , probably above 700. This will help you get cheaper
-         
-        %input{:name => "NA12", :type => "hidden", :value => "loan"}/
-        %input.ipxa{:name => "NB12", :size => "15", :type => "text", :value => ""}/
-         
-        in the future.
-        %br/
-        %ul.quiz-ul
-          %li credit score
-          %li loans
-          %li credit history
-          %li cash flow
-        %br/
-        %hr/
-        5) B2B companies often allow their customers to pay later, which means there will be many invoices that have not been paid. This means that a company’s worth is based partly on
-        %input{:name => "NA13", :type => "hidden", :value => "accounts receivable"}/
-        %input.ipxa{:name => "NB13", :size => "15", :type => "text", :value => ""}/
-        , a value that hasn’t yet turned to cash.
-        %input{:name => "NA14", :type => "hidden", :value => "factoring"}/
-        %input.ipxa{:name => "NB14", :size => "15", :type => "text", :value => ""}/
-        is a good alternative to loans for this type of company because they can get a cash
-        %input{:name => "NA15", :type => "hidden", :value => "advance"}/
-        %input.ipxa{:name => "NB15", :size => "15", :type => "text", :value => ""}/
-        immediately based on the money they are owed in the future.
-        %br/
-        %ul.quiz-ul
-          %li factoring
-          %li accounts receivable
-          %li B2C
-          %li advance
-        %br/
-        %hr/
-        /
-          6) Most banks and lenders require that you put down some
-          <INPUT value="collateral" name=NA16 type=hidden><INPUT class=ipxa value="" name=NB16 type=text size=15>
-          
-          
-          , which is something they can take from you if you cannot pay off the loan. It protects them from losing money on the loan. Some lenders will only make you pay a percentage of your sales, which is a type of repayment period called a
-          <INPUT value="variable rate" name=NA17 type=hidden><INPUT class=ipxa value="" name=NB17 type=text size=15> 
-          
-          \. However most lenders are more strict, requiring the same payment every day or week. This is referred to as a
-          <INPUT value="variable rate" name=NA18 type=hidden><INPUT class=ipxa value="" name=NB18 type=text size=15> 
-          \.<br/>
-          <ul class="quiz-ul">
-          <li>borrow</li>
-          <li>fixed rate</li>
-          <li>collateral</li>
-          <li>variable rate</li>
-          </ul>
-          <br/>
-          <hr/>
-        %p Click "CHECK ALL" to see how you did!
-        %input{:name => "check", :onclick => "scoreme()", :type => "button", :value => "CHECK ALL"}/
-        %button{:type => "reset", :value => "Reset"} Reset
-        %input.ipxx{:name => "ovrXX", :size => "28", :type => "text", :value => ""}/
-       
-        %p <a href="https://gatewaycfs.com/games/bee-the-financial-broker.html">Click here to try the quiz and test your recently adquired knowledge</a>
+        %p <a href="https://gatewaycfs.com/games/bee-the-financial-broker.html" target="_blanc">Click here to try the quiz and test your recently adquired knowledge</a>
         %h3 Are you done with the "Fill-in-the-blank quiz"?, let's keep learning...
         %p In the United States, there are different ways to get money for your business. However, first you should ask yourself the following questions:
-        %img{:class => "float-right", :alt => "esl money", :src => "https://cdn.gatewaycfs.com/education/exasperated.jpg"}
+        %img.float-right{:alt => "esl money", :src => "https://cdn.gatewaycfs.com/education/exasperated.jpg"}
         %ul
           %li <strong>Why do I need money?</strong>
           %li <strong>What kind of company do I own?</strong>
@@ -219,18 +226,21 @@ robots: index,follow
           %li <strong>Can I put down collateral?</strong>
 
         %p.highlighted Based on the answers to these questions, you can determine the best way to get money for your business. <strong>You have two general options: take out a loan or receive an advance.</strong> But as you know, finance is always complicated! Within each category, many types exist.
-        %h3 Loans
-        %ul
-          %li Traditional Bank Loans
-          %li Lines of Credit
-          %li Online Loans
-        %h3 Cash Advances
-        %ul
-          %li Merchant Cash Advance
-          %li Factoring
+        .flex-container
+          .col50
+            %h3 Loans
+            %ul
+              %li Traditional Bank Loans
+              %li Lines of Credit
+              %li Online Loans
+          .col50
+            %h3 Cash Advances
+            %ul
+              %li Merchant Cash Advance
+              %li Factoring
         %h2 Loans
         %h3 Traditional Bank Loan
-        %img{:class => "float-right", :alt => "esl bank", :src => "https://cdn.gatewaycfs.com/education/bank.jpg"}
+        %img.float-right{:alt => "esl bank", :src => "https://cdn.gatewaycfs.com/education/bank.jpg"}
         %ul
           %li Good for long-term business investment
           %li Established B2B or B2C company
@@ -273,7 +283,7 @@ robots: index,follow
           Congratulations! Now you're ready to play
           %a{:href => "https://gatewaycfs.com/games/bee-the-financial-broker.html"}
             Bee the Broker
-            %img{:src => "https://cdn.gatewaycfs.com/bee-icon.png"} !
+            %img.padding0{:src => "https://cdn.gatewaycfs.com/bee-icon.png"} !
             We challenge you to test your knowledge of loans and cash advances.
 
 %section.bottom.bg-darkblue
@@ -315,3 +325,4 @@ robots: index,follow
         %li=link_to 'Sitemap', '/sitemap'
         %li=link_to 'Education', '/education/'
         %li=link_to 'Factoraje', '/es/'
+%script{:src => "https://gatewaycfs.com/js/scoreme.js"}

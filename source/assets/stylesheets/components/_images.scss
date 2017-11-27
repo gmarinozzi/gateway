@@ -1,10 +1,22 @@
 img{
-	// .float-left{
-	// 	float: left;
-	// 	padding-right: 20px;
-	// }
-	// .float-right{
-	// 	float:right;
-	// 	padding-left: 20px;
-	// }
+	&.float-left{
+		float: left;
+		padding-right: 20px;
+		display: inline-block;
+	}
+	&.float-right{
+		float:right;
+		padding-left: 20px;
+		display: inline-block;
+		clear: right;
+	}
+	&.padding0{
+		padding-bottom: 0!important;
+	}
+	@media (min-width: 320px) and (max-width: 959px){
+		&.float-left, &.float-right{
+			float: none;
+			padding: 0 0 20px 0;
+		}
+	}
 }

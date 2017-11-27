@@ -82,3 +82,32 @@ select {
   max-width: 100%;
   width: auto;
 }
+.quiz{
+  margin-bottom: 30px;
+  input[type=text]{
+    display: inline-block;
+    width: auto;
+    padding: 0 3px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px dashed #999;
+    color:$green;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  input[value="INCORRECT!"]{
+    background-color:#000!important;
+  }
+  input.result{
+    width: 100%;
+    margin-top: 30px;
+    color: $blue;
+    display: block;
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+  }
+}

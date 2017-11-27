@@ -50,9 +50,48 @@
 
 	}
 	.internal-content article .block{
+
+		dl{
+			.drow{
+				padding-bottom: 12px;
+			}
+			dt{
+				display: inline;
+
+				&:after{
+					content: ":";
+					padding-right: 3px;
+				}
+			}
+			dd{
+				display: inline;
+				font-weight: 300;
+			}
+		}
 		padding-top: 0!important;
 		@media (min-width: 320px) and (max-width: 759px){
 			padding-top: 40px!important;
 		}
+	}
+	.quiz-ul{
+		padding-top: 20px;
+		font-size: 15px;
+		font-weight: 600;
+		color: $green;
+		padding-left: 0;
+		li{
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+			padding-right: 20px;
+			display: inline-block;
+		}
+	}
+	.vocabulary{
+		border: 1px solid #ededed;
+		border-radius: 5px;
+		padding: 20px 20px 0 20px;
+		margin: 20px 0 40px 0;
+		font-size: 90%;
 	}
 }
