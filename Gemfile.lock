@@ -149,7 +149,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.4)
   middleman-meta-tags
   middleman-minify-html
-  middleman-sprockets (= 4.0.0.rc.1)
+  middleman-sprockets
   neat (~> 1.7)
   sassc (~> 1.8)
 
