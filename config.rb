@@ -30,7 +30,8 @@ activate :deploy do |deploy|
 end
 
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
+  activate :minify_css, inline: true
+  activate :minify_javascript, inline: true
   activate :minify_html
 end
+
