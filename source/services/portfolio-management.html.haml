@@ -26,24 +26,13 @@ robots: index,follow
             =link_to 'Our Company', '/company/'
             %ul.submenu
               %li=link_to 'About Gateway', '/company/'
-              %li=link_to 'Factoring services', '/services/accounts-receivable-factoring/'
               %li=link_to 'Brokers & partners', '/company/factoring-brokers/'
               %li=link_to 'Locations we serve', '/locations/'
 %section.internal-content
   .flex-container
     %aside.container-left
       .block
-        %nav
-          %h3 More about...
-          %ul
-            %li.selected
-              =link_to 'Factoring Invoices', '/invoice-factoring/how-it-works/'
-              %ul.submenu
-                %li=link_to 'How factoring works', '/invoice-factoring/how-it-works/'
-                %li=link_to 'How much it costs', '/invoice-factoring/cost-fees-rates/'
-                %li=link_to 'Factoring Requirements', '/invoice-factoring/requirements/'
-            %li=link_to 'Industries we serve', '/industries/'
-        %button.outline=link_to 'CONTACT US', '/company/contact/'
+      
     %article.container-right
       .block
         %hgroup
@@ -180,14 +169,10 @@ robots: index,follow
       %ul
         %li=link_to 'Financial Management Program', '/bff/m/business-financial-fitness-program'
         %li=link_to 'Finance & Factoring Blog', '/bff/recent_posts'
-        %li=link_to 'Factoring Expenses', '/invoice-factoring/cost-fees-rates/'
-        %li=link_to 'Factoring Facility', '/'
     .block25
       %p Resources
       %ul
-        %li=link_to 'Invoice Financing', '/invoice-factoring/how-it-works/'
-        %li=link_to 'Invoice Factoring Company', '/invoice-factoring/pick-a-company/'
-        %li=link_to 'Factoring Florida', '/locations/florida-factoring/'
+        %li=link_to 'Factoring Facility', '/'
         %li=link_to 'Receivable Financing Company', '/bff/financing-receivables'
     .block50
       %p Our Affiliations & Partnerships

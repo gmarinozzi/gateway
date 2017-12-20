@@ -25,7 +25,7 @@ robots: index,follow
           %li.selected
             =link_to 'Our Company', '/company/'
             %ul.submenu
-              %li=link_to 'About Gateway', '/company/'
+              %li=link_to 'Contact us', '/company/contact/'
               %li=link_to 'Factor services', '/services/accounts-receivable-factoring/'
               %li=link_to 'Factoring brokers', '/company/factoring-brokers/'
               %li=link_to 'Portfolio management', '/services/portfolio-management/'
@@ -34,16 +34,7 @@ robots: index,follow
   .flex-container
     %aside.container-left
       .block
-        %nav
-          %h3 More about...
-          %ul
-            %li.selected
-              =link_to 'Factoring of Invoices', '/invoice-factoring/how-it-works/'
-              %ul.submenu
-                %li=link_to 'Factoring cash advances', '/invoice-factoring/cash-advances/'
-                %li=link_to 'Cost of factoring receivables', '/invoice-factoring/cost-fees-rates/'
-                %li=link_to 'Invoice factoring requirements', '/invoice-factoring/requirements/'
-        %button.outline=link_to 'CONTACT US', '/company/contact/'
+       
     %article.container-right
       .block
         %hgroup
