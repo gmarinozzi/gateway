@@ -34,4 +34,3 @@ configure :build do
   activate :minify_javascript, inline: true
   activate :minify_html
 end
-

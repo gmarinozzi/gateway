@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACC,iBAAM;EACL,MAAM,EAAE,IAAI;EACZ,uBAAK;IACJ,MAAM,EAAE,eAAc;IACtB,2BAAG;MACF,KAAK,EAAE,gBAAe;EAGxB,kCAAgB;IACf,MAAM,EAAE,eAAc;IACtB,gBAAgB,EAAE,IAAI;AAIxB,4BAAiB;EAChB,WAAW,EAAE,IAAI;AAElB,2CAAgC;EAC/B,WAAW,EAAE,YAAW",
-"sources": ["_education.scss"],
-"names": [],
-"file": "_education.css"
-}

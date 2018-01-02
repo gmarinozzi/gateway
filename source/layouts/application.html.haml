@@ -24,6 +24,6 @@
     / %noscript
     /   %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-K4HK4R", :style => "display:none;visibility:hidden", :width => "0"}
     = yield
-    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    %script{:async => "", :src => "https://code.jquery.com/jquery-2.1.1.min.js"}
     = javascript_include_tag "application"
     %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300,400,700", :rel => "stylesheet"}

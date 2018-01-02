@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/middleman/middleman-sprockets.git
+  revision: 5e5197c3e4049845c446dc2b30d0169f2b3c6070
+  specs:
+    middleman-sprockets (4.1.1)
+      middleman-core (~> 4.0)
+      sprockets (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,9 +103,6 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
-    middleman-sprockets (4.0.0.rc.1)
-      middleman-core (>= 4.0.0.rc.1)
-      sprockets (~> 3.0)
     minitest (5.10.3)
     neat (1.9.0)
       sass (>= 3.3)
@@ -149,7 +154,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.4)
   middleman-meta-tags
   middleman-minify-html
-  middleman-sprockets (= 4.0.0.rc.1)
+  middleman-sprockets!
   neat (~> 1.7)
   sassc (~> 1.8)
 
