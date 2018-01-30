@@ -1,12 +1,12 @@
 !!!
 %html
   %head
-    / :javascript
-    /   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    /   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    /   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    /   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    /   })(window,document,'script','dataLayer','GTM-K4HK4R');
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K4HK4R');
 
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
@@ -23,6 +23,7 @@
   %body{class: page_classes}
      %noscript
        %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-K4HK4R", :style => "display:none;visibility:hidden", :width => "0"}
+
     = yield
     %script{:async => "", :src => "https://code.jquery.com/jquery-2.1.1.min.js"}
     = javascript_include_tag "application"
