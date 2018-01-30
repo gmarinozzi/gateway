@@ -12,17 +12,18 @@
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title= current_page.data.title
-    %meta{:content => current_page.data.description || data.site.description, :name => "description"}
-    %meta{:content => "Gateway Commercial Finance 2018", :name => "copyright"}
-    %link{:href => "https://cdn.gatewaycfs.com/favicon.ico", :rel => "icon", :type => "image/ico"}
-    %link{:href => current_page.data.canonical || data.site.canonical, :rel => "canonical"}
-    %meta{:content => current_page.data.robots || data.site.robots, :name => "robots"}
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %meta{:content => current_page.data.description || data.site.description, :name => "description"}/
+    %meta{:content => "Gateway Commercial Finance 2018", :name => "copyright"}/
+    %link{:href => "https://cdn.gatewaycfs.com/favicon.ico", :rel => "icon", :type => "image/ico"}/ 
+    %link{:href => current_page.data.canonical || data.site.canonical, :rel => "canonical"}/
+    %meta{:content => current_page.data.robots || data.site.robots, :name => "robots"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     = stylesheet_link_tag "application"
 
   %body{class: page_classes}
-    %noscript
-      %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-K4HK4R", :style => "display:none;visibility:hidden", :width => "0"}
+     %noscript
+       %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-K4HK4R", :style => "display:none;visibility:hidden", :width => "0"}
+
     = yield
     %script{:async => "", :src => "https://code.jquery.com/jquery-2.1.1.min.js"}
     = javascript_include_tag "application"
