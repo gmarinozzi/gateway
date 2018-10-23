@@ -10,7 +10,7 @@ robots: index,follow
     .container-left
       .logo
         %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
-          %a{:href => "/"}
+          %a{:href => "https://gatewaycfs.com", :itemprop => "url"}
             %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png",}
     .container-right
       .nav-trigger
@@ -70,14 +70,16 @@ robots: index,follow
           %p.highlighted These fees are calculated by applying a factoring rate either on the amount advanced or on the invoice face value depending on an agreed upon rate structure.
           %p.highlighted  Factoring fees begin accruing on the day the receivable is purchased and are usually collected by the factor when the invoice is paid.</span>
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}          
-          %p <strong>Here is a simplified <span itemprop="name">factoring fee example</span>:</strong><span itemprop="description">
-        
-          %ul
-            %li Invoice face value: $1,000
-            %li Amount advanced: $800
-            %li Factoring rate: 2%
-            %li <strong>Factoring fee if calculated on amount advanced</strong> = $800 x 2% = $16
-            %li <strong>Factoring fee if calculated on invoice face value</strong> =$1000 x 2% = $20 </span>
+          %p <strong>Here is a simplified <span itemprop="name">factoring fee example</span>:</strong>
+          %span{:itemprop => "description"}
+            %ul
+              %li Invoice face value: $1,000
+              %li Amount advanced: $800
+              %li Factoring rate: 2%
+              %li
+                %strong Factoring fee if calculated on amount advanced = $800 x 2% = $16
+              %li
+                %strong Factoring fee if calculated on invoice face value = $1000 x 2% = $20
         %p We’ll show you more realistic examples of common factoring rate structures and rate calculation details later on this page.
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
           %h2 What are <span itemprop="name">Factoring Rates</span>?

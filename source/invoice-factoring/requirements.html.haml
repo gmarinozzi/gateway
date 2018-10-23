@@ -10,7 +10,7 @@ robots: index,follow
     .container-left
       .logo
         %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
-          %a{:href => "/"}
+          %a{:href => "https://gatewaycfs.com", :itemprop => "url"}
             %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png",}/      
     .container-right
       .nav-trigger
@@ -56,15 +56,15 @@ robots: index,follow
             %p What to do to resolve your cash needs? You could apply for a bank loan, but it can be difficult to meet the underwriting requirements. Also, banks can take months to approve loan applications. By the time it’s approved, your cash flow need may have resolved itself.
             %p.highlighted That leaves one option: factoring financing. Factoring helps you get your cash flow on a more predictable schedule. You can get advances on a large percentage of your receivables within days of sending a new invoice so you have cash available to reach your business goals.
             %p Perhaps the best part of factoring is that the service isn’t based on your credit. Rather, approval is based on the creditworthiness of your customers. Even if you have a rough credit history, factoring financing may still be a viable option.
-          %h2 <span itemprop="description"> List of common factoring requirements:
-          %ol
-            %li Your company sells to businesses
-            %li You have creditworthy customers
-            %li Your sales are $5,000 or more per month
-            %li You have limited or no access to bank financing
-            %li Your company is incorporated in US
-            %li You give customers 30 or more days to pay</span>
-    
+          %span{:itemprop => "description"}   
+            %h2 List of common factoring requirements:
+            %ol
+              %li Your company sells to businesses
+              %li You have creditworthy customers
+              %li Your sales are $5,000 or more per month
+              %li You have limited or no access to bank financing
+              %li Your company is incorporated in US
+              %li You give customers 30 or more days to pay
           %h3 Does your company sell products or services to other businesses on terms?
           %p Factoring is almost always available only for B2B invoices. If you sell to consumers, factoring may not be a good option. Also, your invoices need to have specific terms. Remember, the factor will be collecting on your invoice, so they need to know exactly when the receivable is due.				
           %h3 Are at least some of your customers credit-worthy businesses?
