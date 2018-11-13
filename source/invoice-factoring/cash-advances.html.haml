@@ -48,7 +48,7 @@ robots: index,follow
           %h1 Factoring Advances <br>What Cash Advance Rate Can Your Business Get?
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
           %h2 What is a <span itemprop="name">Factoring Advance</span>?
-          %p <span itemprop="description">The advance is the percentage of the invoice value that a factor will pay you at the time of the sale of the receivables.</span> This is not the final amount your company will be paid for the purchase of the invoices; you will get the balance minus the factoring fees at the time the payments are collected from your customers.
+          %p <span itemprop="description">The advance is the percentage of the invoice value that a factor will pay you at the time of the sale of the receivables.</span> It is usually between 75 and 90% of the invoice value. This is not the total amount your company receives; you will get the balance minus the factoring fees at the time the payments are collected.
           %p.highlighted Example: Let's say your are selling invoices for $100 and your pre-agreed advance rate is 80%. Your factoring advance then would be $80.
           %img{:align => "", :alt => "factoring advance",:itemprop => "image",:src => "https://cdn.gatewaycfs.com/new/optimized/factoring-advance.jpg"}
         
@@ -117,11 +117,78 @@ robots: index,follow
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
       =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/gateway-commercial-finance/', target: '_blank'
+    %span Copyright Gateway Commercial Finance, LLC 2019
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'
         %li=link_to 'Sitemap', '/sitemap/'
         %li=link_to 'Education', '/education/'
         %li=link_to 'Factoraje en USA', '/es/'
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "name" : "Factoring Advances. What Cash Advance Rate Can Your Business Get?",
+    "headline" : "How Much Your Business' Factoring Advance Would Be?",
+    "image": "https://cdn.gatewaycfs.com/new/optimized/factoring-advance.jpg",
+    "author" : {
+    "@type" : "Person",
+    "name" : "Marc J Marin",
+    "url": "https://gatewaycfs.com/company/marc-marin/"
+    },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gatewaycfs.com/invoice-factoring/cash-advances/"
+    },
+    "genre": "business financing",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "Gateway Commercial Finance, LLC",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.gatewaycfs.com/new/gatewaylogo.png"
+    }
+    },
+    "url": "https://gatewaycfs.com/invoice-factoring/cash-advances/",
+    "datePublished": "2018-01-03",
+    "dateCreated": "2018-01-03",
+    "dateModified": "2018-10-23",
+    "description": "Learn what factoring advance rates are and how are determined. Grab a realistic idea of the deal your company can get."
+    }
+%script{:type => "application/ld+json"}
+  :cdata
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com",
+    "name": "Gateway Commercial"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "name": "Invoice Factoring"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 3,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/cash-advances/",
+    "name": "Advances"
+    }
+    }
+    ]
+    }

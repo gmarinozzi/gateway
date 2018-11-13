@@ -94,7 +94,7 @@ robots: index,follow
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}  
           %h2 What is a <span itemprop="name">Factoring Company</span>?
   
-          %p.highlighted <span itemprop="description">A factoring company is a business that purchases outstanding receivables from B2B companies, providing cash advances until the invoice is due or collected.<br>
+          %p.highlighted <span itemprop="description">A factoring company is a business that purchases outstanding receivables from B2B companies, providing cash advances until the invoicea are due or collected.<br>
 
           %p Factoring companies:
           %ul
@@ -288,11 +288,83 @@ robots: index,follow
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
       =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/gateway-commercial-finance/', target: '_blank'
+    %span Copyright Gateway Commercial Finance, LLC 2019
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'
         %li=link_to 'Sitemap', '/sitemap/'
         %li=link_to 'Education', '/education/'
         %li=link_to 'Factoraje Financiero', '/es/'
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "name" : "How to Pick the Best Factoring Company for Your Business",
+    "headline" : "Learn to Compare Invoice Factoring Companies",
+    "image": [
+    "https://cdn.gatewaycfs.com/new/factoring-company-comparison.jpg",
+    "https://cdn.gatewaycfs.com/new/online-lenders-fintech.jpg",
+    "https://cdn.gatewaycfs.com/new/advertised-factoring-rates.jpg",
+    "https://cdn.gatewaycfs.com/new/computer-algorithms.jpg"
+    ],
+    "author" : {
+    "@type" : "Person",
+    "name" : "Marc J Marin",
+    "url": "https://gatewaycfs.com/company/marc-marin/"
+    },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gatewaycfs.com/invoice-factoring/pick-a-company/"
+    },
+    "genre": "business financing",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "Gateway Commercial Finance, LLC",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.gatewaycfs.com/new/gatewaylogo.png"
+    }
+    },
+    "url": "https://gatewaycfs.com/invoice-factoring/pick-a-company/",
+    "datePublished": "2018-01-03",
+    "dateCreated": "2018-01-03",
+    "dateModified": "2018-10-23",
+    "description": "Learn to distinguish factoring companies from expensive lenders, compare agreements and service quality, and discover the truth about published rates."
+    }
+%script{:type => "application/ld+json"}
+  :cdata
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com",
+    "name": "GatewayCFS.com"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "name": "Invoice Factoring"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 3,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/pick-a-company/",
+    "name": "How to Pick a Factor"
+    }
+    }
+    ]
+    }

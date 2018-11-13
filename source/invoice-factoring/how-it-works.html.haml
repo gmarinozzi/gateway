@@ -219,11 +219,73 @@ robots: index,follow
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
       =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/gateway-commercial-finance/', target: '_blank'
+    %span Copyright Gateway Commercial Finance, LLC 2019
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'
         %li=link_to 'Sitemap', '/sitemap/'
         %li=link_to 'Education', '/education/'
         %li=link_to 'Factoraje', '/es/'
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "name" : "Invoice Factoring - All You Need to Know",
+    "headline" : "The Most Complete Article About Invoice Factoring You'll Ever Find",
+    "image": [
+    "https://cdn.gatewaycfs.com/new/optimized/invoice-factoring.jpg",
+    "https://cdn.gatewaycfs.com/new/invoice-factoring-vs-invoice-financing.jpg",
+    "https://cdn.gatewaycfs.com/new/optimized/how-factoring-works.jpg"
+    ],
+    "author" : {
+    "@type" : "Person",
+    "name" : "Marc J Marin",
+    "url": "https://gatewaycfs.com/company/marc-marin/"
+    },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/"
+    },
+    "genre": "business financing",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "Gateway Commercial Finance, LLC",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.gatewaycfs.com/new/gatewaylogo.png"
+    }
+    },
+    "url": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "datePublished": "2018-01-03",
+    "dateCreated": "2018-01-03",
+    "dateModified": "2018-10-18",
+    "description": "Learn what factoring is and how it works, how your business can benefit, costs and advances, typical contract terms, qualifications for approval and much more. "
+    }
+%script{:type => "application/ld+json"}
+  :cdata
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com",
+    "name": "Gateway Commercial Finance"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "name": "Invoice Factoring 101"
+    }
+    }
+    ]
+    }
