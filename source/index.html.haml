@@ -223,15 +223,64 @@ robots: index,follow
   .container
     .social
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
       =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'
         %li=link_to 'Sitemap', '/sitemap/'
         %li=link_to 'Education', '/education/'
 
-
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Organization",
+    "additionalType": "FinancialService",
+    "name": "Gateway Commercial Finance",
+    "legalName" : "Gateway Commercial Finance, LLC",
+    "description" : "Invoice factoring company",
+    "Memberof":
+    {
+    "@type": "Organization",
+    "name": "International Factoring Association"
+    },
+    "foundingDate": "August 11th, 2006",
+    "foundingLocation": "Florida, USA",
+    "founders":
+    {
+    "@type": "Person",
+    "name": "Marc J Marin"
+    },
+    
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "340 SE 1st Street",
+    "addressLocality": "Delray Beach",
+    "addressRegion": "FL",
+    "postalCode": "33483",
+    "addressCountry": "USA"
+    },
+    "areaServed" : "US",
+    "contactPoint" : [
+    { "@type" : "ContactPoint",
+    "telephone" : "+1-561-734-2706",
+    "FaxNumber" : "+1-561-734-2708",
+    "contactType" : "Customer Service",
+    "email" : "gateway@gatewaycfs.com",
+    "areaServed" : "US",
+    "availableLanguage" : ["English","Spanish"]
+    } , {
+    "@type" : "ContactPoint",
+    "telephone" : "+1-855-424-2955",
+    "contactType" : "Sales",
+    "contactOption" : "TollFree",
+    "areaServed" : "US",
+    "availableLanguage" : ["English","Spanish"]
+    } ] ,
+    "sameAs": [
+    "https://www.facebook.com/gatewaycfs",
+    "https://twitter.com/GatewayCFS",
+    "https://www.linkedin.com/company/gateway-commercial-finance/"
+    ]}
 
