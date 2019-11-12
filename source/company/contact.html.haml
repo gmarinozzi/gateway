@@ -53,7 +53,12 @@ robots: index,follow
         .cols
           .col50
             #dv015883572687830183
-            %script{:src => "https://gatewaycfs.com/ourforms/form.php?div_id=dv015883572687830183&template=contact-main", :type => "text/javascript"}
+            %script{:charset => "utf-8", :src => "//js.hsforms.net/forms/v2.js", :type => "text/javascript"}
+            :javascript
+              hbspt.forms.create({
+              	portalId: "6403347",
+              	formId: "69fe84c4-44f4-4970-8544-f78676b80c2e"
+              });
           .col50
             %h3 Our headquarters
             %div{:itemprop => "address", :itemscope => "", :itemtype => "https://schema.org/PostalAddress"}
@@ -109,10 +114,9 @@ robots: index,follow
   .container
     .social
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
       =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'

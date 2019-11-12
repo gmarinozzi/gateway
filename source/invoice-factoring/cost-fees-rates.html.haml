@@ -9,9 +9,9 @@ robots: index,follow
   .flex-container
     .container-left
       .logo
-        %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
-          %a{:href => "https://gatewaycfs.com", :itemprop => "url"}
-            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png",}
+        %div{:itemscope => "", :itemtype => "http://schema.org/Organization"}
+          %a{:href => "https://gatewaycfs.com/", :itemprop => "url"}
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png"}/
     .container-right
       .nav-trigger
         =image_tag('icons/nav.svg')
@@ -21,13 +21,18 @@ robots: index,follow
       %nav
         %ul
           %li.selected
-            =link_to 'Invoice Factoring', '/invoice-factoring/how-it-works/'
+            %a{:href => "/invoice-factoring/how-it-works/"} Invoice Factoring
             %ul.submenu
-              %li=link_to 'How does factoring work', '/invoice-factoring/how-it-works/'
-              %li=link_to 'Factoring fees', '/invoice-factoring/cost-fees-rates/'
-              %li=link_to 'Factoring requirements', '/invoice-factoring/requirements/'
-          %li=link_to 'Industries We Serve', '/industries/'
-          %li=link_to 'Our Company', '/company/'
+              %li
+                %a{:href => "/invoice-factoring/how-it-works/"} How does factoring work
+              %li
+                %a{:href => "/invoice-factoring/cost-fees-rates/"} Factoring fees
+              %li
+                %a{:href => "/invoice-factoring/requirements/"} Factoring requirements
+          %li
+            %a{:href => "/industries/"} Industries We Serve
+          %li
+            %a{:href => "/company/"} Our Company
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -36,19 +41,27 @@ robots: index,follow
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Factoring Services', '/services/accounts-receivable-factoring/'
+              %a{:href => "/services/accounts-receivable-factoring/"} Factoring Services
               %ul.submenu
-                %li=link_to 'Recourse factoring', '/invoice-factoring/non-recourse/'
-                %li=link_to 'Sell account receivables', '/bff/ob/how-sell-accounts-receivable-ar-factoring-companies'
-                %li=link_to 'Invoice factoring reviews', '/industries/'
-            %li=link_to 'Contact Gateway', '/company/contact/'
-        %button.outline=link_to 'GET STARTED', '/invoice-factoring/quote/'
+                %li
+                  %a{:href => "/invoice-factoring/non-recourse/"} Recourse factoring
+                %li
+                  %a{:href => "/bff/ob/how-sell-accounts-receivable-ar-factoring-companies"} Sell account receivables
+                %li
+                  %a{:href => "/industries/"} Invoice factoring reviews
+            %li
+              %a{:href => "/company/contact/"} Contact Gateway
+        %button.outline
+          %a{:href => "/invoice-factoring/quote/"} GET STARTED
     %article.container-right
       .block
         %hgroup
-          %h1 How Much Does Invoice Factoring Costs? <br>Factoring Fees & Factoring Rates 
+          %h1
+            How Much Does Invoice Factoring Costs?
+            = succeed "Factoring" do
+              %br/
         %p A common concern among factoring prospects is the cost of factoring receivables. Unfortunately there’s no “one-size-fits-all” rule when determining the cost of factoring services. Despite the teaser rate advertised by a factoring company, the final cost for you will depend on the terms of your factoring agreement, which are based on your individual company and client portfolio characteristics.
-        %p.highlighted An abundance of confusing information exists online; we’ll try our best to clarify and organize it for you. 
+        %p.highlighted An abundance of confusing information exists online; we’ll try our best to clarify and organize it for you.
         %h3 In this document we’ll elaborate on the following subjects:
         %ol
           %li How much a factoring company charges
@@ -60,50 +73,71 @@ robots: index,follow
         %p Factoring companies generally use any of two fee models to charge for their services:
         %ul
           %li The first model consists of just one all-inclusive fee.
-          %li The second one usually includes invoice factoring fees and factoring account fees. 
+          %li The second one usually includes invoice factoring fees and factoring account fees.
         %p.highlighted It’s important to understand how the fees are applied. For instance, you may find that the single-fee model ends up costing your company significantly more in the long run. We’ll provide comprehensive information so you can understand all the elements that influence the cost of factoring and also learn how factors (or computer algorithms in some cases) evaluate your company before defining your rates and fees.
-        %p <strong>Your learning process begins here. Let’s talk about accounts receivable factoring fees.</strong>
+        %p
+          %strong Your learning process begins here. Let’s talk about accounts receivable factoring fees.
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
-          %h2 What are <span itemprop="name">Factoring Fees</span>? 
-          %img{:class => "float-right", :alt => "factoring fees", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/factoring-fees.jpg"}
-          %p.highlighted <span itemprop="description">Factoring fees are the discount factoring companies receive for purchasing invoices before they are due and waiting for debtors to pay them.</span>
+          %h2
+            What are
+            = succeed "?" do
+              %span{:itemprop => "name"} Factoring Fees
+          %img.float-right{:alt => "factoring fees", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/factoring-fees.jpg"}/
+          %p.highlighted
+            %span{:itemprop => "description"} Factoring fees are the discount factoring companies receive for purchasing invoices before they are due and waiting for debtors to pay them.
           %p.highlighted These fees are calculated by applying a factoring rate either on the amount advanced or on the invoice face value depending on an agreed upon rate structure.
-          %p.highlighted  Factoring fees begin accruing on the day the receivable is purchased and are usually collected by the factor when the invoice is paid.</span>
-        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}          
-          %p <strong>Here is a simplified <span itemprop="name">factoring fee example</span>:</strong>
+          %p.highlighted Factoring fees begin accruing on the day the receivable is purchased and are usually collected by the factor when the invoice is paid.
+        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
+          %p
+            %strong
+              Here is a simplified
+              = succeed ":" do
+                %span{:itemprop => "name"} factoring fee example
           %span{:itemprop => "description"}
             %ul
               %li Invoice face value: $1,000
               %li Amount advanced: $800
-              %li Factoring rate: 2%
+              %li Factoring rate: 1%
               %li
-                %strong Factoring fee if calculated on amount advanced = $800 x 2% = $16
+                If calculated on
+                %strong amount advanced
+                \= $800 x 1% = $8
               %li
-                %strong Factoring fee if calculated on invoice face value = $1000 x 2% = $20
+                If calculated on
+                %strong invoice value
+                \=$1000 x 1% = $10
         %p We’ll show you more realistic examples of common factoring rate structures and rate calculation details later on this page.
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
-          %h2 What are <span itemprop="name">Factoring Rates</span>?
-          %img{:class => "float-right", :alt => "types of factoring rates", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/types-of-factoring-rates.jpg"}
-          %p.highlighted <span itemprop="description">Factoring rates (a.k.a. <span itemprop="alternateName">factoring discount</span>) are used to calculate the fee that companies pay for factoring services. 
-          %p.highlighted There are several factoring rate models. The most popular are a “flat discount rate” and a combination of a “flat discount plus margin”.</span>
-          %p <strong>The invoice factoring rate that your company will be offered mainly depends on:</strong> 
+          %h2
+            What are
+            = succeed "?" do
+              %span{:itemprop => "name"} Factoring Rates
+          %img.float-right{:alt => "types of factoring rates", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/types-of-factoring-rates.jpg"}/
+          %p.highlighted
+            %span{:itemprop => "description"}
+              Factoring rates (a.k.a.
+              = succeed ")" do
+                %span{:itemprop => "alternateName"} factoring discount
+          %p.highlighted There are several factoring rate models. The most popular are a “flat discount rate” and a combination of a “flat discount plus margin”.
+          %p
+            %strong The invoice factoring rate that your company will be offered mainly depends on:
           %ol
             %li The model the factoring company uses to structure its discount rates,
             %li The risk level of your company and your clients, and
             %li The amount of invoices you plan to sell each month.
-        
-        %h3 This section will help you understand how factoring rates are usually structured				
+        %h3 This section will help you understand how factoring rates are usually structured
         %p.highlighted Factoring companies use several parameters to structure their discount rates. Understanding these structures is crucial when evaluating factoring agreements. We will now describe and exemplify the two most common approaches.
         %ul
           %li Let’s say that you are selling a $100 invoice that will be paid in 60 days. You have been offered an advance rate of 80%.
           %li Let’s see how factoring fees will be calculated using the two most common methods.
-
         %p
-          =link_to 'Click here to learn about factoring advance rates.', '/invoice-factoring/cash-advances/'
+          %a{:href => "/invoice-factoring/cash-advances/"} Click here to learn about factoring advance rates.
         %h2 Typical Factoring Fees & Rate Models
         %h3 Flat Discount Model
         %p.highlighted In this model, commonly used by the new wave of online lenders, fees are calculated by applying a rate on the gross invoice value instead of on the amount advanced.
-        %p <strong>Example</strong>: Let’s say you’ve been offered:  
+        %p
+          %strong> Example
+          \: Let’s say you’ve been offered:
         %ul
           %li A 2% Flat Discount Rate for the first 30 days and,
           %li An additional 1% Flat Discount Rate every 30 days afterward.
@@ -111,70 +145,125 @@ robots: index,follow
         %ul
           %li First 30 days: $100 *2% = $2.00
           %li Second 30 days: $100 * 1% = $1.00
-          %li <strong>Total factoring fee</strong>= $2+$1 = <strong>$3</strong> 
-        //Calculator1
-        %p Here is a simple <a data-fancybox="modal" data-src="#calculator1" href="javascript:;">Factoring Flat Discount Calculator</a> for you to input your numbers and see how it works.
-        #calculator1.calculator{style: 'display:none'}
+          %li
+            %strong> Total factoring fee
+            \= $2+$1 =
+            %strong $3
+        %p
+          Here is a simple
+          %a{"data-fancybox" => "modal", "data-src" => "#calculator1", :href => "javascript:;"} Factoring Flat Discount Calculator
+          for you to input your numbers and see how it works.
+        #calculator1.calculator{:style => "display:none"}
           %h3 Flat Discount Calculator Instructions
           %p This script will calculate the factoring fee for the period the discount rate covers (e.g. 1.5% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.5% for the first 30 days, then 1% for the second 30 days and then add the results)
           %p Complete fields entering numbers only.
           %form
             .row
               %label Invoice Amount:
-              %input#Calculator1-invoice_amount{type: 'text'}
+              %input#Calculator1-invoice_amount/
             .row
               %label Flat Discount (%):
-              %input#Calculator1-discount{type: 'text'}
+              %input#Calculator1-discount/
             .actions
               %button#Calculator1-calculate Calculate
               %button#Calculator1-reset Reset
             .result
               %label Factoring Fee:
-              %input#Calculator1-factoring_fee{type:'text'}
+              %input#Calculator1-factoring_fee/
         %h3 Flat Discount plus Margin Model
-        %p.highlighted  Most factoring companies use a combination of a flat fee and an annual interest rate to define their discount rates. 
-        %p <strong>Example</strong>: Let’s say that your factoring discount is:
+        %p.highlighted Most factoring companies use a combination of a flat fee and an annual interest rate to define their discount rates.
+        %p
+          %strong> Example
+          \: Let’s say that your factoring discount is:
         %ul
           %li PRIME + 2 %,
           %li Plus a flat discount of 1.00% every 30 days.
         %p Your $100 invoice, if it’s paid in 60 days, will pay the following fees:
         %ol
-          %li <strong>First, a PRIME + margin fee</strong> <br>PRIME plus margin: 4.25% + 2% = <strong>6.25% annual</strong><br>PRIME + Margin<strong> daily rate</strong> = 6.25% /360 = <strong>0.017%.</strong><br><br>This fee is <strong>calculated on the amount advanced, not on the gross invoice amount</strong> so we need to calculate your advance.<br><br>Amount advanced: $100 * 80% = $80<br><br><strong>The part of your fee based on prime plus margin</strong> would then be: $80 x 0.017% x 60 days =<strong> $0.84</strong><br><br>
-          %li <strong>Second, a flat discount</strong><br>Flat discount= 1% every 30 days = 2% for 60 days<br>The <strong>flat discount for 60 days</strong> would be $100*2.00% = <strong>$2.00</strong><br><br>
-          %li <strong>Lastly, let’s put them together<br><br>Total factoring fees</strong> would be $0.84+$2= <strong>=$2.84 </strong>
+          %li
+            %strong First, a PRIME + margin fee
+            = succeed "PRIME" do
+              %br/
+            %strong 6.25% annual
+            = succeed "PRIME" do
+              %br/
+            %strong daily rate
+            \= 6.25% /360 =
+            %strong 0.017%.
+            %br/
+            = succeed "This" do
+              %br/
+            %strong calculated on the amount advanced, not on the gross invoice amount
+            so we need to calculate your advance.
+            %br/
+            = succeed "Amount" do
+              %br/
+            %br/
+            %br/
+            %strong The part of your fee based on prime plus margin
+            would then be: $80 x 0.017% x 60 days =
+            %strong $0.84
+            %br/
+            %br/
+          %li
+            %strong Second, a flat discount
+            = succeed "Flat" do
+              %br/
+            = succeed "The" do
+              %br/
+            %strong flat discount for 60 days
+            would be $100*2.00% =
+            %strong $2.00
+            %br/
+            %br/
+          %li
+            %strong
+              Lastly, let’s put them together
+              %br/
+              = succeed "Total" do
+                %br/
+            would be $0.84+$2=
+            %strong =$2.84
         %p NOTE: Prime rate is the short-term interest rate (annual) used in the US banking system. We use a Prime Rate of 4.25% in this example.
-        //Calculator2
-        %p Here is a <a data-fancybox="modal" data-src="#calculator2" href="javascript:;">Factoring Flat Discount and PRIME plus Margin Calculator</a> for you to input your numbers and see how this rate structure works.
-        #calculator2.calculator{style: 'display:none'}
+        %p
+          Here is a
+          %a{"data-fancybox" => "modal", "data-src" => "#calculator2", :href => "javascript:;"} Factoring Flat Discount and PRIME plus Margin Calculator
+          for you to input your numbers and see how this rate structure works.
+        #calculator2.calculator{:style => "display:none"}
           %h3 Factoring Flat Discount and PRIME plus Margin Calculator Instructions
           %p This script will calculate the factoring fee for the period the flat discount covers (e.g. 1% for 30 days). If you have more than one period/rate you'll need to make separate calculations. (e.g. in our example you'll need to calculate first 1.0% for the first 30 days, then 1.00% for the second 30 days and then add the results)
           %p Complete fields entering numbers only. No $,%, etc characters allowed.
           %form
             .row
               %label Invoice Amount:
-              %input#Calculator2-invoice_amount{type: 'text'}
+              %input#Calculator2-invoice_amount/
             .row
-              %labelFlat Advance Rate (%):
-              %input#Calculator2-advance_rate{type: 'text'}
+              %labelflat Advance Rate (%):
+              %input#Calculator2-advance_rate/
             .row
-              %labelFlat Prime + Margin (%):
-              %input#Calculator2-prime_margin{type: 'text'}
+              %labelflat Prime + Margin (%):
+              %input#Calculator2-prime_margin/
             .row
-              %labelFlat Flat Discount (%):
-              %input#Calculator2-flat_discount{type: 'text'}
+              %labelflat Flat Discount (%):
+              %input#Calculator2-flat_discount/
             .actions
               %button#Calculator2-calculate Calculate
               %button#Calculator2-reset Reset
             .result
               %label Factoring Fee:
-              %input#Calculator2-factoring_fee{type:'text'}
-
-        %p.highlighted The options described above represent the most common factoring agreements. However, these are not the only ones. It is very important for you to fully read and understand a factoring proposal, review the numbers and take into account other important variables before <a href="/invoice-factoring/pick-a-company/">picking a factoring company</a>.
+              %input#Calculator2-factoring_fee/
+        %p.highlighted
+          The options described above represent the most common factoring agreements. However, these are not the only ones. It is very important for you to fully read and understand a factoring proposal, review the numbers and take into account other important variables before
+          = succeed "." do
+            %a{:href => "/invoice-factoring/pick-a-company/"} picking a factoring company
         %h2 What Factoring Rate Can Your Company Get?
         %p.highlighted As a general rule you can expect to pay from 1 to 4% of the invoice amount factored as invoice factoring fees.
-        %p Whether the receivable factoring company uses a flat discount, prime plus a margin, or another model to structure the factoring discount, <strong>your offered rate will depend on your company’s risk level to the factor</strong>.
+        %p
+          Whether the receivable factoring company uses a flat discount, prime plus a margin, or another model to structure the factoring discount,
+          = succeed "." do
+            %strong your offered rate will depend on your company’s risk level to the factor
         %h2 Aspects that influence your company and clients’ risk to a factor
-        %p There are many factors that influence your factoring discount rate. The most important ones are the following: 
+        %p There are many factors that influence your factoring discount rate. The most important ones are the following:
         %ul
           %li You company’s average collection period (days sales outstanding)
           %li The concentration rate of your portfolio of customers
@@ -182,55 +271,152 @@ robots: index,follow
           %li The creditworthiness of your customers
         %h3 Customer Concentration
         %p As part of the factoring approval process, a factoring company needs to analyze your client portfolio and the percentage of businesses each client represents to your company. The decision maker will give special attention to the customer concentration ratio to measure the risk of doing business with your company in case of the default of an account.
-        %p <strong>Let’s see how this works</strong>:
+        %p
+          %strong> Let’s see how this works
+          \:
         %p A company with just one customer has 100% concentration. A decision maker will very likely find this situation extremely risky because if something negative occurs with this customer, your business will suffer. Unless this single customer is a highly reputable and creditworthy business it is very unlikely that a factoring company will offer you a deal. If it takes the risk, your discount rate will likely be higher in addition to a lower advance rate.
         %p.highlighted As a general rule, the more customers you have and the more evenly your sales are distributed among them, the lower the customer concentration, and overall risk. Companies with low customer concentration tend to get better factoring rates than those with high concentration.
-        %p Here is a simple calculator in case you would you like to <a href="/bff/avoiding-high-customer-concentration">estimate your company’s customer concentration</a>.(This calculator will work with a portfolio of 10 customers or less. If you have more than 10 customers, contact us and we'll calculate it for you.)
-        %p <strong>Important Note</strong>: As with most variables used to calculate your business risk, customer concentration is a relative factor. Only a deep analysis of your portfolio can help a factoring company make a final decision. E.g. if you have a high concentration but your main customers are companies that the receivable factoring company qualifies as low risk, this high concentration rate may have no influence in establishing your invoice discount rate.
+        %p
+          Here is a simple calculator in case you would you like to
+          = succeed ".(This" do
+            %a{:href => "/bff/avoiding-high-customer-concentration"} estimate your company’s customer concentration
+        %p
+          %strong> Important Note
+          \: As with most variables used to calculate your business risk, customer concentration is a relative factor. Only a deep analysis of your portfolio can help a factoring company make a final decision. E.g. if you have a high concentration but your main customers are companies that the receivable factoring company qualifies as low risk, this high concentration rate may have no influence in establishing your invoice discount rate.
         %h3 Days Sales Outstanding (DSO)
-        %p Day Sales Outstanding (DSO) is your company’s average collection period. 
-        %p.highlighted As a general rule, the shorter the time it takes to collect a customer's invoice, the lower the risk of default and the lower the discount rate your business may qualify for.  
+        %p Day Sales Outstanding (DSO) is your company’s average collection period.
+        %p.highlighted As a general rule, the shorter the time it takes to collect a customer's invoice, the lower the risk of default and the lower the discount rate your business may qualify for.
         %p Results vary according to your business’s field of industry. However, a DSO under 1.5 times your payment terms is usually considered a good result.
-        %p Here is a simple calculator to help you <a href="/bff/measuring-days-sales-outstanding">estimate your company’s DSO</a>.The smaller your DSO ratio the better the deal you will likely get. 
+        %p
+          Here is a simple calculator to help you
+          = succeed ".The" do
+            %a{:href => "/bff/measuring-days-sales-outstanding"} estimate your company’s DSO
         %h3 Volume
-        %p The amount of accounts receivable your company plans to factor every month will, most likely, significantly affect your factoring discount rate. Factoring companies incur a number of costs to set up and manage your account, and many of these costs tend to be almost the same whether you sell invoices for $10k or $100k. 
+        %p The amount of accounts receivable your company plans to factor every month will, most likely, significantly affect your factoring discount rate. Factoring companies incur a number of costs to set up and manage your account, and many of these costs tend to be almost the same whether you sell invoices for $10k or $100k.
         %p.highlighted As a general rule the more invoices you plan to sell, the lower the rate you will likely pay.
-        %p Author <a href="https://plus.google.com/115570243090693289711" rel="author" target="_blank" >Marc J Marin 
+        %p
+          Author
+          %a{:href => "/company/marc-marin/", :rel => "author"} Marc J Marin
 %section.bottom.bg-darkblue
   .container
     .block25
       %p Factoring
       %ul
-        %li=link_to 'Business Invoice Finance', '/'
-        %li=link_to 'Purchase Order Financing', '/services/purchase-order-financing/'
-        %li=link_to 'Florida Factoring', '/locations/florida-factoring/'
-        %li=link_to 'Non Notification Factoring', '/invoice-factoring/non-notification/'
+        %li
+          %a{:href => "/"} Business Invoice Finance
+        %li
+          %a{:href => "/services/purchase-order-financing/"} Purchase Order Financing
+        %li
+          %a{:href => "/locations/florida-factoring/"} Florida Factoring
+        %li
+          %a{:href => "/invoice-factoring/non-notification/"} Non Notification Factoring
     .block25
       %p Resources
       %ul
-        %li=link_to 'Invoice Factoring Calculator', '/invoice-factoring/calculator/'
-        %li=link_to 'Discounting Receivables', '/bff/ob/invoice-discounting-factoring'
-        %li=link_to 'For Factoring Brokers', '/company/factoring-brokers/'
-        %li=link_to 'Cash Flow Financing', '/bff/ob/cash-flow-financing-options'
+        %li
+          %a{:href => "/invoice-factoring/calculator/"} Invoice Factoring Calculator
+        %li
+          %a{:href => "/bff/ob/invoice-discounting-factoring"} Discounting Receivables
+        %li
+          %a{:href => "/company/factoring-brokers/"} For Factoring Brokers
+        %li
+          %a{:href => "/bff/ob/cash-flow-financing-options"} Cash Flow Financing
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
-        %img{:alt => "affiliations",:height => "27", :width => "80", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}
-        %img{:alt => "associations",:height => "21", :width => "81", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB"}
-        %img{:alt => "factoring credit",:height => "63", :width => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}
-        %img{:alt => "factoring members",:height => "43", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}
-        %img{:alt => "factoring associations",:height => "40", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}
+        %img{:alt => "affiliations", :height => "27", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA", :width => "80"}/
+        %img{:alt => "associations", :height => "21", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB", :width => "81"}/
+        %img{:alt => "factoring credit", :height => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B", :width => "63"}/
+        %img{:alt => "factoring members", :height => "43", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA", :width => "122"}/
+        %img{:alt => "factoring associations", :height => "40", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA", :width => "122"}/
 %footer.bg-darkblue
   .container
     .social
-      =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+      %a{:href => "https://www.facebook.com/gatewaycfs", :target => "_blank"}
+        %img{:alt => "Facebook", :src => "../../assets/images/icons/facebook.svg"}/
+      %a{:href => "https://twitter.com/GatewayCFS", :target => "_blank"}
+        %img{:alt => "Twitter", :src => "../../assets/images/icons/twitter.svg"}/
+      %a{"aria-label" => "linkedin", :href => "https://www.linkedin.com/company/2525331/", :target => "_blank"}
+        %img{:alt => "Linkedin", :src => "../../assets/images/icons/linkedin.svg"}/
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
-        %li=link_to 'Privacy', '/privacy-policies/'
-        %li=link_to 'Sitemap', '/sitemap/'
-        %li=link_to 'Education', '/education/'
-        %li=link_to 'Factoraje Financiero', '/es/'
+        %li
+          %a{:href => "/privacy-policies/"} Privacy
+        %li
+          %a{:href => "/sitemap/"} Sitemap
+        %li
+          %a{:href => "/education/"} Education
+        %li
+          %a{:href => "/es/"} Factoraje Financiero
+
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "name" : "How Much Does Invoice Factoring Costs? Factoring Fees & Factoring Rates",
+    "headline" : "How Much Do Factoring Companies Charge?",
+    "image": [
+    "https://cdn.gatewaycfs.com/new/factoring-fees.jpg",
+    "https://cdn.gatewaycfs.com/new/types-of-factoring-rates.jpg"
+    ],
+    "author" : {
+    "@type" : "Person",
+    "name" : "Marc J Marin",
+    "url": "https://gatewaycfs.com/company/marc-marin/"
+    },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gatewaycfs.com/invoice-factoring/cost-fees-rates/"
+    },
+    "genre": "business financing",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "Gateway Commercial Finance, LLC",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.gatewaycfs.com/new/gatewaylogo.png"
+    }
+    },
+    "url": "https://gatewaycfs.com/invoice-factoring/cost-fees-rates/",
+    "datePublished": "2018-01-03",
+    "dateCreated": "2018-01-03",
+    "dateModified": "2018-10-20",
+    "description": "Detailed explanation of the cost of factoring receivables, learn about factoring fees and rate models with sample calculations."
+    }
+%script{:type => "application/ld+json"}
+  :cdata
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com",
+    "name": "GatewayCFS.com"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "name": "Invoice Factoring"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 3,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/cost-fees-rates/",
+    "name": "Fees & Rates"
+    }
+    }
+    ]
+    }

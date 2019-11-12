@@ -27,10 +27,10 @@ robots: index,follow
 
           %li=link_to 'Industries We Serve', '/industries/'
           %li=link_to 'Our Company', '/company/'  
+
 %section.internal-content
   .flex-container
     %aside.container-left
-
     %article.container-right
       .block
         %hgroup
@@ -38,7 +38,7 @@ robots: index,follow
           %p
             %strong
               Regresar a
-              %a{:href => "/es/"} Sitio en Español           
+              %a{:href => "/es/"} Sitio en Español
           %p
             %b What information do we collect?
             %br/
@@ -86,17 +86,17 @@ robots: index,follow
           %p
             %strong Google Analytics
           %p
-            This website uses Google Analytics to anonymously  track usage data within the site. If you don't want your activity to be tracked you can opt-out
+            This website uses Google Analytics to anonymously track usage data within the site. If you don't want your activity to be tracked you can opt-out
             = succeed "." do
               %a{:href => "https://tools.google.com/dlpage/gaoptout/"} here
           %p
             %strong DoubleClick
           %p
-            We use Google Analytics remarketing codes to log   when users view specific pages or take specific actions on a website.   This allows us to provide targeted advertising in the future. If you do   not wish to receive this type of advertising from us in the future you   can opt out using the
+            We use Google Analytics remarketing codes to log when users view specific pages or take specific actions on a website. This allows us to provide targeted advertising in the future. If you do not wish to receive this type of advertising from us in the future you can opt out using the
             %a{:href => "https://www.google.com/settings/ads/onweb#display_optout"} DoubleClick opt-out page
             or the
             = succeed "." do
-              %a{:href => "https://www.networkadvertising.org/managing/opt_out.asp"} Network Advertising Initiative opt-out page
+              %a{:href => "http://optout.networkadvertising.org/?c=1"} Network Advertising Initiative opt-out page
           %p
             %b Your Consent
             %br/
@@ -114,14 +114,11 @@ robots: index,follow
             %br/
             %a{:href => "/"} https://gatewaycfs.com
             %br/
-            340 S.E. 1st Street
-            Delray Beach, Florida
+            340 S.E. 1st Street Delray Beach, Florida
             %br/
             US
             %br/
             gateway@gatewaycfs.com
-
-  
 
 %section.bottom.bg-darkblue
   .container
@@ -145,10 +142,9 @@ robots: index,follow
   .container
     .social
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
       =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'

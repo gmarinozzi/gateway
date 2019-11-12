@@ -9,9 +9,9 @@ robots: index,follow
   .flex-container
     .container-left
       .logo
-        %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
-          %a{:href => "https://gatewaycfs.com", :itemprop => "url"}
-            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png",}
+        %div{:itemscope => "", :itemtype => "http://schema.org/Organization"}
+          %a{:href => "https://gatewaycfs.com/", :itemprop => "url"}
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png"}/
     .container-right
       .nav-trigger
         =image_tag('icons/nav.svg')
@@ -21,12 +21,16 @@ robots: index,follow
       %nav
         %ul
           %li.selected
-            =link_to 'Invoice Factoring', '/invoice-factoring/how-it-works/'
+            %a{:href => "/invoice-factoring/how-it-works/"} Invoice Factoring
             %ul.submenu
-              %li=link_to 'How much factoring costs', '/invoice-factoring/cost-fees-rates/'
-              %li=link_to 'Do you qualify?', '/invoice-factoring/requirements/'
-          %li=link_to 'Industries We Serve', '/industries/'
-          %li=link_to 'Our Company', '/company/'
+              %li
+                %a{:href => "/invoice-factoring/cost-fees-rates/"} How much factoring costs
+              %li
+                %a{:href => "/invoice-factoring/requirements/"} Do you qualify?
+          %li
+            %a{:href => "/industries/"} Industries We Serve
+          %li
+            %a{:href => "/company/"} Our Company
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -35,13 +39,18 @@ robots: index,follow
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Receivables Factoring', '/services/accounts-receivable-factoring/'
+              %a{:href => "/services/accounts-receivable-factoring/"} Receivables Factoring
               %ul.submenu
-                %li=link_to 'Recourse & Nonrecourse Factoring', '/invoice-factoring/non-recourse/'
-                %li=link_to 'Pick an Invoice Factoring Company', '/invoice-factoring/pick-a-company/'
-                %li=link_to 'Invoice Advance', '/invoice-factoring/cash-advances/'
-            %li=link_to 'Invoice Factoring for Small Business', '/bff/ob/invoice-factoring-small-business'
-        %button.outline=link_to 'FACTORING QUOTE', '/invoice-factoring/quote/'
+                %li
+                  %a{:href => "/invoice-factoring/non-recourse/"} Recourse & Nonrecourse Factoring
+                %li
+                  %a{:href => "/invoice-factoring/pick-a-company/"} Pick an Invoice Factoring Company
+                %li
+                  %a{:href => "/invoice-factoring/cash-advances/"} Invoice Advance
+            %li
+              %a{:href => "/bff/ob/invoice-factoring-small-business"} Invoice Factoring for Small Business
+        %button.outline
+          %a{:href => "/invoice-factoring/quote/"} FACTORING QUOTE
     %article.container-right
       .block
         %hgroup
@@ -59,16 +68,25 @@ robots: index,follow
           %li How Much Cash Advances You'll Get?
           %li What Does Factoring Cost?
           %li Typical Factoring Contract Terms
-
         %p We hope this complete reference helps you understand factoring thoroughly. If after finishing reading you still have questions please contact us. We would love to help.
         %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
-          %h2 What is <span itemprop="name">Invoice Factoring</span>?
-          %img{:class => "float-right", :alt => "invoice factoring", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/optimized/invoice-factoring.jpg"}
-          %p.highlighted <span itemprop="description">Invoice factoring (aka <span itemprop="alternateName">accounts receivable factoring</span>) is a financial transaction in which a business sells its outstanding invoices to a factoring company at a discount. Businesses that sell to other businesses (or the government) use factoring to access immediate cash flow.</span>
+          %h2
+            What is
+            = succeed "?" do
+              %span{:itemprop => "name"} Invoice Factoring
+          %img.float-right{:alt => "invoice factoring", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/optimized/invoice-factoring.jpg"}/
+          %p.highlighted
+            %span{:itemprop => "description"}
+              Invoice factoring (aka
+              = succeed ")" do
+                %span{:itemprop => "alternateName"} accounts receivable factoring
         %p Invoice factoring and invoice financing are often used interchangeably and therefore mistaken for the same thing. They are not! Invoice factoring is the sale of an asset. Invoice financing is a loan with invoices as collateral.
-        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}        
+        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
           %h2 How Does Invoice Factoring Work?
-          %p The <span itemprop="name">invoice factoring process</span> consists of four main components:
+          %p
+            The
+            %span{:itemprop => "name"} invoice factoring process
+            consists of four main components:
           %ol
             %li Your business
             %li Your business clients (debtors)
@@ -77,16 +95,31 @@ robots: index,follow
           %span{:itemprop => "description"}
             %h3 The factoring process involves seven steps:
             %ol
-              %li <strong>Step 1</strong>: Your business sells to another business and issues invoices due in 30 to 90 days .
-              %li <strong>Step 2</strong>: You set up an account with a factoring company.
-              %li <strong>Step 3</strong>: You sell your invoices to the factor.
-              %li <strong>Step 4</strong>: The factor provides a cash advance based on an agreed rate.
-              %li <strong>Step 5</strong>: The debtor pays the invoice.
-              %li <strong>Step 6</strong>: The payment is deposited into a temporary reserve account.
-              %li <strong>Step 7</strong>: The factor discounts the fees and amount advanced and wires the balance to your bank account.
-          %img{:align => "", :alt => "how factoring works - process",:itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/optimized/how-factoring-works.jpg"}
-        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}  
-          %h3 <span itemprop="name">Invoice factoring example</span>
+              %li
+                %strong> Step 1
+                \: Your business sells to another business and issues invoices due in 30 to 90 days .
+              %li
+                %strong> Step 2
+                \: You set up an account with a factoring company.
+              %li
+                %strong> Step 3
+                \: You sell your invoices to the factor.
+              %li
+                %strong> Step 4
+                \: The factor provides a cash advance based on an agreed rate.
+              %li
+                %strong> Step 5
+                \: The debtor pays the invoice.
+              %li
+                %strong> Step 6
+                \: The payment is deposited into a temporary reserve account.
+              %li
+                %strong> Step 7
+                \: The factor discounts the fees and amount advanced and wires the balance to your bank account.
+          %img{:align => "", :alt => "how factoring works - process", :itemprop => "image", :src => "https://cdn.gatewaycfs.com/new/optimized/how-factoring-works.jpg"}/
+        %div{:itemscope => "", :itemtype => "https://schema.org/Thing"}
+          %h3
+            %span{:itemprop => "name"} Invoice factoring example
           %span{:itemprop => "description"}
             %ul
               %li Your business sells and delivers product XYZ to Wholesale Inc., issues an invoice for $1,000 and gives the debtor 60 days to pay.
@@ -97,7 +130,7 @@ robots: index,follow
               %li You sell the invoice to the factor and receive an advance of $800.
               %li On day 29 the debtor pays the invoice (usually sending a check to a bank account opened by the factor under your company’s name)
               %li The factoring company receives the payment and deposits it into a reserve account.
-              %li The factor takes $20 as a factoring fee, deducts the $800 already advanced to you and wires the remaining amount  $180 (sometimes called a rebate) to your company’s bank account.
+              %li The factor takes $20 as a factoring fee, deducts the $800 already advanced to you and wires the remaining amount $180 (sometimes called a rebate) to your company’s bank account.
         %h2 How can businesses be eligible for factoring?
         %p.highlighted Factoring is available exclusively to B2B (business to business OR business to government) companies. Unfortunately factoring is not structured to serve retail companies.
         %h3 Industries that regularly use factoring as financing source (but not limited to) :
@@ -110,13 +143,15 @@ robots: index,follow
           %li Distribution
           %li Apparel
           %li Commercial Services
-        %p <strong>Potential reasons for accessing factoring services:</strong>
+        %p
+          %strong Potential reasons for accessing factoring services:
         %ul
           %li You need temporary cash flow for everyday business expenses and payroll.
           %li You cannot access traditional bank financing.
           %li You need cash flow in addition to bank financing.
           %li You’re seeking to avoid debt on your ledger.
-        %p <strong>Factoring clients typically share one or more of the following characteristics:</strong>
+        %p
+          %strong Factoring clients typically share one or more of the following characteristics:
         %ul
           %li Insufficient credit history
           %li Troubled past including prior bankruptcies or forbearances
@@ -127,16 +162,18 @@ robots: index,follow
           %li Highly leveraged company
           %li Delinquent taxes
         %h3 Advantages and Disadvantages of Using Invoice Factoring
-        %p <strong>Pros</strong>
+        %p
+          %strong Pros
         %ul
           %li Quick cash flow boost for your business
           %li Your business can give terms to your customers without worries
-          %li Low qualification requirements and simple application process 
+          %li Low qualification requirements and simple application process
           %li High approval rates
           %li Cash flow without debt
           %li Minimal credit history requirements
           %li Operational support to A/R department
-        %p <strong>Cons</strong>
+        %p
+          %strong Cons
         %ul
           %li Not accessible to B2C companies (businesses that sell only to consumers)
           %li More expensive than traditional bank financing
@@ -148,16 +185,23 @@ robots: index,follow
         %p If you receive bank financing but your credit is maxed out or you don’t want to add more debt to your ledgers, factoring can provide an additional source of cash flow.
         %h2 Invoice Factoring vs Invoice Financing
         %p.highlighted It’s important to distinguish between invoice factoring and invoice financing. Invoice factoring is the purchasing of invoices at a discount. You receive a cash advance, not a loan, for the purchase. Invoice financing, on the other hand, is an asset-based loan. In this case, you can borrow based on a percentage of your accounts receivable, and your invoices serve as collateral.
-        %img{:align => "", :alt => "invoice factoring vs invoice financing", :src => "https://cdn.gatewaycfs.com/new/invoice-factoring-vs-invoice-financing.jpg"}
+        %img{:align => "", :alt => "invoice factoring vs invoice financing", :src => "https://cdn.gatewaycfs.com/new/invoice-factoring-vs-invoice-financing.jpg"}/
         %h2 How Do Companies Qualify For Factoring?
-        %p <strong>The basic factoring requirements:</strong>
+        %p
+          %strong The basic factoring requirements:
         %ul
           %li Your business sells products or services to other businesses or the government.
           %li Your clients are expected to pay in 30 to 90 days.
           %li Your clients are creditworthy.
-        %p Qualification requirements vary between different factoring companies. Feel free to read <a href="/invoice-factoring/requirements/">Invoice Factoring Requirements</a> for other potential criteria.
+        %p
+          Qualification requirements vary between different factoring companies. Feel free to read
+          %a{:href => "/invoice-factoring/requirements/"} Invoice Factoring Requirements
+          for other potential criteria.
         %h2 How Much Cash Will You Get Upfront?
-        %p.highlighted Your advance rate, based on the terms of your factoring agreement, typically ranges between 75 and 90% of the invoice’s face value. Multiply the advance rate by the invoice value to determine how much cash you’ll get upfront. For example if your rate is 80% and you factor a $2,000 invoice, you’ll receive $1,600. Please read <a href="/invoice-factoring/cash-advances/">"What factoring advance rate can your business get?"</a> to understand how factoring companies determine your advance rate.
+        %p.highlighted
+          Your advance rate, based on the terms of your factoring agreement, typically ranges between 75 and 90% of the invoice’s face value. Multiply the advance rate by the invoice value to determine how much cash you’ll get upfront. For example if your rate is 80% and you factor a $2,000 invoice, you’ll receive $1,600. Please read
+          %a{:href => "/invoice-factoring/cash-advances/"} "What factoring advance rate can your business get?"
+          to understand how factoring companies determine your advance rate.
         %p Remember, this is not the entire amount your business gets. The remainder minus agreed factoring fees is “rebated” when your customer pays the invoice.
         %h2 The Costs of Invoice Factoring
         %p Most factoring companies charge two types of fees:
@@ -171,25 +215,39 @@ robots: index,follow
         %ul
           %li A flat discount
           %li A combination of a flat discount and PRIME plus Margin
-        %p To learn more, read <a href="/invoice-factoring/cost-fees-rates/"> How much does factoring costs? Factoring Fees & Factoring Rates</a>.
+        %p
+          To learn more, read
+          = succeed "." do
+            %a{:href => "/invoice-factoring/cost-fees-rates/"} How much does factoring costs? Factoring Fees & Factoring Rates
         %h3 Factoring account fees
         %p These fees vary according to factoring company. Here are the most common administrative fees in factoring agreements:
         %ul
-          %li <strong>Account set-up fee</strong>: this is a one-time fee for assessing original debtor’s credit background.
-          %li <strong>Wire fees</strong>: usually around $25, these fees apply any time funds from your reserve account are wired to your bank account. Note that this fee is not charged for every invoice collected, but rather for the entire amount wired to you, usually including several cash advances and rebates.
-          %li <strong>Mailing fees</strong>
-          %li <strong>Monthly minimum volume fee</strong>: this fee applies only if you had agreed to sell a minimum amount of invoices to get a lower rate, but you failed to meet the minimum.
+          %li
+            %strong> Account set-up fee
+            \: this is a one-time fee for assessing original debtor’s credit background.
+          %li
+            %strong> Wire fees
+            \: usually around $25, these fees apply any time funds from your reserve account are wired to your bank account. Note that this fee is not charged for every invoice collected, but rather for the entire amount wired to you, usually including several cash advances and rebates.
+          %li
+            %strong Mailing fees
+          %li
+            %strong> Monthly minimum volume fee
+            \: this fee applies only if you had agreed to sell a minimum amount of invoices to get a lower rate, but you failed to meet the minimum.
         %h2 Other Typical Factoring Contract Terms
         %p In addition to fees, most factoring contracts also include the following stipulations:
         %h3 Recourse or Non-recourse Factoring
         %p Recourse factoring protects the factoring company when receivables become delinquent, requiring you to pay back the advance.
         %p.highlighted Non-recourse factoring, in theory, releases your company from any liability in the case of non-payment. Yet even when factoring companies advertise the non-recourse option, rarely can customers afford the extremely high premium.
-        %p In addition, non-recourse factoring usually requires your business to have a credit insurance policy to cover the factoring company in case of delinquency. Your business customers need to be highly creditworthy to be approved by the insurance company.<
-        %p For a more detailed explanation of these options, please check out <a href="/invoice-factoring/non-recourse/">Difference among recourse, true non-recourse and modified non-recourse factoring.</a>
+        %p In addition, non-recourse factoring usually requires your business to have a credit insurance policy to cover the factoring company in case of delinquency. Your business customers need to be highly creditworthy to be approved by the insurance company.
+        %p
+          For a more detailed explanation of these options, please check out
+          %a{:href => "/invoice-factoring/non-recourse/"} Difference among recourse, true non-recourse and modified non-recourse factoring.
         %h3 Factoring Minimums - How many invoices do you need to sell?
         %p Most factoring contracts require a monthly minimum of invoices to be factored because the fewer the invoices, the higher the operational costs will be for the factoring company. Typically these minimums are agreed upon at the beginning of the relationship based on highly achievable targets. A higher minimum should lower the offered factoring rate.
         %p.highlighted Very few companies offer spot factoring, which allows your business to factor just one invoice at a time. This may be a good option if you just want a single cash boost, but the cost would be far greater than if you pursued a recurring factoring relationship.
-        %p Author <a href="https://plus.google.com/115570243090693289711" rel="author" target="_blank" >Marc J Marin
+        %p
+          Author
+          %a{:href => "/company/marc-marin/", :rel => "author"} Marc J Marin
 %section.bottom.bg-darkblue
   .container
     .block25
@@ -217,13 +275,75 @@ robots: index,follow
   .container
     .social
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
       =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
         %li=link_to 'Privacy', '/privacy-policies/'
         %li=link_to 'Sitemap', '/sitemap/'
         %li=link_to 'Education', '/education/'
         %li=link_to 'Factoraje', '/es/'
+
+%script{:type => "application/ld+json"}
+  :cdata
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "name" : "Invoice Factoring - All You Need to Know",
+    "headline" : "The Most Complete Article About Invoice Factoring You'll Ever Find",
+    "image": [
+    "https://cdn.gatewaycfs.com/new/optimized/invoice-factoring.jpg",
+    "https://cdn.gatewaycfs.com/new/invoice-factoring-vs-invoice-financing.jpg",
+    "https://cdn.gatewaycfs.com/new/optimized/how-factoring-works.jpg"
+    ],
+    "author" : {
+    "@type" : "Person",
+    "name" : "Marc J Marin",
+    "url": "https://gatewaycfs.com/company/marc-marin/"
+    },
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/"
+    },
+    "genre": "business financing",
+    "publisher" : {
+    "@type" : "Organization",
+    "name" : "Gateway Commercial Finance, LLC",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.gatewaycfs.com/new/gatewaylogo.png"
+    }
+    },
+    "url": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "datePublished": "2018-01-03",
+    "dateCreated": "2018-01-03",
+    "dateModified": "2018-10-18",
+    "description": "Learn what factoring is and how it works, how your business can benefit, costs and advances, typical contract terms, qualifications for approval and much more. "
+    }
+%script{:type => "application/ld+json"}
+  :cdata
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com",
+    "name": "Gateway Commercial Finance"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://gatewaycfs.com/invoice-factoring/how-it-works/",
+    "name": "Invoice Factoring 101"
+    }
+    }
+    ]
+    }

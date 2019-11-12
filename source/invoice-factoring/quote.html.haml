@@ -9,9 +9,9 @@ robots: index,follow
   .flex-container
     .container-left
       .logo
-        %div{:itemscope => "", :itemtype => "https://schema.org/Organization"}
-          %a{:href => "https://gatewaycfs.com", :itemprop => "url"}
-            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png",}/      
+        %div{:itemscope => "", :itemtype => "http://schema.org/Organization"}
+          %a{:href => "https://gatewaycfs.com/", :itemprop => "url"}
+            %img{:alt => "Gateway Commercial Finance", :itemprop => "logo", :src => "https://cdn.gatewaycfs.com/new/gatewaylogo.png"}/
     .container-right
       .nav-trigger
         =image_tag('icons/nav.svg')
@@ -21,13 +21,18 @@ robots: index,follow
       %nav
         %ul
           %li.selected
-            =link_to 'Invoice Factoring', '/invoice-factoring/how-it-works/'
+            %a{:href => "/invoice-factoring/how-it-works/"} Invoice Factoring
             %ul.submenu
-              %li=link_to 'How it works', '/invoice-factoring/how-it-works/'
-              %li=link_to 'Factoring Rates', '/invoice-factoring/cost-fees-rates/'
-              %li=link_to 'Do you qualify?', '/invoice-factoring/requirements/'
-          %li=link_to 'Industries We Serve', '/industries/'
-          %li=link_to 'Our Company', '/company/'
+              %li
+                %a{:href => "/invoice-factoring/how-it-works/"} How it works
+              %li
+                %a{:href => "/invoice-factoring/cost-fees-rates/"} Factoring Rates
+              %li
+                %a{:href => "/invoice-factoring/requirements/"} Do you qualify?
+          %li
+            %a{:href => "/industries/"} Industries We Serve
+          %li
+            %a{:href => "/company/"} Our Company
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -36,107 +41,135 @@ robots: index,follow
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Confidential Factoring', '/company/'
+              %a{:href => "/company/"} Confidential Factoring
               %ul.submenu
-                %li=link_to 'Invoice Factoring Calculators', '/invoice-factoring/calculator/'
-                %li=link_to 'What is a factoring advance rate', '/invoice-factoring/cash-advances/'
-                %li=link_to 'Factoring with recourse', '/invoice-factoring/non-recourse/'
-                %li=link_to 'Locations we serve', '/locations/'
-        %button.outline=link_to 'CONTACT US', '/company/contact/'
+                %li
+                  %a{:href => "/invoice-factoring/calculator/"} Invoice Factoring Calculators
+                %li
+                  %a{:href => "/invoice-factoring/cash-advances/"} What is a factoring advance rate
+                %li
+                  %a{:href => "/invoice-factoring/non-recourse/"} Factoring with recourse
+                %li
+                  %a{:href => "/locations/"} Locations we serve
+        %button.outline
+          %a{:href => "/company/contact/"} CONTACT US
     %article.container-right
       .block
         %hgroup
           %h1 Invoice Factoring Quote
           %h3 Get an invoice factoring quote and proposal in hours! No Obligation. No Hassle.
- 
         .cols
           .col50
-            %p Talking to a Decision Maker can  make all the difference to solving cash flow problems professionally.
-            %p <strong> Please submit the Invoice Factoring Quote Form, it only takes 15 seconds!</strong>
-            %p From the first minute you will realize the difference <strong>in working with a professional advisor and decision maker.</strong>					
-            %p.highlighted We have been included in the Inc 500/5000  List as <strong>one of the nation's fastest growing companies FOUR years in a row!</strong>
+            %p Talking to a Decision Maker can make all the difference to solving cash flow problems professionally.
+            %p
+              %strong Please submit the Invoice Factoring Quote Form, it only takes 15 seconds!
+            %p
+              From the first minute you will realize the difference
+              %strong in working with a professional advisor and decision maker.
+            %p.highlighted
+              We have been included in the Inc 500/5000 List as
+              %strong one of the nation's fastest growing companies FOUR years in a row!
           .col50
             %h2.form-title Factoring Quote
-            #dv014976237606967524
-            %script{:src => "https://gatewaycfs.com/ourforms/form.php?div_id=dv014976237606967524&template=leadnew", :type => "text/javascript"}      
-        %hr
-        %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif", :style => 'padding-bottom:0'}
-        %hr
-
+            %br/
+            /[if lte IE 8]
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            %script{:charset => "utf-8", :src => "//js.hsforms.net/forms/v2.js", :type => "text/javascript"}
+            :javascript
+              hbspt.forms.create({
+              	portalId: "6403347",
+              	formId: "ea755ddc-2db7-46a9-8317-b44c30b826ec"
+              });
+        %hr/
+        %img{:alt => "fastest growing company", :src => "https://cdn.gatewaycfs.com/new/logos/inc500.gif", :style => "padding-bottom:0"}/
+        %hr/
         %h2 About Our Factoring Services
-        %p <a href="/services/accounts-receivable-factoring/">Factoring services</a> provide temporary working capital to pre-bankable, non-bankable, rapidly growing and financially troubled businesses.
+        %p
+          %a{:href => "/services/accounts-receivable-factoring/"} Factoring services
+          provide temporary working capital to pre-bankable, non-bankable, rapidly growing and financially troubled businesses.
         %p There many other reasons to choose Gateway as your preferred factoring partner, including:
         %ol
-          %li <strong>Cost.</strong> Our  fees are based on the risk associated with the debt we take on. Generally, the  lower the risk of default, the lower your costs will be. Our fees start as low  as 0.5 percent, among the lowest in the factoring industry.
-          %li <strong>High advances. </strong>Again,  the amount we advance upfront is often tied to a number of factors, including  the risk of default. We often advance around 80 percent of the invoice amount  and sometimes as much as 95 percent.
-          %li <strong>Deal directly  with the decision maker. </strong>There&rsquo;s no jumping through hoops or going through  automated phone systems when you work with Gateway. You have direct contact  with the decision maker on your funding application. We find that connecting  the seller with the decision maker helps us get all the information we need to  make an informed decision. Have extra information about the debt that you think  will help your application? By all means, share it with us.
-          %li <strong>Fast funding.</strong> Your first approved request will be funded within three days. All subsequent  requests will be funded within one day. That&rsquo;s among the fastest turnaround  times in the industry. Get the cash you need quickly so you can get back to the  business of running your business.
-          %li <strong>High-quality  service.</strong> Our business is built on the quality of our relationships with our  customers. We strive to provide the highest level of service possible. Our job  is to address all of your goals, needs, and concerns so we can all grow  together.
-          %li <strong>Dedicated staff  specialized in your industry.</strong> No matter what industry you&rsquo;re in, chances  are good that we&rsquo;ve have a consultant who specializes in it. We have helped  thousands of companies in a wide range of industries, giving us experience and  depth of knowledge to help you solve your unique cash flow issues.
-        %p Learn why Gateway Commercial Finance is the right factoring  partner for you. Request your no-cost, no-commitment quote from our managing director.
-
+          %li
+            %strong Cost.
+            Our fees are based on the risk associated with the debt we take on. Generally, the lower the risk of default, the lower your costs will be. Our fees start as low as 0.5 percent, among the lowest in the factoring industry.
+          %li
+            %strong> High advances.
+            Again, the amount we advance upfront is often tied to a number of factors, including the risk of default. We often advance around 80 percent of the invoice amount and sometimes as much as 95 percent.
+          %li
+            %strong> Deal directly with the decision maker.
+            There’s no jumping through hoops or going through automated phone systems when you work with Gateway. You have direct contact with the decision maker on your funding application. We find that connecting the seller with the decision maker helps us get all the information we need to make an informed decision. Have extra information about the debt that you think will help your application? By all means, share it with us.
+          %li
+            %strong Fast funding.
+            Your first approved request will be funded within three days. All subsequent requests will be funded within one day. That’s among the fastest turnaround times in the industry. Get the cash you need quickly so you can get back to the business of running your business.
+          %li
+            %strong High-quality service.
+            Our business is built on the quality of our relationships with our customers. We strive to provide the highest level of service possible. Our job is to address all of your goals, needs, and concerns so we can all grow together.
+          %li
+            %strong Dedicated staff specialized in your industry.
+            No matter what industry you’re in, chances are good that we’ve have a consultant who specializes in it. We have helped thousands of companies in a wide range of industries, giving us experience and depth of knowledge to help you solve your unique cash flow issues.
+        %p Learn why Gateway Commercial Finance is the right factoring partner for you. Request your no-cost, no-commitment quote from our managing director.
 %section.testimonials.bg-green
   .container
     %hgroup
       %h3 Here's What Our Customers Have to Say
     .testimonial
       %p
-        %i "In 3 short days, we were flushed with cash..." 
-      %img{:alt => "plumbing", :src => "https://cdn.gatewaycfs.com/new/optimized/19.png"}
+        %i "In 3 short days, we were flushed with cash..."
+      %img{:alt => "plumbing", :src => "https://cdn.gatewaycfs.com/new/optimized/19.png"}/
       %h6 Industry: Plumbing Services
       %p Keith was nearly under water
     .testimonial
       %p
         %i "With reliable funding and a solid partner we're seeing clearly again!"
-      %img{:alt => "advertising", :src => "https://cdn.gatewaycfs.com/new/optimized/31.png"}
+      %img{:alt => "advertising", :src => "https://cdn.gatewaycfs.com/new/optimized/31.png"}/
       %h6 Industry: Advertising
       %p Armando's cash flow wasn't seeing straight
     .testimonial
       %p
         %i "Gateway understood my dire situation and took the necessary time to listen."
-      %img{:alt => "tower erectors", :src => "https://cdn.gatewaycfs.com/new/optimized/38.png"}
+      %img{:alt => "tower erectors", :src => "https://cdn.gatewaycfs.com/new/optimized/38.png"}/
       %h6 Industry: Cell Tower Company
       %p Connection is critical in John's business
     .testimonial
       %p
         %i "Gateway was able to provide us with a line of credit on our receivables."
-      %img{:alt => "farmer", :src => "https://cdn.gatewaycfs.com/success/thumbs/102.png"}
+      %img{:alt => "farmer", :src => "https://cdn.gatewaycfs.com/success/thumbs/102.png"}/
       %h6 Industry: Farming
       %p Slow Growing Problem
     .testimonial
       %p
         %i "Our banker recommended Gateway Commercial Finance to solve our working capital dilemma."
-      %img{:alt => "security guards", :src => "https://cdn.gatewaycfs.com/new/optimized/57.png"}
+      %img{:alt => "security guards", :src => "https://cdn.gatewaycfs.com/new/optimized/57.png"}/
       %h6 Industry: Security Services
       %p It's about Security
     .testimonial
       %p
         %i "They helped us lay out a clear strategy for effective credit policies and procedures."
-      %img{:alt => "telecommunications company", :src => "https://cdn.gatewaycfs.com/new/optimized/392.png"}
+      %img{:alt => "telecommunications company", :src => "https://cdn.gatewaycfs.com/new/optimized/392.png"}/
       %h6 Industry: Telecommunications
       %p Cash Flow Connection
     .testimonial
       %p
         %i "With Gateway, my only concern now is how big to grow!"
-      %img{:alt => "product supplier", :src => "https://cdn.gatewaycfs.com/success/thumbs/156.png"}
+      %img{:alt => "product supplier", :src => "https://cdn.gatewaycfs.com/success/thumbs/156.png"}/
       %h6 Industry: Fencing Supplier
       %p Stray Cash Flow
     .testimonial
       %p
         %i "Now we have a reliable source of working capital to support our growth."
-      %img{:alt => "aviation contractor", :src => "https://cdn.gatewaycfs.com/new/optimized/207.png"}
+      %img{:alt => "aviation contractor", :src => "https://cdn.gatewaycfs.com/new/optimized/207.png"}/
       %h6 Industry: Aerospace Contractor
       %p Effective Financing Takes Precision
     .testimonial
       %p
         %i "Gateway moved quickly to ensure we had the necessary support"
-      %img{:alt => "medical transportation", :src => "https://cdn.gatewaycfs.com/new/optimized/272.png"}
+      %img{:alt => "medical transportation", :src => "https://cdn.gatewaycfs.com/new/optimized/272.png"}/
       %h6 Industry: Medical Transportation
       %p Cash Flow Emergency
     .testimonial
       %p
         %i "Gateway was an ideal partner to support our weekly payroll and fuel needs"
-      %img{:alt => "government contractor", :src => "https://cdn.gatewaycfs.com/success/thumbs/319.png"}
+      %img{:alt => "government contractor", :src => "https://cdn.gatewaycfs.com/success/thumbs/319.png"}/
       %h6 Industry: Government Contractor
       %p They Deliver
 %section.bottom.bg-darkblue
@@ -144,33 +177,44 @@ robots: index,follow
     .block25
       %p Factoring
       %ul
-        %li=link_to 'Staffing Factoring Company', '/industries/factoring-companies-for-staffing-agencies/'
-        %li=link_to 'Government Invoice Factoring', '/industries/government-factoring/'
-        %li=link_to 'Broker Invoice Factoring', '/company/factoring-brokers/'
+        %li
+          %a{:href => "/industries/factoring-companies-for-staffing-agencies/"} Staffing Factoring Company
+        %li
+          %a{:href => "/industries/government-factoring/"} Government Invoice Factoring
+        %li
+          %a{:href => "/company/factoring-brokers/"} Broker Invoice Factoring
     .block25
       %p Resources
       %ul
-        %li=link_to 'Construction Factoring Companies', '/industries/construction-factoring/'
-        %li=link_to 'Accounting for Factoring', '/bff/ob/invoice-factoring-bookkeeping-accounting'
-        %li=link_to 'Non Notification Invoice Factoring', '/invoice-factoring/non-notification/'
+        %li
+          %a{:href => "/industries/construction-factoring/"} Construction Factoring Companies
+        %li
+          %a{:href => "/bff/ob/invoice-factoring-bookkeeping-accounting"} Accounting for Factoring
+        %li
+          %a{:href => "/invoice-factoring/non-notification/"} Non Notification Invoice Factoring
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
-        %img{:alt => "affiliations",:height => "27", :width => "80", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}
-        %img{:alt => "associations",:height => "21", :width => "81", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB"}
-        %img{:alt => "factoring credit",:height => "63", :width => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}
-        %img{:alt => "factoring members",:height => "43", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}
-        %img{:alt => "factoring associations",:height => "40", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}
+        %img{:alt => "affiliations", :height => "27", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA", :width => "80"}/
+        %img{:alt => "associations", :height => "21", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB", :width => "81"}/
+        %img{:alt => "factoring credit", :height => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B", :width => "63"}/
+        %img{:alt => "factoring members", :height => "43", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA", :width => "122"}/
+        %img{:alt => "factoring associations", :height => "40", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA", :width => "122"}/
 %footer.bg-darkblue
   .container
     .social
-      =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
-      =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+      %a{:href => "https://www.facebook.com/gatewaycfs", :target => "_blank"}
+        %img{:alt => "Facebook", :src => "../../assets/images/icons/facebook.svg"}/
+      %a{:href => "https://twitter.com/GatewayCFS", :target => "_blank"}
+        %img{:alt => "Twitter", :src => "../../assets/images/icons/twitter.svg"}/
+      %a{:href => "https://www.linkedin.com/company/2525331/", :target => "_blank"}
+        %img{:alt => "Linkedin", :src => "../../assets/images/icons/linkedin.svg"}/
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
-        %li=link_to 'Privacy', '/privacy-policies/'
-        %li=link_to 'Sitemap', '/sitemap/'
-        %li=link_to 'Education', '/education/'
+        %li
+          %a{:href => "/privacy-policies/"} Privacy
+        %li
+          %a{:href => "/sitemap/"} Sitemap
+        %li
+          %a{:href => "/education/"} Education  

@@ -28,6 +28,7 @@ robots: index,follow
               %li=link_to 'About Gateway', '/company/'
               %li=link_to 'Factoring account receivables', '/services/accounts-receivable-factoring/'
               %li=link_to 'Brokers & partners', '/company/factoring-brokers/'
+
 %section.internal-content
   .flex-container
     %aside.container-left
@@ -36,44 +37,71 @@ robots: index,follow
           %h3 More about...
           %ul
             %li.selected
-              =link_to 'Selling Accounts Receivable', '/bff/ob/how-sell-accounts-receivable-ar-factoring-companies'
+              %a{:href => "/bff/ob/how-sell-accounts-receivable-ar-factoring-companies"} Selling Accounts Receivable
               %ul.submenu
-                %li=link_to 'What is invoice factoring?', '/invoice-factoring/how-it-works/'
-                %li=link_to 'What is a factoring fee?', '/invoice-factoring/cost-fees-rates/'
-                %li=link_to 'What is with recourse factoring?', '/invoice-factoring/non-recourse/'
-                %li=link_to 'Factoring company comparison', '/invoice-factoring/pick-a-company/'
-                %li=link_to 'Small business invoice factoring', '/bff/ob/invoice-factoring-small-business'
-        %button.outline=link_to 'CONTACT US', '/company/contact/'
+                %li
+                  %a{:href => "/invoice-factoring/how-it-works/"} What is invoice factoring?
+                %li
+                  %a{:href => "/invoice-factoring/cost-fees-rates/"} What is a factoring fee?
+                %li
+                  %a{:href => "/invoice-factoring/non-recourse/"} What is with recourse factoring?
+                %li
+                  %a{:href => "/invoice-factoring/pick-a-company/"} Factoring company comparison
+                %li
+                  %a{:href => "/bff/ob/invoice-factoring-small-business"} Small business invoice factoring
+        %button.outline
+          %a{:href => "/company/contact/"} CONTACT US
     %article.container-right
       .block
         %hgroup
           %h1 Meet Our Managing Director - Marc J. Marin
-  
           %h3 Marc Marin is a Founder and Managing Member of Gateway Commercial Finance, LLC
-          %img{:class => "float-left", :alt => "marc j marin", :src => "https://cdn.gatewaycfs.com/new/optimized/marc-marin.jpg"}
-          %p Marin is a regular author for various publications on factoring and business management, including <i>The Commercial Finance Institute</i>, <i>Monitor Daily</i>, <i>Factoring Journal</i>, <i>Professional Repossessor</i>, and <i>Finance & Commerce</i>. Check out Marin’s “Training Guides” to <a href="/downloads/Factoring-Training-Guide.pdf">Factoring</a>, <a href="/downloads/Asset-Based-Lending-Training-Guide.pdf">Asset-Based Lending</a>, <a href="/downloads/Equipment-Finance-And-Leasing-Training-Guide.pdf">Equipment Financing & Leasing</a>, and <a href="/downloads/Commercial%20-Lending-Training-Guide.pdf">Commercial Lending</a>.
+          %img.float-left{:alt => "marc j marin", :src => "https://cdn.gatewaycfs.com/new/optimized/marc-marin.jpg"}/
+          %p
+            Marin is a regular author for various publications on factoring and business management, including
+            = succeed "," do
+              %i The Commercial Finance Institute
+            = succeed "," do
+              %i Monitor Daily
+            = succeed "," do
+              %i Factoring Journal
+            = succeed "," do
+              %i Professional Repossessor
+            = succeed "." do
+              %i Finance & Commerce
+            = succeed "," do
+              %a{:href => "/downloads/Factoring-Training-Guide.pdf"} Factoring
+            = succeed "," do
+              %a{:href => "/downloads/Asset-Based-Lending-Training-Guide.pdf"} Asset-Based Lending
+            = succeed "," do
+              %a{:href => "/downloads/Equipment-Finance-And-Leasing-Training-Guide.pdf"} Equipment Financing & Leasing
+            = succeed "." do
+              %a{:href => "/downloads/Commercial%20-Lending-Training-Guide.pdf"} Commercial Lending
           %p Over the course of Marin’s career, he has closed more than $2.5 billion in factoring volume, primarily with SME’s with annual revenues of less than $1.5 million. As an expert in factoring, he has served as a board member on the IFA (International Factoring Association) and has provided consulting and sub-servicing support to banks and other factors. Marin has also sat on panels for the CFA (Commercial Finance Association), the Finance Network Club, and the IFA regarding issues of business finance, fraud and future trends.
           %p Marin lectures for the IFA, speaking on topics such as portfolio management, introductory factoring, fraud, and workouts. He has also given lectures to the NAELB (National Association of Equipment Lease Brokers) on the benefits of adding factoring to a lessor's product line, to the ACFA (American Cash Flow Association) on marketing for factoring brokers, and to top banks such as Citibank, Bank of America, TD Bank and Wells Fargo on the importance of client retention utilizing non-bank products.
           %p Prior to founding Gateway in 2007, Mr. Marin served as Vice President of Business Development for Bibby Financial Services, Inc. During his 9 year tenure, he was responsible for broker development, underwriting and operations. Before joining Bibby, Marin was the National Business Development Manager for Sun Capital.
           %p.highlighted Marc is a passionate entrepreneur and an avid small business supporter. He truly cares about the financial needs of prospects and customers and is always available to answer questions and help business owners find workable solutions.
           %p Talk to a decision maker. Call Marc J. Marin now - 1-855-424-2955.
           %ul
-            %li Google Plus: <a href="https://plus.google.com/115570243090693289711" rel="author" target="_blank" >Marc J Marin </a>
-            %li Twitter: <a href="https://twitter.com/GatewayCFS">@gatewaycfs</a>
-            %li LinkedIn: <a href="https://www.linkedin.com/in/marc-j-marin-3324849">Marc J. Marin</a>
+            %li
+              Twitter:
+              %a{:href => "https://twitter.com/GatewayCFS"} @gatewaycfs
+            %li
+              LinkedIn:
+              %a{:href => "https://www.linkedin.com/in/marc-j-marin-3324849"} Marc J. Marin
           %script{:type => "application/ld+json"}
             :cdata
               { "@context" : "https://schema.org",
               "@type" : "Person",
               "name" : "Marc J. Marin",
               "image": "https://cdn.gatewaycfs.com/marc-marin.jpg",
+              "telephone": "1-855-424-2955",
               "jobTitle": "Managing Director",
               "worksFor": {
               "@type": "Organization",
               "name": "Gateway Commercial Finance, LLC"},
-              "url" : "https://gatewaycfs.com/message.php",
-              "sameAs" : [ "https://plus.google.com/115570243090693289711",
-              "https://twitter.com/GatewayCFS",
+              "url" : "https://gatewaycfs.com/company/marc-marin/",
+              "sameAs" : ["https://twitter.com/GatewayCFS",
               "https://www.linkedin.com/in/marc-j-marin-3324849"]
               }
 %section.bottom.bg-darkblue
@@ -81,35 +109,46 @@ robots: index,follow
     .block25
       %p Factoring
       %ul
-        %li=link_to 'Factoring Finance', '/'
-        %li=link_to 'Financing Receivable', '/bff/financing-receivables'
-        %li=link_to 'Staffing Factoring Companies', '/industries/factoring-companies-for-staffing-agencies/'
-        %li=link_to 'Factoring Companies in Florida', '/locations/florida-factoring/'
+        %li
+          %a{:href => "/"} Factoring Finance
+        %li
+          %a{:href => "/bff/financing-receivables"} Financing Receivable
+        %li
+          %a{:href => "/industries/factoring-companies-for-staffing-agencies/"} Staffing Factoring Companies
+        %li
+          %a{:href => "/locations/florida-factoring/"} Factoring Companies in Florida
     .block25
       %p Resources
       %ul
-        %li=link_to 'Payroll Factoring', '/industries/staffing-factoring/'
-        %li=link_to 'Telecommunications Factoring', '/industries/telecommunications-factoring/'
-        %li=link_to 'Online Business Funding', '/industries/online-business-funding/'
-        %li=link_to 'Factoring Receivables in QuickBooks', '/bff/ob/invoice-factoring-quickbooks'
+        %li
+          %a{:href => "/industries/staffing-factoring/"} Payroll Factoring
+        %li
+          %a{:href => "/industries/telecommunications-factoring/"} Telecommunications Factoring
+        %li
+          %a{:href => "/industries/online-business-funding/"} Online Business Funding
+        %li
+          %a{:href => "/bff/ob/invoice-factoring-quickbooks"} Factoring Receivables in QuickBooks
     .block50
       %p Our Affiliations & Partnerships
       .affiliations
-        %img{:alt => "affiliations",:height => "27", :width => "80", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA"}
-        %img{:alt => "associations",:height => "21", :width => "81", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB"}
-        %img{:alt => "factoring credit",:height => "63", :width => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B"}
-        %img{:alt => "factoring members",:height => "43", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA"}
-        %img{:alt => "factoring associations",:height => "40", :width => "122", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA"}
+        %img{:alt => "affiliations", :height => "27", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic1.png", :title => "AFA", :width => "80"}/
+        %img{:alt => "associations", :height => "21", :src => "https://cdn.gatewaycfs.com/new/optimized/pic2.png", :title => "NFIB", :width => "81"}/
+        %img{:alt => "factoring credit", :height => "63", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic3.png", :title => "D&B", :width => "63"}/
+        %img{:alt => "factoring members", :height => "43", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic4.png", :title => "IFA", :width => "122"}/
+        %img{:alt => "factoring associations", :height => "40", :src => "https://cdn.gatewaycfs.com/new/affiliations/pic5.png", :title => "ICBA", :width => "122"}/
+
 %footer.bg-darkblue
   .container
     .social
       =link_to image_tag('icons/facebook.svg'), 'https://www.facebook.com/gatewaycfs', target: '_blank'
-      =link_to image_tag('icons/google.svg'), 'https://plus.google.com/+Gatewaycfs', target: '_blank'
       =link_to image_tag('icons/twitter.svg'), 'https://twitter.com/GatewayCFS', target: '_blank'
       =link_to image_tag('icons/linkedin.svg'), 'https://www.linkedin.com/company/2525331/', target: '_blank'
-    %span Copyright Gateway Commercial Finance, LLC 2018
+    %span Copyright Gateway Commercial Finance, LLC 2020
     %nav
       %ul
-        %li=link_to 'Privacy', '/privacy-policies/'
-        %li=link_to 'Sitemap', '/sitemap/'
-        %li=link_to 'Education', '/education/'
+        %li
+          %a{:href => "/privacy-policies/"} Privacy
+        %li
+          %a{:href => "/sitemap/"} Sitemap
+        %li
+          %a{:href => "/education/"} Education  
