@@ -233,54 +233,53 @@ robots: index,follow
         %li=link_to 'Education', '/education/'
 
 %script{:type => "application/ld+json"}
-  :cdata
-    { "@context": "http://schema.org",
-    "@type": "Organization",
-    "additionalType": "FinancialService",
-    "name": "Gateway Commercial Finance",
-    "legalName" : "Gateway Commercial Finance, LLC",
-    "description" : "Invoice factoring company",
-    "Memberof":
-    {
-    "@type": "Organization",
-    "name": "International Factoring Association"
-    },
-    "foundingDate": "August 11th, 2006",
-    "foundingLocation": "Florida, USA",
-    "founders":
-    {
-    "@type": "Person",
-    "name": "Marc J Marin"
-    },
-    
-    "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "340 SE 1st Street",
-    "addressLocality": "Delray Beach",
-    "addressRegion": "FL",
-    "postalCode": "33483",
-    "addressCountry": "USA"
-    },
-    "areaServed" : "US",
-    "contactPoint" : [
-    { "@type" : "ContactPoint",
-    "telephone" : "+1-561-734-2706",
-    "FaxNumber" : "+1-561-734-2708",
-    "contactType" : "Customer Service",
-    "email" : "gateway@gatewaycfs.com",
-    "areaServed" : "US",
-    "availableLanguage" : ["English","Spanish"]
-    } , {
-    "@type" : "ContactPoint",
-    "telephone" : "+1-855-424-2955",
-    "contactType" : "Sales",
-    "contactOption" : "TollFree",
-    "areaServed" : "US",
-    "availableLanguage" : ["English","Spanish"]
-    } ] ,
-    "sameAs": [
-    "https://www.facebook.com/gatewaycfs",
-    "https://twitter.com/GatewayCFS",
-    "https://www.linkedin.com/company/gateway-commercial-finance/"
-    ]}
+  { "@context": "http://schema.org",
+  "@type": "Organization",
+  "additionalType": "FinancialService",
+  "name": "Gateway Commercial Finance",
+  "legalName" : "Gateway Commercial Finance, LLC",
+  "description" : "Invoice factoring company",
+  "Memberof":
+  {
+  "@type": "Organization",
+  "name": "International Factoring Association"
+  },
+  "foundingDate": "August 11th, 2006",
+  "foundingLocation": "Florida, USA",
+  "founders":
+  {
+  "@type": "Person",
+  "name": "Marc J Marin"
+  },
+  
+  "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "340 SE 1st Street",
+  "addressLocality": "Delray Beach",
+  "addressRegion": "FL",
+  "postalCode": "33483",
+  "addressCountry": "USA"
+  },
+  "areaServed" : "US",
+  "contactPoint" : [
+  { "@type" : "ContactPoint",
+  "telephone" : "+1-561-734-2706",
+  "FaxNumber" : "+1-561-734-2708",
+  "contactType" : "Customer Service",
+  "email" : "gateway@gatewaycfs.com",
+  "areaServed" : "US",
+  "availableLanguage" : ["English","Spanish"]
+  } , {
+  "@type" : "ContactPoint",
+  "telephone" : "+1-855-424-2955",
+  "contactType" : "Sales",
+  "contactOption" : "TollFree",
+  "areaServed" : "US",
+  "availableLanguage" : ["English","Spanish"]
+  } ] ,
+  "sameAs": [
+  "https://www.facebook.com/gatewaycfs",
+  "https://twitter.com/GatewayCFS",
+  "https://www.linkedin.com/company/gateway-commercial-finance/"
+  ]}
 
